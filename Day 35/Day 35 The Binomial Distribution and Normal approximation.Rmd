@@ -1,0 +1,245 @@
+---
+title: "Day 35 Graphing the Binomial Distribution and Normal Approximation"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, error=TRUE)
+```
+
+
+As a review, the general form of the formula we have been working with is:
+$$ {n \choose x} p^x q^{(n-x)}  $$
+where: (fill in the blanks)
+___ is the number of trials
+x is the number of successes
+___ is the probability of success
+___ is the probability of failure
+
+*Note that we use x, not k here, because that is what R uses, but they mean the same thing.*
+
+Note that this only works if: there are only 2 options to choose from, p remains constant, and the trials are independent or represent sampling less than 10% of the population.
+In other words, if they are Bernoulli trials.
+
+This is a special distribution called:
+
+####The Binomial Distribution
+
+#####dbinom
+The dbinom( x, n, p) function will find the probability of getting exactly x successes in n trials with a p probability of success.
+
+#####pbinom
+If we want to know the probability of getting x or fewer successes we can use pbinom( x, n, p)
+
+If we wanted to know the probability of getting more than x successes we can use:
+1 - pbinom( x, n, p)
+
+#####qbinom
+We won't use qbinom.
+
+#####rbinom
+If we want to simulate how many successes we would get in each of 1000 different situations with probability of success p where we sample n people we would use rbinom(number of situations, n, p)
+
+
+####Graphing The Binomial Distribution
+
+We will return to the situation we looked at on the Notability worksheet.
+According to ctpublic.org 72.8% of the population of CT is fully vaccinated. 
+We already answered the question: "If you randomly sampled 8 people, what is the probability that exactly 5 of them would be fully vaccinated?" 
+
+We can graph the Binomial distribution for this situation, so that we can see the probability of getting various numbers of vaccinated people among the 8 we sample from. 
+
+From our graph, we will be able to see the probability that exactly 5 are vaccinated but also the probability that exactly 2, exactly 7, etc are vaccinated. This is what makes it a *distribution*.
+
+The binomial distribution requires two pieces of information (parameters) to graph:
+a) number of trials
+b) probability of success
+
+To graph the Binomial Probability Mass Function we use ```dbinom```. This is a discrete function with a set number of x values. The x values are the different numbers of successes. It is possible to get anywhere from 0 to n successes, where n is the number of trials. Thus the x values are 0:n. We get the y-values by plugging the x values into dbinom to get their probabilities.
+
+```{r}
+#define your number of trials (n) and probability (p)
+#these must be manually changed depending on n and p for the situation
+n <- 
+p <- 
+
+#generate the x and y values; this changes by manipulating the numbers above
+x.values <- 0:n
+y.values <- dbinom( x.values, n, p)
+
+#this is the graph; the h makes it graph bars instead of dots
+plot( x.values, y.values,
+      type = "h"
+)
+```
+
+
+We can add a fancy title that changes when you change n and p so you have an automatically well-titled graph!
+```{r}
+#define your number of trials (n) and probability (p)
+#these must be manually changed depending on n and p for the situation
+n <- 10
+p <- .728
+
+#generate the x and y values; this changes by manipulating the numbers above
+x.values <- 0:n
+y.values <- dbinom( x.values, n, p)
+
+#this is the graph with title that automatically shows the n and p you defined
+plot( x.values, y.values,
+      main = paste("Binomial Probability Mass Function \n", "With  n = ", n, "and p = ", p),
+      col = "blue",
+      pch = 20,
+      cex = 2,
+      xlab = "Number of successes",
+      ylab = "Percent X=x",
+      type = "h")
+
+
+```
+*Describe the shape and center of the graph above:*
+
+
+
+What do you think will happen to the distribution as we make n bigger and bigger? Make a guess, then experiment with different values of n in the code chunk below and see what the new distributions look like.
+```{r}
+#define your number of trials (n) and probability (p)
+#these must be manually changed depending on n and p for the situation
+n <- 10
+p <- .728
+
+#generate the x and y values; this changes by manipulating the numbers above
+x.values <- 0:n
+y.values <- dbinom( x.values, n, p)
+
+#this is the graph with title that automatically shows the n and p you defined
+plot( x.values, y.values,
+      main = paste("Binomial Probability Mass Function \n", "With  n = ", n, "and p = ", p),
+      col = "blue",
+      pch = 20,
+      cex = 2,
+      xlab = "Number of successes",
+      ylab = "Percent X=x",
+      type = "h")
+
+```
+
+Describe the shape and the center of the graph when n = 100:
+
+
+
+Wow! The graph looks ________________! And it basically is! We can add a curve to convince ourselves that it is indeed ________________.
+
+Copy and paste the following at the end of the code chunk above.
+curve( dnorm( x, n*p, sqrt(n*p*(1-p) )  ),
+       add = TRUE)
+
+
+Why is this helpful/important?
+
+
+
+####NORMAL APPROXIMATION OF THE BINOMIAL DISTRIBUTION
+The binomial distribution with probability of success p is *nearly normal* when the sample size n is sufficiently large such that:
+
+
+The approximate normal distribution has parameters corresponding to the mean and standard deviation of the Binomial distribution:
+
+
+
+Let's test to convince ourselves that the Normal approximation works:
+
+One more time...according to ctpublic.org 72.8% of the population of CT is fully vaccinated. What if we want to know the probability of observing 350 or less vaccinated people in a sample of 500?
+
+First let's calculate this with the binomial model:
+```{r}
+
+```
+
+Now, let's use the Normal approximation to do this calculation. First we have to check that we can use it. Are np and nq  greater than 10? 
+```{r}
+
+```
+
+To use the Normal model we will need the mean and standard deviation. Calculate these:
+```{r}
+
+```
+
+Now we can use the Normal model to answer our question above- the probability of observing 350 or less vaccinated people in a sample of 500.
+
+```{r}
+
+```
+
+Finally, we can graph our binomial model with the Normal curve overlaid and xlims and ylims that make it really show how the Normal approximation is a good fit:
+```{r}
+n <- 500
+p <- .728
+
+plot( 0:n, dbinom( 0:n, n, p),
+      main = paste("Binomial Probability Mass Function \n", "With p = ", p, "and n = ", n),
+      xlim = c(n*p - 4* sqrt(n*p*(1-p) ), (n*p + 4* sqrt(n*p*(1-p) )) ),
+      ylim = c(0, dbinom( round(n*p), n, p)*1.2 ),
+      col = "blue",
+      pch = 20,
+      cex = 2,
+      xlab = "Number of successes",
+      ylab = "Percent X=x",
+      type = "h",
+            )
+
+#add Normal model curve using the mean and sd of Binomial model
+curve( dnorm( x, n*p, sqrt(n*p*(1-p) )  ),
+       add = TRUE)
+
+```
+
+*We will use the Normal approximation of the Binomial model when we work with situations where n > 100 because that is about the point at which a calculator cannot handle the calculations anymore. R can, but that is because R uses a special trick and isn't actually calculating 100 factorial.*
+
+
+####Practice
+
+1. Underage drinking again. We learned last class that about 70% of 18-20 year olds consumed alcoholic beverages in any given year. We now consider a random sample of one hundred 18-20 year olds.
+
+What is the probability that 95 or more people in this sample have consumed alcoholic beverages? Calculate this using the Binomial model and then calculate it using the Normal approximation of the binomial model.
+
+
+
+
+
+
+2. The American Red Cross says that about 11% of the U.S. population has Type B blood. A blood drive is being held at your school.
+
+a. The blood drive has a total of 150 donors. Assuming this is a typical number of donors for a school blood drive, what would be the mean and standard deviation of the number of donors who have Type B blood? (You did this on the homework already but do it again here so you can use the answers in the next problem.)
+
+
+b. *Use the Normal approximation* to figure out what the probability is that 14 or less of the 150 donors have Type B blood. First make sure to verify that the Normal approximation is appropriate.
+
+
+3. Coin Flips. You and your friend are flipping a coin to decide who will get to ride in the front seat of a car. You decide to flip the coin 20 times; if more heads are flipped, your friend gets the front seat, and if more tails are flipped, you get the front seat. After 20 coin flips, the results are 17 heads and 3 tails. You are suspicious and think that your friend may have supplied an unfair coin. You wonder, what is the chance of this situation happening by chance alone???
+
+a. Explain why this situation involves Bernoulli trials.
+
+
+
+b. Use the binomial distribution to calculate the probability of flipping 17 heads in 20 coin flips with a fair coin.
+
+
+
+c. Make a graph that shoes the binomial distribution for 20 coin flips with a fair coin.
+
+
+
+d. If you flipped a fair coin 200 times, what is the expected (mean) number of heads you would get? With what standard deviation?
+
+
+
+e. You want to test the coin further so you tell your friend you won't believe the coin is fair without more data. You decide to do 200 coin flips. Now, determine if the Normal approximation is suitable, and if so, use it to determine the probability of getting 170 heads.
+
+
+
+f. Use the Normal approximation to determine the probability of getting 170 OR MORE heads in 200 flips.
+
+
+

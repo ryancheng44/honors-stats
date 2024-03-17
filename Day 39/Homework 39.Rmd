@@ -1,0 +1,74 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
+
+11. a. Unimodal and symmetric because the chance of heads and tails is the same
+11. b. 0.5
+11. c.
+```{r}
+sqrt(0.5*0.5/16)
+```
+11. d. np = 16 * 0.5 = 8 <= 10; nq = 16 * 0.5 = 8 <= 10; np and nq too small for Normal and Binomial distributions to be similar
+
+17. a.
+17. b. It depends if the 80 cars are chosen at random as constant probability of success is a requirement for Bernoulli trials.
+
+27.
+
+Bernoulli trials:
+success/failure = yes; success = support; failure = does not support
+independence: no, drawing without replacement
+OR
+400 < 10% of all voters, most likely true
+constant probability of success = yes, 400 drawn at random
+
+np >= 10
+400 * 0.52 = 208
+nq >= 10
+400 * 0.48 = 192
+
+p = 0.52
+```{r}
+sqrt(0.52*0.48/400)
+```
+sd = 0.52
+```{r}
+pnorm(0.5, 0.52, 0.025)
+```
+
+28. a.
+
+Bernoulli trials:
+success/failure = yes, success = germinate, failure = did not germinate
+independence: no, drawing without replacement
+OR
+160 < 10% of all seeds sold, most likely trrue
+constant probability of success: yes as long as sample is drawn at random
+
+np >= 10
+160 * 0.92 = 147.2
+nq >= 10
+160 * 0.08 = 12.8
+
+p = 0.92
+```{r}
+sqrt(0.92*0.08/160)
+```
+sd = 0.021
+```{r}
+1 - pnorm(0.95, 0.92, 0.021)
+```
+28. b. If all the seeds came from the same packet, it is hard to say whether the constant probability of success requirement for Bernoulli trials is met. Perhaps the packet grew mold and therefore messed up all of the seeds.
+
+30.
+
+p = 0.04
+```{r}
+sqrt(0.04*0.96/732)
+```
+sd = 0.007
+```{r}
+1 - pnorm(20/732, 0.04, 0.0072)
+```

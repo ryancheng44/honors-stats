@@ -1,0 +1,123 @@
+---
+title: "Homework 8 Boxplots Solutions"
+author: "Carey Kopeikin and Steph Neul"
+date: "9/21/2023"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, error = TRUE)
+```
+
+
+Go to the webpage: <https://www.openintro.org/data/index.php?data=ssd_speed>. **Read the description of the data set before starting!**
+
+*If you don't know what a SSD drive is, you can read more about it on Wikipedia: <https://en.wikipedia.org/wiki/Solid-state_drive> or do your own googling*
+
+1.  Read in the data found on ssd_speed.csv and print out the first six rows.
+
+```{r}
+ssd.data <- read.csv("ssd_speed.csv")
+head(ssd.data)
+```
+
+2. Use R to find the 5-number summary of average read speeds.
+
+```{r}
+summary(ssd.data$read)
+```
+
+3.  Create a box plot of the average read speeds. Title the plot and label the axis. Make sure that your labels and title make sense. Also, make the colors look nice - I will not give full credit if your graph is black and grey and white. Refer to the R colors png file if you want to see the colors available.
+
+```{r}
+boxplot(
+    ssd.data$read,
+    main = "Average Read Speeds of SSDs",
+    ylab = "speed in mb/s",
+    col = "cadetblue2",
+    border = "red"
+    )
+```
+
+4.  Where would the "invisible fences" be on this boxplot? (the dotted lines that we drew on the boxplot that we made by hand - we called them "upper fence" and "lower fence", and we talked about how we would erase them at the end). Show your work! You should use R to perform any necessary calculations.
+
+```{r}
+summary(ssd.data$read)
+q1 <- 471.2
+q3 <- 1764
+
+upper.fence <- q3 + 1.5*IQR(ssd.data$read)
+lower.fence <- q1 - 1.5*IQR(ssd.data$read)
+
+upper.fence
+lower.fence
+```
+
+5.  Create a boxplot of the `brands` variable. It can be a simple boring boxplot without labels or colors.
+
+```{r}
+
+```
+
+6.  Why did you get an error when trying to do question 5? Then you should erase your code for problem 5 otherwise this rmd may not properly knit to PDF.
+
+Brands is a categorical variable, and it is saved as a character vector. Boxplots are for quantitative (numeric) data.
+
+7.  Create a boxplot of average `read` speeds by brand (like we did for avocados by type and by region). Include a title, and make sure that all of the axis labels make sense and that every label is visible. Include all titles and labels. Make sure that the colors look nice.
+*Hint: you can (and should!) turn the axis labels vertical using code found in the Rmd file from class. Look at the graph that we did for avocado average price by region.*
+
+```{r}
+boxplot(
+    main = "Average Read Speeds of SSDs by Brand",
+    ssd.data$read~ssd.data$brand,
+    xlab = "",  #no label
+    ylab = "Read speed in mb/s",
+    las = 2, #turn labels sideways
+    par(cex.axis = .6), #size of x axis labels
+    col = c("pink", "navy", "lightcoral")
+    )
+```
+
+
+8.  Write at least 3 good observations about the boxplot you created in problem 7. Each observation should be about a different aspect of the graph. Try to use vocabulary that we talked about in class.
+
+-No outliers!
+-Medians varied a lot across brand
+-For some brands, median and Q1 were very close
+-Some brands only had a single data point, so we only see the median (which is that one data point)
+-*Answers will vary!*
+
+9.  Of all of the brands represented in this data set, Samsung has greatest number of different models of SSD. By subsetting, create a new dataframe that only contains data for SSDs from the brand Samsung. Then, find the mean read speed for Samsung SSDs.
+
+```{r}
+ssd.data.samsung <- ssd.data[ssd.data$brand == "Samsung",]
+mean(ssd.data.samsung$read)
+```
+
+10.  Which if any models blew away the competition in terms of their `write` speed? Show all work. There are different ways to go about solving this problem, and answers may vary.
+
+```{r}
+head(ssd.data[ order(ssd.data$write, decreasing = TRUE),])
+#sort data frame by write speed, fastest to slowest
+```
+Corsair Force MP600 had the fastest write speed, but I want to see if this was an outlier - if it actually was FAR better than the other write speeds. So I will make a boxplot:
+
+```{r}
+boxplot(ssd.data$write)
+```
+
+There are no outliers, so no one truly blew away the competition. While Corsair Force MP600 had the fastest write speed, it was not that much better than the next fastest.
+
+11.  Which if any models blew away the competition in terms of number of samples. Show all work. There are different ways to go about solving this problem.
+
+```{r}
+boxplot(ssd.data$samples)
+```
+
+```{r}
+head(ssd.data[ order(ssd.data$samples, decreasing = TRUE),])
+
+#sort data frame by number samples, greatest to smallest
+```
+
+There are several outliers according to the boxplot. Sorting the data, we see that there are about 8 models with over 60,000 samples, then the next most samples was 33,000. Those 8 could be considered to "blow away the competition" in terms of number of samples. Or, if you want to have higher standards, you could say just the top three, with more than 100,000 samples, blew away the competition.

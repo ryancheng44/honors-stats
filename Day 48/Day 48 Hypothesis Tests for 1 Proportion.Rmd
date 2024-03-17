@@ -1,0 +1,284 @@
+---
+title: "Day 48 Hypothesis Testing for 1 Proportion"
+author: "Stephanie Neul"
+date: "3/23/2022 updated 2/6/2024"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, error = TRUE)
+```
+
+
+##1-Proportion Z-Test, or a Hypothesis test for one proportion
+
+We can use R to do a 1-proportion hypothesis test and create a CI quickly instead of doing the calculations by hand on paper. This means we will also be able to perform hypothesis tests and construct CIs for data sets that we read into R.
+
+Problem 1: The National Center for Education Statistics monitors many aspects of elementary and secondary education nationwide. Their 1996 numbers are often used as a baseline to assess changes. In 1996 34% of students had not been absent from school even once during the previous month. In the survey given in 2000, responses from 8302 students showed that this figure had slipped to 33%. Officials would, of course, be concerned if student attendance were declining. Do these figures give evidence of a decline in student attendance? Use 95% confidence and an alpha of .05.
+
+###State hypotheses and alpha
+
+BEFORE doing any coding you should write out your hypotheses and choose an alpha:
+* H0: p = .34 (true proportion of never absent is .34)
+* Ha: p < .34 (true proportion of never absent is less than .34)
+* alpha = .05
+
+###Explore data and collect sample statistics
+
+Now, we should define the following as variables:
+* x = number of successes (SOMETIMES DON'T NEED TO DEFINE THIS!)
+* n = sample size (number of trials)
+* p = null probability (what we decide to use for H0)
+* SD.p.hat = standard deviation of the sampling distribution of p-hat = SD(p-hat) = sqrt(pq/n)
+* p.hat = sample proportion of successes = x/n
+* q.hat = sample proportion of failures = 1 - p.hat
+
+```{r}
+#define your sample statistics; use R functions to define these when possible
+#consider printing out the values to make sure everything is working
+x <-
+n <- 8302
+p <- .34
+q <- 1-p
+SD.p.hat <- sqrt(p*q/n)
+
+p.hat <- .33
+q.hat <- 1 - p.hat
+```
+
+###Check assumptions and conditions
+Specifically make sure to show/state that:
+* n < 10% of population
+* Large Enough to use Normal Model
+Discuss all other assumptions/conditions here as well.
+
+```{r}
+n*p
+n*q
+```
+
+###Perform the test
+
+Perform the hypothesis test using pnorm, and state the p-value.
+```{r}
+#if Ha is p < 
+pnorm(p.hat, p, SD.p.hat)
+
+#if Ha is p > then 1 - pnorm(p.hat, p, SD.p.hat)
+
+#if Ha is p != (not equal to)
+
+```
+
+p-value = .027
+
+###Make a conclusion using alpha
+
+Compare your p-value to alpha and formally state a conclusion about your hypotheses.
+
+.027 is less than alpha of .05, so we reject null and accept the alternative that attendance is declining.
+
+###Confidence Interval
+
+Construct a confidence interval to further support your answer; this is also called looking at the "effect size". First you will need to calculate SE.p.hat since we use that for CIs, not SD.p.hat. Also check the Large Enough condition for a CI: are np.hat and nq.hat > 10?
+
+How to use qnorm to find z*:
+95% confidence: z* is about 2
+To calculate the exact z* for 95% confidence: qnorm(.975)
+
+```{r}
+#define the standard error of p.hat
+SE.p.hat <- sqrt(p.hat*q.hat/n)
+
+#determine the z* value for your chosen level of confidence
+z.star <- qnorm(.975)
+z.star
+
+#check Large Enough conditions for a CI for proportions
+n*p.hat
+n*q.hat
+
+#construct your confidence interval using the formula we know well now!
+p.hat - z.star*SE.p.hat
+p.hat + z.star*SE.p.hat
+    
+```
+
+###Interpret CI and summarize findings.
+
+
+
+##Working with a data set
+
+Problem 2: Now, let's use these new R tools to work through a whole problem using actual data.
+
+Read in the csv file ```full_body_scan.csv```
+```{r}
+body.scan.poll <- read.csv("full_body_scan.csv")
+body.scan.poll
+```
+
+This is a randomized poll about use of full-body airport scanners with 2 variables: 
+answer:  "do not know / no answer", "should", "should not"
+
+party.affiliation: a factor with levels: "Democrat", "Independent", "Republican"
+
+Imagine that you are a politician and you are deciding whether to support the policy for full body scans. You decide to support the policy as long as less than 20% of the population is against it. Your chance of winning reelection is slim so you need to make sure that you make the correct choice. Should you support the policy? Use a hypothesis test to make your choice using an alpha of .05 and then make a 95% confidence interval for the true proportion of people who are against full body scans.
+
+###State hypotheses and alpha
+p = proportion of people AGAINST full body scans
+* H0: p = .20
+* Ha: p < .20 less tham 20% are against it
+* alpha = .05
+
+###Explore data and collect sample statistics
+
+```{r}
+#define your sample statistics; use R functions to define these when possible
+#consider printing out the values to make sure everything is working
+x <- sum(body.scan.poll$answer == "should not")#number successes: number of people against full body scans
+n <- nrow(body.scan.poll)
+p <- .2
+q <- 1 - p
+SD.p.hat <- sqrt(p*q/n)
+
+p.hat <- x/n #sample proportion
+q.hat <- 1 - p.hat
+```
+
+###Check assumptions and conditions
+np, nq > 10?
+Is n < 10% of population? Yes
+```{r}
+n*p
+n*q
+n
+```
+
+###Perform the test
+
+Perform the hypothesis test using pnorm, and state the p-value OUTSIDE OF CODE CHUNK!
+```{r}
+pnorm(p.hat, p, SD.p.hat)
+```
+p-value: 1.04195e-05
+
+###Make a conclusion using alpha
+P-value of 1.04195e-05 is less than alpha, so reject null and accept alternative hypothesis that less than 20% of people are AGAINST full body scans.
+
+###Confidence Interval
+
+```{r}
+#define the standard error of p.hat
+SE.p.hat <- sqrt(p.hat*q.hat/n)
+
+#determine the z* value for your chosen level of confidence
+z.star <- qnorm(.975)
+
+#check Large Enough conditions for a CI for proportions
+n*p.hat
+n*q.hat
+
+#construct your confidence interval using the formula we know well now!
+p.hat - z.star*SE.p.hat
+p.hat + z.star*SE.p.hat
+```
+95% CI: 12.9 to 17.0%
+
+###Interpret CI and summarize findings.
+
+We are 95% confident that the true proportion of people against full body scans is between 12.9 and 17%. This supports the result of our hypothesis test, as 20% is not in our CI and is above our CI.
+
+
+##Practice: Flint Water
+In 2014, to save money, Flint city officials switched the water supply from the Detroit water system to the Flint River. The following years became a battle in Flint, between residents raising concerns about the safety of their tap water and government officials who insisted it was fine.
+
+We will simulate the investigation of Flint’s water that was performed by outside researchers at Virginia Tech. We will perform a *hypothesis test to see if there is convincing evidence that the proportion of homes in Flint with high-lead content in their water supply passes the EPA threshold for safety.* You may choose your alpha this time!
+
+According to EPA regulations, if more than 10% of homes in a city have high lead content in their water (>15 parts per billion), the city’s water supply is unsafe. We will refer to the "FirstDraw" data - testing the water immediately as it comes out of the tap. (The other two columns are tests taken after running the water for 45 seconds and 2 minutes respectively.)
+
+Read in the data set called FlintWaterSamples.csv. This is the data collected by Virginia Tech by sending test kits to 300 random households in Flint and asking them to test their water and send back the kit. The measurements are all given in parts per billion.
+
+```{r}
+flint.water.samples <- read.csv("FlintWaterSamples.csv")
+head(flint.water.samples)
+```
+
+Perform a hypothesis test to see if there is convincing evidence that the proportion of homes in Flint with high-lead content in their water supply passes the EPA threshold for safety. Then, construct a CI to estimate the true proportion of homes in Flint with high-lead content in their water.
+
+###State hypotheses and alpha
+p = proportion of homes in Flint with high lead in water
+* H0: p = .10 (10% have high lead, pass EPA threshold for safety)
+* Ha: p > .10 (more than 10% have high lead content; water is unsafe in flint)
+* alpha = .05
+
+###Explore data and collect sample statistics
+
+```{r}
+#define your sample statistics; use R functions to define these when possible
+#consider printing out the values to make sure everything is working
+x <- sum(flint.water.samples$FirstDraw > 15)
+n <- nrow(flint.water.samples) #rows in data frame
+p <- .1 #null hypothesis p
+q <- 1 - p
+SD.p.hat <- sqrt(p*q/n)
+
+p.hat <- x/n #sample proportion
+q.hat <- 1 - p.hat
+
+p.hat
+n
+```
+
+###Check assumptions and conditions
+np, nq > 10? Yes
+Is n < 10% of population? Yes, there are more than 2710 homes in Flint.
+```{r}
+n*p
+n*q
+n
+```
+
+###Perform the test
+Perform the hypothesis test using pnorm, and state the p-value OUTSIDE OF CODE CHUNK!
+```{r}
+#Ha is "greater than", so we use 1 - pnorm
+1 - pnorm(p.hat, p, SD.p.hat)
+```
+p-value = 0.0001
+
+###Make a conclusion using alpha
+P-value of 0.0001 is less than alpha, so we reject the null and accept the alternative hypothesis that more than 10% of homes in Flint have high levels of lead in their water. According to EPA guidelines, the water in Flint is unsafe.
+
+###Confidence Interval
+Ok, so how bad is the situation?
+```{r}
+#define the standard error of p.hat
+SE.p.hat <- sqrt(p.hat*q.hat/n)
+
+#determine the z* value for your chosen level of confidence
+z.star <- qnorm(.975)
+
+#check Large Enough conditions for a CI for proportions
+n*p.hat
+n*q.hat
+
+#construct your confidence interval using the formula we know well now!
+p.hat - z.star*SE.p.hat
+p.hat + z.star*SE.p.hat
+```
+95% CI: 12.2 to 21.0%
+
+###Interpret CI and summarize findings.
+
+We are 95% confident that the true proportion of homes with high lead in water in Flint is between 12.2 and 21%. This supports the result of our hypothesis test, as 10% is not in our CI, and is below our CI.
+
+##Another practice problem: Loans to renters
+The Lending Club platform believes that it is loaning more money to people who rent their houses than they used to. *They used to give out 38% of their loans to renters. Are they giving out more loans now?* Use the data set loan50.csv. Information can be found at: https://www.openintro.org/data/index.php?data=loan50. This data set represents 50 loans made through the Lending Club platform, which is a platform that allows individuals to lend to other individuals.
+
+```{r}
+loan.data <- read.csv("loan50.csv")
+```
+
+
+

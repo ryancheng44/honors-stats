@@ -1,0 +1,127 @@
+---
+title: "Day 06 Intro to Quantitative Stats"
+author: "Carey Kopeikin and Matt Bardoe edited by Stephanie Neul"
+date: "9/22/2021"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, error = TRUE)
+```
+
+# What you will learn
+
+-   How to calculate basic quantitative statistics in R
+
+
+#### Load the Data
+
+We will use the data set `avocado_updated_2020_total_us.csv`. From the creator of the data set: 
+
+"It is a well known fact that Millennials LOVE Avocado Toast. It's also a well known fact that all Millennials live in their parents basements.
+
+Clearly, they aren't buying homes because they are buying too much Avocado Toast!
+
+But maybe there's hope... if a Millennial could find a place with cheap avocados, they could live out the Millennial American Dream."
+
+**Read about the data before you get started:**
+This data set is an updated version of the one described here:
+<https://www.kaggle.com/neuromusic/avocado-prices?select=avocado.csv>
+The updates are described here; most importantly, the updated dataset now includes data up through November 2020:
+<https://www.kaggle.com/datasets/timmate/avocado-prices-2020>
+
+For today, we are going to look at data for the US as a whole, for "conventional" (non-organic) avocados only. Each row contains Hass avocado sales data for the entire US for one week.
+Run this code to read in the data and take a look at it:
+```{r}
+avocado <- read.csv("avocado_updated_2020_total_us.csv")
+head(avocado)
+```
+
+## Measures of Center and Variation
+
+Ok. Now we are ready to do some statistics. One goal of statistics to is to describe a set of numbers using one or a few numbers. The one you all know about is the *mean()*. The mean is a way to find the "typical" number or "center" of the data set. Of course there is no promise that the mean will even be in the data set, but we know that this is somewhere smaller than the biggest and larger than the smallest.
+This code will find the mean of the `total_volume` variable:
+
+```{r}
+mean(avocado$total_volume)
+```
+
+Other numbers that can be useful to know are the minimum and the maximum. We will write code below to find the *min()* and the *max()* of the `total_volume` variable.
+
+```{r}
+min(avocado$total_volume)
+max(avocado$total_volume)
+```
+
+
+By calculating *max() - min()* we can find the `range` which is one measure of what we would call the variation or `spread`. 
+
+**You Do**: Write code in the chunk below to find the range of the `total_volume`. 
+
+```{r}
+max(avocado$total_volume) - min(avocado$total_volume)
+```
+
+While the min and max and mean are important, they are often misleading because they are affected significantly by extreme values (outliers) in a data set. Extreme values contribute disproportionately to the calculation of the mean (think about the mean salary of an American - billionaires make the mean American salary much higher than is really representative of most salaries in the US). In statistics we we say that the mean and min and max and range are "sensitive" to outliers. Therefore, many times, we would rather have the *median()* than the mean.
+
+The median is the middle number of a data set. The median is "resistant" to outliers. The median is also not necessarily one of the numbers in a dataset, as when there is an even number of numbers the median is calculated as the mean of the middle two.
+Find the median of `total_volume`:
+
+```{r}
+median(avocado$total_volume)
+```
+
+#### Dealing with NA
+
+Let's look at a kind of made up situation. I have the vector below and I would like to calculate the mean of the numeric values. Run the code and see what happens.
+
+```{r}
+example.numbers <- c(3,4,8, NA, 90)
+mean(example.numbers)
+median(example.numbers)
+max(example.numbers)
+```
+
+The `NA` ruins it. `NA` ruins everything! NA means Not Available and basically means the value is missing (it can be more complicated than that, but for now that's all you need to know). However, all of the calculations that we have learned so far (`mean`, `median`, `sum`, etc.) have the ability to remove `NA` using the following trick:
+
+```{r}
+mean(example.numbers, na.rm = TRUE)
+median(example.numbers, na.rm = TRUE)
+max(example.numbers, na.rm = TRUE)
+```
+
+#### Five number summaries
+
+An important way to get a sense of the *center* and *spread* is called the five number summary. We have already discussed 3 important descriptors of a data set. They are the *median*, *min*, and *max*. Now we will add in the median of the numbers between the min and the median and the median of the numbers between the median and the max. These numbers will help to break the data set into four sets of numbers of with an equal amount of the data in each section. We call these sections *quartiles* and the numbers that we calculated above are called *Q1* and *Q3* respectively.
+
+See how the `summary()` command finds the five number summary for `total_volume`.
+```{r}
+summary(avocado$total_volume)
+```
+
+Now try the following:
+
+```{r}
+summary(avocado)
+```
+
+**You Do**:
+1. Find the mean of the `total_bags` variable.
+2. Find the minimum `average_price`.
+3. Find the median `average_price`.
+4. Find the range of the `average_price` variable.
+5. Show the summary for the `total_bags` variable.
+
+```{r}
+mean(avocado$total_bags)
+min(avocado$average_price)
+median(avocado$average_price)
+max(avocado$average_price) - min(avocado$average_price)
+summary(avocado$total_bags)
+```
+
+
+We will return to this data set next class to start learning how to make graphs in R and attempt to "find a place with cheap avocados where we can live out the Millennial American Dream."
+
+
+

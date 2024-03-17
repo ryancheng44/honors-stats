@@ -1,0 +1,258 @@
+---
+title: "Day 08 Boxplots in R"
+author: "Carey Kopeikin and Matt Bardoe edited by Stephanie Neul"
+date: "9/22/2021"
+output: pdf_document
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, error = TRUE)
+```
+
+# What you will learn
+
+-   How to graph boxplots using R
+-   Parameters for formatting graphs in R
+
+#### Load the Data
+
+Let's again load the data `avocado_updated_2020_total_us.csv`. From the
+creator of the data set:
+
+"It is a well known fact that Millennials LOVE Avocado Toast. It's also a well known fact that all Millennials live in their parents basements. Clearly, they aren't buying homes because they are buying too much Avocado Toast! But maybe there's hope... if a Millennial could find a place with cheap avocados, they could live out the Millennial American Dream."
+
+**Read about the data before you get started:** This data set is an
+updated version of the one described here:
+<https://www.kaggle.com/neuromusic/avocado-prices?select=avocado.csv>
+The updates are described here; most importantly, the updated dataset
+now includes data up through November 2020:
+<https://www.kaggle.com/datasets/timmate/avocado-prices-2020>
+
+And again, to start, we are going to look at data for the US as a whole,
+for "conventional" (non-organic) avocados only. Each row contains the
+sales data for the entire US for one week.
+
+```{r}
+avocado <- read.csv("avocado_updated_2020_total_us.csv")
+head(avocado)
+```
+
+#### Boxplots in R
+
+Last class you learned how to draw a boxplot by hand. Moving forward, we
+are going to have R draw our box plots for us.
+
+As a reminder: In a boxplot a box is drawn between Q1 and Q3, and there
+is a line in the box to reflect the median. Then lines are drawn to
+connect the max to end of the box at Q3 and another to connect the min
+to the box at Q1. Any outliers are drawn as dots, and in that case the
+largest and smallest non-outlier points are connected to the box
+instead.
+
+Here is how you would use R to create a boring boxplot for the variable
+`average_price`.
+
+```{r}
+boxplot(avocado$average_price)
+```
+
+*Describe or discuss what this boxplot shows us*
+
+Unfortunately this graph is not visually appealing. Here are some ways
+you can change your graph:
+
++-----------+------------------------------------------------+
+| Parameter | Definition                                     |
++===========+================================================+
+| *type*    | Tells R how to plot the points joined with     |
+|           | lines or individually                          |
++-----------+------------------------------------------------+
+| *main*    | The main title for the graph                   |
++-----------+------------------------------------------------+
+| *xlab*    | The label for the x-axis                       |
++-----------+------------------------------------------------+
+| *ylab*    | The label for the y-axis                       |
++-----------+------------------------------------------------+
+| *col*     | The color or colors to use for plotting        |
++-----------+------------------------------------------------+
+| *pch*     | The point character. This selects the          |
+|           | individual characters for points               |
++-----------+------------------------------------------------+
+| *cex*     | controls the size of the points                |
++-----------+------------------------------------------------+
+| *lty*     | The line type                                  |
++-----------+------------------------------------------------+
+| *lwd*     | The line width                                 |
++-----------+------------------------------------------------+
+| *xlim*    | A vector that provides the limits for the      |
+|           | horizontal axis                                |
++-----------+------------------------------------------------+
+| *ylim*    | A vector that provides the limits for the      |
+|           | vertical axis                                  |
++-----------+------------------------------------------------+
+
+Note that not all of these are used for all graphs. To find out more
+type the kind of plot you want to learn about in the help search or
+
+```{r}
+?boxplot
+```
+
+You can read more about all the point styles here:
+<http://www.sthda.com/english/wiki/r-plot-pch-symbols-the-different-point-shapes-available-in-r>
+
+You can see more about colors here:
+<http://www.sthda.com/english/wiki/colors-in-r>
+
+Now here is a less-boring boxplot:
+
+```{r}
+boxplot(avocado$average_price,
+        main = "Average Weekly Prices of Avocado in the US, 2016-2020",
+        ylab = "US Dollars",
+        col = "lightgreen",
+        border = "blue",
+        outcol = "red"
+        )
+
+```
+
+#### Comparative Box Plots
+
+We can also make comparative box plots - which means several box plots
+side by side. The one below shows the average price of avocados by year.
+
+```{r}
+boxplot(avocado$average_price~avocado$year,
+        main = "Average Prices of Avocados by Year",
+        ylab = "US Dollars", 
+        xlab = "Year", 
+        col = c("green", "blue"),
+        border = "black",
+        outcol = "red")
+```
+
+We can make each box a different color if we want! You just need to add
+colors to the col vector. Try it!
+
+We can also turn the axis labels sideways by setting the parameter `las` equal to 2, and change the size of the axis labels: 
+
+```{r}
+boxplot(avocado$average_price~avocado$year,
+        main = "Average Prices of Avocados by Year",
+        ylab = "US Dollars", 
+        xlab = "Year", 
+        col = c("green", "blue"),
+        border = "black",
+        outcol = "red",
+        las = 2, #change orientation of axis labels
+        par(cex.axis = .6) #size of axis labels
+      )
+```
+
+It is said that there was an "avocadopocalypse" in 2017. Explain what
+you think people meant by that, based on the graph above.
+
+**Your Turn** Write code to make a boxplot of Total Volume by Year. Feel
+free to copy and paste code from above and change what you need to
+change. Make sure the graph is labeled appropriately!
+
+```{r}
+boxplot(avocado$total_volume~avocado$year,
+        main = "Total Volume by Year",
+        ylab = "US Dollars", 
+        xlab = "Year", 
+        col = c("green", "blue"),
+        border = "black",
+        outcol = "red",
+        las = 2, #change orientation of axis labels
+        par(cex.axis = .6) #size of axis labels
+      )
+```
+
+According to this graph, did the "avocadopocalypse" seem to impact
+volume of avocados sold?
+
+#### Subsetting a Dataframe
+
+Sometimes we may just want to look at one particular year. To do so, we
+can make a *new dataframe* that only contains data for that year, using
+the following code. This is called *subsetting* the dataframe. You can
+do this anytime you want to separate out the data for just a particular
+category. The code below makes a new data frame containing only data for
+avocados in 2018.
+
+**DO NOT FORGET THE COMMA!!!**
+
+```{r}
+avocado.2018 <- avocado[ avocado$year == 2018, ]
+head(avocado.2018)
+```
+
+Now, we can calculate the average weekly volume and the weekly average
+price of avocados sold for just 2018:
+
+```{r}
+
+```
+
+And we can make a boxplot of average prices for just 2018:
+
+```{r}
+boxplot(avocado.2018$average_price,
+        main = "Average Weekly Prices of Avocados in 2018",
+        ylab = "US Dollars",
+        col = "lightgreen",
+        border = "blue",
+        outcol = "red"
+        )
+```
+
+Make some observations about the boxplot above:
+
+We may be interested in learning more about the outliers we see. What
+week were avocados most expensive, and least expensive? We can order the
+data to find out:
+
+```{r}
+avocado.2018[ order(avocado.2018$average_price, decreasing = TRUE),]
+
+```
+
+**Your Turn** Hass Avocado splits the US into 8 regions for purposes of
+sales data collection: California, Great Lakes, Midsouth, Northeast,
+Southeast, South Central, Plains, and West. They also track organic
+avocado sales.
+
+Read in the dataset called `avocado_updated_2020_large_regions.csv`. It
+contains data for each of the regions, and for both conventional and
+organic avocados.
+
+```{r}
+avocado.regions <- read.csv("avocado_updated_2020_large_regions.csv")
+```
+
+1.  Make a comparative boxplot for the average price of avocados by
+    `type`. Make some observations about your boxplot.
+
+2.  Make a new dataframe by subsetting that contains the data only for
+    organic avocados. Then make a boxplot for the average price of just
+    organic avocados.
+
+3.  Where would you recommend that I live if I want to have access to
+    the cheapest avocados? Explain, and make sure to use a graph to
+    support your answer. Make sure the labels on your graph are properly formatted!!!
+
+4.  Does your answer to question 3 change if I tell you I will only buy
+    organic avocados? Explain.
+
+5.  Which region bought more avocados in 2019: California or the
+    Northeast? Hint: you shouldn't need to make a graph to answer this
+    question.
+
+6.  Bonus: Make a comparative boxplot that shows the amount of money
+    spent on avocados by year in the US as a whole. You'll have to add a
+    column to the dataframe.

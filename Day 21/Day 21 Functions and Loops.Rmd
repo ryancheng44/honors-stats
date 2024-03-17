@@ -1,0 +1,312 @@
+---
+title: "Day 21 Functions and Loops"
+author: "Carey Kopeikin and Stephanie Neul, rev Matthew Bardoe"
+date: "1/22/2020 rev 10/27/22"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, error=TRUE)
+```
+
+
+# What you will learn
+
+-   How a function in R works
+-   How to create your own functions
+-   How to use loops to create functions
+
+
+In Algebra II when we talked about a function we usually meant a relationship between 2 numbers a dependent variable and an independent variable and was written something like this:
+
+$$f(x) = 3x-6$$ 
+
+or
+
+$$f(x)=\sqrt{x}$$
+
+They all do the same thing which is take an input and produce a unique output.
+
+In R we are going to do something similar but quite a bit different. Let's download the loan50.csv data. These are loans that are made from individual to individual from a website called *Lending Club*. These are loans that actually went through. 
+
+https://www.openintro.org/data/index.php?data=loan50
+
+```{r}
+loans <- read.csv("loan50.csv")
+```
+
+```{r}
+head(loans)
+```
+
+
+Now use the three functions that you already know to find the length, sum, and mean of the annual income variable.
+
+```{r}
+length(loans$annual_income)
+sum(loans$annual_income)
+mean(loans$annual_income)
+```
+
+How could we find the mean of the annual income variable without using the mean function? 
+Try to do it now:
+```{r}
+sum(loans$annual_income) / length(loans$annual_income)
+```
+
+####Creating Functions
+
+Now we will create our own version of the average function. It is not a super useful function because R already has it built in (the mean function) but it will help us see how to create a function.
+
+```{r}
+example.average.function.1 <- function( vector.to.be.averaged){
+  
+  ###write code here that finds the average of vector.to.be.averaged WITHOUT using mean()
+  
+    average = sum(vector.to.be.averaged) / length(vector.to.be.averaged)
+    
+  return(average)
+}
+```
+
+Now to use this function, we have to give it as an argument the vector of numbers we wanted to be averaged.
+
+```{r}
+example.average.function.1(loans$annual_income)
+```
+
+**Your Turn:**
+Write a function that takes a number as an argument and returns that number doubled. Then test your function by using it to double a number of your choice.
+
+```{r}
+#define the function
+doubling.fun = function(number.to.be.doubled) {
+    return(number.to.be.doubled * 2)
+}
+```
+
+```{r}
+#test the function by seeing if it will double the number of your choice
+doubling.fun(2)
+```
+
+Now, let's break lots of Algebra II rules and create a function that has more than one input and does not have a unique output for each group of inputs.
+
+If you have a lively social life, you probably frequently encounter situations in which you need to roll dice of different sizes. For example you may want to roll a d8 and a d20 (die with 8 sides and die with 20 sides) but you forgot your d20 next to your all wood custom Settlers of Catan set in the game closet. This is not a problem, as we can just create a function that rolls 2 dice.
+
+Multi-sided dice rolling function:
+```{r}
+#arguments are the number of sides on die 1 and number of sides on die 2
+dice.roller <- function(die1sides, die2sides ){ 
+
+#pick 1 random number between 1 and the number of sides on the die and store it, once for each die
+  d1 <- sample( 1:die1sides, 1)
+  d2 <- sample( 1:die2sides, 1)
+
+#Display results  
+  return( c(d1, d2) )
+}
+```
+
+```{r}
+#roll a d8 and d20
+dice.roller(8, 20)
+```
+
+**Your turn:**
+
+Use the dice.roller function to roll two 6-sided dies.
+
+```{r}
+dice.roller(6, 6)
+```
+
+**Your Turn**: In baseball, a batting average is calculated by taking a player's number of hits and dividing it by that player's number of at-bats Write a function that takes two arguments, the number of at-bats and the number of hits, and returns a value representing the player's batting average.
+
+```{r}
+batting.average = function(number.of.hits, number.of.at.bats) {
+    return(number.of.hits / number.of.at.bats)
+}
+```
+
+Use your function to calculate the batting average of baseball player Ted Williams, who had 7706 at bats and 2654 hits.
+
+```{r}
+batting.average(2654, 7706)
+```
+
+## The "sample()" function
+The sample() function is built-in to R. Sample() takes a vector as an argument and spits out a random value from the vector. If you want to select more than one value, you need to indicate how many values you want it to randomly select; we will just select one for now. Here we will go through some examples of using sample().
+```{r}
+#code always takes this form: sample(vector, number of values to pick)
+
+#pick one random number between 1 and 10
+sample(1:10, 1)
+
+#pick one random number out of this list of numbers: 2, 35, 6, 7, 10, 0
+sample(c(2, 35, 6, 7, 10, 0), 1)
+
+#pick one random number between 1 and 50
+sample(1:50, 1)
+
+#pick two random numbers between 1 and 50
+sample(1:50, 2)
+```
+
+Now, using sample(), write a function that picks a number randomly between 1 and 100, and if the number is greater than 44, the function returns FALSE and if it is less than or equal to 44, it returns TRUE.
+
+```{r}
+example.function.2 = function() {
+    if (sample(1:100, 1) > 44)
+        return(FALSE)
+    else
+        return(TRUE)
+}
+```
+
+Test your function:
+```{r}
+example.function.2()
+```
+
+####Loops
+In order to demonstrate how loops work we will again use a function that we already know and understand, and create our own version from scratch. The *sum* function in R adds up all of the values in a vector and displays the result. 
+
+Here we will use a repeat loop. Repeat loops do the same task over and over until a condition is met that causes them to break the loop. There are other types of loops (for loops are very commonly used) but for simplicity we will use repeat loops in this class.
+
+```{r}
+new.sum1 <- function( vector){
+  
+  #Create variables i and current.sum
+  i = 1
+  current.sum <- 0
+ 
+  #repeat loop
+  repeat {
+    current.sum <- current.sum + vector[i]
+    
+    i <- i + 1
+    
+    if(i > length(vector) ){
+      break
+      }
+  
+  }
+  
+  #display result
+  return(current.sum)
+}
+```
+
+```{r}
+new.sum1(loans$annual_income )
+```
+
+See that it gives the exact same answer as the built-in sum function in R:
+```{r}
+sum(loans$annual_income)
+```
+
+## Simulations using functions and loops
+Now we have most of the tools we need to answer the question posed at the beginning of class using a **simulation**.
+
+A person with type O-positive blood can receive blood only from other type O donors. About 44% of the U.S. population has type O blood. At a blood drive, how many potential donors do you expect to examine in order to get three units of type O blood?
+
+## Write the function
+First create a function that simulates one trial. An outline of the function is provided:
+```{r}
+three.units.o.positive <-function(){
+    
+    donors.examined = 0
+    units.of.o.blood = 0
+    
+#initialize variables that we will need; give them useful names
+  
+  repeat{
+    #"test" a person's blood type and update variables accordingly 
+      donors.examined = donors.examined + 1
+      
+      if (sample(1:100, 1) < 44) {
+          units.of.o.blood = units.of.o.blood + 1
+      }
+      
+    #what condition do we need to meet for us to break the loop?
+      
+      if (units.of.o.blood >= 3) {
+          break
+      }
+      
+    }
+    
+  return(donors.examined)
+  
+}
+```
+
+## Replicate
+
+```R``` has a special function that allows you to run a function over and over and collect the output. That function is called ```replicate```. When you use replicate you give it a number of times that you want to do something and the thing you want it to do.
+
+```{r}
+many.trials = replicate(1000000, three.units.o.positive())
+summary(many.trials)
+```
+
+Now we can graphs and find the summary statistics of the simulations to attempt to answer our initial question.
+```{r}
+
+
+```
+
+
+*Your Turn*: It's mug night in Tenney and everyone gets to choose from a plate that has cookies, brownies, and rice krispie treats. The plate has 45 treats on it. Each person takes 0, 1, or 2 treats as it gets passed around. There is 10% chance a person takes 0, a 70% chance that a person takes 1, and a 20% chance that a person takes 2. Write a function that returns how many people can pick from the plate before it is empty. Then replicate your function 10,000 times and make a histogram and find the summary of those numbers. Did the dorm adviser make enough treats? 
+
+Write a function that represents a single mug night:
+```{r}
+mug.night = function() {
+    treats.left = 45
+    turns.taken = 0
+    
+    repeat {
+        turns.taken = turns.taken + 1
+        chance = sample(1:100, 1)
+    
+        if (chance > 80) {
+            treats.left = treats.left - 2
+        } else if (random.num <= 70) {
+            treats.left = treats.left - 1
+        }
+            
+        if (treats.left <= 0) {
+            break
+        }
+    }
+    
+    return(turns.taken)
+}
+```
+
+Replicate your function:
+```{r}
+replicate(10000, mug.night())
+```
+
+Graphs and summary:
+```{r}
+
+```
+
+```{r}
+current.number = 23
+numbers.printed = 0
+
+repeat {
+    print(current.number)
+    numbers.printed = numbers.printed + 1
+    current.number = current.number + 23
+    
+    if (numbers.printed == 15) {
+        break
+    }
+}
+```

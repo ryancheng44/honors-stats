@@ -1,0 +1,111 @@
+---
+title: "Homework 35"
+author: "Ryan Cheng"
+date: "`r Sys.Date()`"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+pg. 447 #2be, 8, 17abdef, 21, 23, 25
+
+#2.
+    b. No. There is no success and failure conditions. It is just the distribution of eye colors, not one specific eye color we're looking for.
+    e. Yes. There are success (cheating) and failure (not cheating) conditions (one student at a time). Not independent because drawing without replacement. However, 481 < 10% of all high school students. We can assume p(success) is constant as long as the principal isn't testing one student from a group predisposed to cheatig and then another from an extremely righteous group.
+
+#8.
+Maybe (probably not). There are success (misplaced bag) and failure (not misplaced bag) conditions (for each individual bag). Not independent because drawing without replacement. Also, if someone else's bag on your flight was misplaced, yours is more likely to be misplaced as well. However, 22 < 10% of all bags checked. p(success) is probably not constant due to second reason for non-independence.
+
+#17.
+    a.
+```{r}
+0.16^3 * 0.84
+```
+    b.
+```{r}
+1 - (0.16)^8
+```
+    d.
+```{r}
+dbinom(6, 8, 0.84)
+```
+    e.
+```{r}
+pbinom(2, 8, 0.16)
+1 - pbinom(5, 8, 0.84)
+```
+    f.
+```{r}
+pbinom(6, 8, 0.84)
+```
+
+#21.
+    a.
+```{r}
+0.16 * 20
+sqrt(20 * 0.16 * 0.84)
+```
+    b.
+        i.
+```{r}
+1 - (0.84)^20
+```
+        ii.
+```{r}
+pbinom(15, 20, 0.84)
+```
+        iii.
+```{r}
+dbinom(10, 20, 0.84)
+```
+        iv.
+```{r}
+pbinom(9, 20, 0.84)
+```
+
+#23.
+```{r}
+0.12 * 169
+sqrt(169 * 0.12 * 0.88)
+```
+
+#25.
+    a.
+```{r}
+0.7^6
+```
+    b.
+```{r}
+dbinom(4, 6, 0.7)
+```
+    c.
+```{r}
+1 - pbinom(3, 6, 0.7)
+pbinom(2, 6, 0.3)
+```
+    d.
+```{r}
+pbinom(4, 6, 0.7)
+```

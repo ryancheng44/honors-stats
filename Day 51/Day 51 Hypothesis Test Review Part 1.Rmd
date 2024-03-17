@@ -1,0 +1,252 @@
+---
+title: "Day 51 Review for Hypothesis Test Test"
+author: ""
+date: "2/13/2024"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, error=TRUE)
+```
+
+1. A team of young scientists trying to make a name for themselves decides to study possums in Australia and New Guinea to determine if global climate change has effected the marsupials. The biologist think that weather conditions have decimated the possums' food supply.  The file ```possum.csv``` is the results of their sample. In the year 2000 the average length of a possum (total_l) was known to be 87.8 mm. Is there evidence that possums have shrunk?
+
+```{r}
+possum.data <- read.csv("possum.csv")
+```
+
+### State hypotheses and alpha
+
+mu = mean length of possums
+H0: mu = 87.8
+Ha: mu < 87.8
+alpha = 0.05
+
+### Explore data and collect sample statistics
+
+```{r}
+mu <- 87.8
+xbar <- mean(possum.data$total_l)
+sx <- sd(possum.data$total_l)
+n <- nrow(possum.data)
+SE.xbar <- sx/sqrt(n)
+```
+
+### Check assumptions and conditions
+
+```{r}
+n
+```
+104 > 30, 1040 < total possum population
+
+### Perform the test
+
+```{r}
+t <- (xbar - mu)/SE.xbar
+t
+pt(t, n-1)
+```
+p-value: 0.04766501
+
+### Make a conclusion using alpha
+
+p-value of 0.04766501 is less than alpha of 0.05, so we reject the null and accept the alternative hypothesis. That means the mean length of possums is less than 87.8mm.
+
+### Confidence Interval
+
+```{r}
+xbar - qt(0.975, n-1)*SE.xbar
+xbar + qt(0.975, n-1)*SE.xbar
+```
+
+### Interpret CI and summarize findings
+
+95% CI: (86.25, 87.93)
+
+We are 95% confident that the mean length of possums is between 86.25 and 87.93mm.
+
+2. What is a type I error in the context of problem 1?
+
+We falsely conclude that the mean length of possums has decreased when it actually hasn't.
+
+3. What is a type II error in the context of problem 1, and what is a potential consequence of this type of error?
+
+We don't have sufficient evidence to prove that the mean length of possums has decreased when it actually has. As a consequence, there will not be as many possum conservation efforts.
+
+2. The scientists believe that there are more males than female possums in the population, and they decide to use their sample to test this as well. They will use an alpha of .05.
+
+### State hypotheses and alpha
+
+p = proportion of possums that are males
+H0: p = 0.5
+Ha: p > 0.5
+alpha = 0.05
+
+### Explore data and collect sample statistics
+
+```{r}
+p <- 0.5
+q <- 1 - p
+
+x <- sum(possum.data$sex == "m")
+n <- nrow(possum.data)
+
+SD.p.hat <- sqrt(p*q/n)
+
+p.hat <- x/n
+q.hat <- 1 - p.hat
+```
+
+### Check assumptions and conditions
+
+```{r}
+n*p
+n*q
+10*n
+```
+52 > 10
+1040 < total possum population
+
+### Perform the test
+
+```{r}
+1 - pnorm(p.hat, p, SD.p.hat)
+```
+p-value: 0.03877808
+
+### Make a conclusion using alpha
+
+p-value of 0.03877808 is less than alpha of 0.05, so we reject the null hypothesis and accept the alternative. We have found conclusive evidence that there are more male possums than female possums in the population.
+
+### Confidence Interval
+
+```{r}
+SE.p.hat <- sqrt(p.hat*q.hat/n)
+z.star <- qnorm(0.975)
+
+n*p.hat
+n*q.hat
+```
+61 > 10
+43 > 10
+
+```{r}
+p.hat - z.star*SE.p.hat
+p.hat + z.star*SE.p.hat
+```
+95% CI: (0.492, 0.681)
+
+We are 95% confident that the proportion of male possums in the population is between 49.2 and 68.1%.
+
+### Interpret CI and summarize findings
+
+
+4. For problem 3, if the scientists had instead used an alpha of .01, would they have made the same decision? Explain.
+
+Not sure what problem 3 is tbh
+
+5. Imagine that a new law was created that would impose a significant fine on airlines if more than 50% of their flights departed late. In order to test this the government takes a random sample of flights from each airline and uses it to determine if they deserve the fine. The file ```flights.sample.csv``` is a sample of 100 flights from Delta airlines. The variable ```is.late``` is TRUE if the flight departed late and FALSE if it departed on time. Does Delta deserves a fine? Perform a hypothesis test and construct a CI to answer this question.
+
+```{r}
+flights.data <- read.csv("flights.sample.csv")
+head(flights.data)
+```
+
+p = proportion of Delta flights that depart late
+H0: p = 0.5
+H0: p > 0.5
+alpha = 0.05
+
+```{r}
+p <- 0.5
+q <- 1 - p
+
+x <- sum(flights.data$is.late == TRUE)
+n <- nrow(flights.data)
+
+SD.p.hat <- sqrt(p*q/n)
+
+p.hat <- x/n
+q.hat <- 1 - p.hat
+```
+
+```{r}
+1 - pnorm(p.hat, p, SD.p.hat)
+```
+p-value: 0.9452007
+
+p-value of 0.9452007 is greater than alpha of 0.05, so we failed to reject the null hypothesis. We do not have sufficient evidence to prove that more than 50% of Delta flights depart late. As such, the government should not fine them.
+
+```{r}
+SE.p.hat <- sqrt(p.hat*q.hat/n)
+z.star <- qnorm(0.975)
+
+n*p.hat
+n*q.hat
+```
+42 > 10
+58 > 10
+
+```{r}
+p.hat - z.star*SE.p.hat
+p.hat + z.star*SE.p.hat
+```
+95% CI: (0.32.3, 0.51.7)
+
+We are 95% confident that the proportion of Delta flights that depart late is between 32.3 and 51.7%.
+
+6. What is a type I error in the context of problem 5, and a potential consequence?
+
+We conclude that more than 50% of Delta flights depart late when that is not true. A potential consequence is the fine that Delta would have to face.
+
+7. What is a type II error in the context of problem 5, and a potential consequence?
+
+More than 50% of Delta flights depart late but we conclude otherwise. A potential consequence is that Delta gets away with late departures but faces no monetary repercussion for it.
+
+8. Would Delta prefer the government use an alpha of .1 or .001 in this context? Make sure to explain why.
+
+Delta would prefer the government use an alpha of .001 in this context. The smaller the alpha, the smaller the p-value needs to be in order for us to reject the null hypothesis and aceept the alternative hypothesis. In other words, the government would need to find more evidence to prove that more than 50% of Delta flights depart late. A smaller alpha also means a smaller chance that a type I error would occur, where the government concludes that more than 50% of Delta flights depart late when it is not true.
+
+9. The government is also looking into assessing fines to airlines based on average arrival delay. The variable ```arr_delay``` contains information about the number of minutes each flight arrived late (or early, if it's a negative number).  Run the code below to make a subset of the flight data that only contains flights that arrived late.
+
+```{r}
+late.flights <- flights.data[flights.data$is.late == TRUE,]
+```
+
+The government is considering imposing a fine on airlines that have a mean arrival delay greater than 15 minutes. Perform a hypothesis test using an alpha of .05 and construct a confidence interval to see whether or not Delta would be fined under this new rule.
+
+mu = mean arrival delay
+H0: mu = 15
+Ha: mu > 15
+alpha = 0.05
+
+```{r}
+mu <- 15
+xbar <- mean(flights.data$arr_delay)
+sx <- sd(flights.data$arr_delay)
+n <- nrow(flights.data)
+SE.xbar <- sx/sqrt(n)
+n
+```
+n > 30: Yes, 100 > 30
+
+```{r}
+t <- (xbar - mu)/SE.xbar
+t
+1 - pt(t, n-1)
+```
+p-value: 0.9253689
+
+p-value of 0.9253689 is greater than alpha of 0.05, so we failed to reject the null hypothesis. We do not have sufficient evidence to prove that the mean arrival delay of Delta flights is greater than 15 minutes.
+
+```{r}
+xbar - qt(0.975, n-1)*SE.xbar
+xbar + qt(0.975, n-1)*SE.xbar
+```
+95% CI: (-3.61, 17.87)
+
+We are 95% confident that the mean arrival delay of Delta flights is between 3.61 minutes early and 17.87 minutes late. This supports our hypothesis test because 15 minutes late is within the CI and therefore it could be the mean value. Delta would not have to pay a fine based on our hypothesis test and CI.
+
+10.  If the government does choose to impose this rule and wants to catch and fine as many airlines as possible, how can it increase the *power* of this test without changing alpha?
+
+

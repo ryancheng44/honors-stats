@@ -1,0 +1,143 @@
+---
+title: "Quiz: Intro to R and RStudio"
+author: "Carey Kopeikin & Steph Neul"
+date: "8/25/2021"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, error = TRUE)
+```
+
+The following quiz is *open note*. You may not give or receive help from any other students, teachers, or anyone else. You may not use the Internet except to read about the data set (link is below) and submit your work when you are finished. When you are finished please knit the file to pdf and upload it to Canvas. Every question should be answered in the R markdown file. *All answers should be in complete sentences OUTSIDE OF THE CODE CHUNK unless the questions only asks for a value to be printed by R.*
+
+If you are stuck because of an error or other issue you may raise your hand. I will come by and see what the issue is and depending on the problem I may be able to give you some assistance but you may lose partial credit.
+
+##Part A
+
+1. Find the square root of 52.
+
+```{r}
+52^(1/2)
+```
+
+
+2. Use R to print every *even* integer between -11 and 91.
+
+```{r}
+seq(from = -11, to = 91, by = 2)
+```
+
+
+3.Create a character vector of your three favorite colors and then call it so R prints it out.
+
+```{r}
+three.favorite.colors = c("Blue", "Black", "Pink")
+three.favorite.colors
+```
+
+
+4. Use R to print out your vector from problem 3 sorted alphabetically A-Z. If you created the vector already in alphabetical order, print it out sorted Z-A.
+
+```{r}
+sort(three.favorite.colors, decreasing = FALSE)
+```
+
+
+## Part B 
+
+1. Load up the data set ```teacher.csv``` and display the first *7* rows. You can find more information about the data set here: https://www.openintro.org/data/index.php?data=teacher
+*You may use the Internet here to read about the data set using the link provided!*
+
+```{r}
+data.set = read.csv("teacher.csv")
+head(data.set, 7)
+```
+
+
+2. For the variables *id, degree, and years*  write down what type of variable they are (quantitative or categorical), what class (in R) they *should* be, and *why*. If you think it could be more than one class, choose the class that you think BEST suits that variable, and explain why.
+
+id: 
+
+Categorical (doesn't pass the average test)
+
+ID should be character (or numerical, I just think character is better). ID has no units and you wouldn't average it (hence why it shouldn't really be numerical), yet each person has a unique ID, so it's not like a team that you belong to (henec why it shouldn't be factor).
+
+
+degree: 
+
+Categorical (doesn't pass the average test)
+
+Degree should be factor because there is a limited amount of options and because having a certain degree means the same thing across multiple people.
+
+years:
+
+Quantitative (passes the average test)
+
+Years should be numerical as it has units (time) and can be averaged.
+
+3. For each variable that is not the correct class (according to your answers above) change it to the correct class. Print the first 6 rows of the updated data frame to show that the variables' classes changed.
+
+```{r}
+data.set$id = as.character(data.set$id)
+class(data.set$id)
+
+data.set$degree = as.factor(data.set$degree)
+class(data.set$degree)
+
+head(data.set, 6)
+```
+
+
+
+4. What does the variable *fte* tell us *and* why might it be best as a logical variable?
+
+fte tells us whether a teacher is employed full time or part time. It might be best as a logical variable because there are only two options (full or part), which can be represented as true or false.
+
+5. Make *fte* a logical variable.
+
+```{r}
+data.set$fte = data.set$fte == 1
+data.set$fte
+```
+
+
+6. How many observations and variables does this data frame have? How do you know, and show how you used R to find these values.
+
+```{r}
+nrow(data.set)
+ncol(data.set)
+```
+
+
+7. Create a new vector in the data frame that tells us how much the teachers make in base pay and retirement combined and then print the first 6 rows of the data frame to show that this worked.
+
+```{r}
+data.set$combined = data.set$base + data.set$retirement
+head(data.set, 6)
+```
+
+
+8. Create a *new vector in the data frame* that tells us how much `total` compensation the teachers would get if they got a 5% raise next year and print the first 6 rows of the data frame. (Make sure you use the `total` variable for this calculation, you don't need to do anything fancy with the other columns to answer this question.)
+
+```{r}
+data.set$raise = data.set$total * 1.05
+head(data.set)
+```
+
+
+
+9. Find the amount of `total` compensation that is earned by the third highest compensated teacher and the third lowest compensated teacher. For full credit you must use indexing and element extraction.
+
+```{r}
+sort(data.set$total, decreasing = TRUE)[3]
+sort(data.set$total, decreasing = FALSE)[3]
+```
+
+
+
+
+
+
+
+

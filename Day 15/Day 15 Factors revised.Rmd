@@ -1,0 +1,294 @@
+---
+title: "Day 15 Factors"
+author: "Stephanie Neul"
+date: "9/16/2019 revised 10/10/2023"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, error=TRUE)
+```
+
+# What you will learn
+    * How to use Factors and how they
+        are different than vectors.
+    * What levels are and how to 
+        use them
+    * How to cut numeric vectors and 
+        turn them into factors
+
+# Factors 
+
+A factor is a way for R to represent categorical data that has a limited number of categories. Factors are created by vectors and behave in much the same way as vectors. Let’s look at an example of a factor created by a character vector. 
+
+First import the data set taylor albums.csv and name it ```taylor.data``` 
+
+```{r}
+taylor.data <- read.csv("taylor albums.csv")
+head(taylor.data)
+```
+
+This data was taken from this website https://taylor.wjakethompson.com/ and modified slightly for the purposes of this lesson. From the website: "includes lyrics and audio features from the Spotify API for all songs on Taylor’s official studio albums. Notably this excludes singles released separately from an album (e.g., Only the Young, Christmas Tree Farm, etc.), and non-Taylor-owned albums that have a Taylor-owned alternative (e.g., Fearless is excluded in favor of Fearless (Taylor’s Version)). We stan artists owning their own songs."
+
+
+Print the vector for ```album_name```:
+```{r}
+taylor.data$album_name
+```
+
+What class is this vector? Use R to find out.
+
+```{r}
+class(taylor.data$album_name)
+```
+
+We can turn this vector into a factor...remember how? Do it here, and then display the first 6 rows of the factor you created.
+
+```{r}
+taylor.data$album_name = as.factor(taylor.data$album_name)
+```
+
+#### Levels 
+Levels are the categories (or names for the categories) that exist in the factor. 
+
+*Why do you think the levels are listed in that order?*
+
+
+You can list just the levels using the following code.
+```{r}
+levels(taylor.data$album_name)
+```
+
+R secretly gives these levels a hidden numeric value so that it can track them while saving space. To see the hidden values you can use the command as.numeric:
+
+```{r}
+as.numeric(taylor.data$album_name)
+```
+
+
+#### Change names of levels
+We can rename the levels which will change the names of the data but keep them in the same order. *Watch out as this permanently changes the values in your factor.*
+
+Let's change the names of the Taylor's Version albums so that instead of saying Taylor's Version, they just say TV, and let's abbreviate "reputation" to "rep". This will make our graph labels fit better later.
+
+*Important note:* We have to keep the albums (levels) in the same order as they already are when we change names.
+
+```{r}
+levels(taylor.data$album_name) <- c("1989","evermore", "Fearless (Taylor's Version)", "folklore","Lover","Midnights","Red (Taylor's Version)","reputation","Speak Now","Taylor Swift")
+```
+
+Renaming is useful when you want to abbreviate, fix a spelling error, make a label make more sense, etc.
+
+We can also **combine categories by giving their levels the same name.** Let's combine the Taylor's version albums into one level just called "Taylor's Version".
+
+```{r}
+# lacking at the current order
+levels(taylor.data$album_name)
+```
+
+
+```{r}
+levels(taylor.data$album_name) <- c("1989", "evermore", "Taylor's Version", "folklore", "Lover", "Midnights", "Taylor's Version", "rep", "Speak Now", "Taylor Swift")
+head(taylor.data$album_name)
+```
+
+
+Let's now re-import the data set to undo our changes to the vector. Note that we have to change album_name back to a factor since it imports as a character vector. We will also redo the change to the album names to shorten "Taylors Version" to TV.
+
+```{r}
+taylor.data <- read.csv("taylor albums.csv")
+head(taylor.data)
+taylor.data$album_name <- as.factor(taylor.data$album_name)
+levels(taylor.data$album_name) <- c("1989","evermore", "Fearless TV", "folklore","Lover","Midnights","Red TV","reputation","Speak Now","Taylor Swift")
+```
+
+#### Changing the order of Levels
+While this is a perfectly acceptable vector there are problems if we wanted to use it in a useful way. Specifically, the albums are not in the correct order. I want the albums listed in the order they were released.
+
+If I want to graph them, I would like them to be in the correct order, but right now we don't know how to order a bar graph!
+
+```{r}
+barplot( table (taylor.data$album_name),
+         main = "Number of Songs on TSwift Albums",
+         ylim = c(0, 30),
+         ylab = "# of Songs",
+         col = c("lightcoral", "lemonchiffon"),
+         las = 2,
+         cex.names = .8
+         ) 
+
+```
+
+Fortunately, we can change the order of the levels.
+**To do so we can create a character vector of the levels in the order that we want**. Then we can change the levels or create a new factor with the correct ordered levels. If we set ordered = TRUE it will make sure that the underlying secret numeric values are ordered from smallest to greatest.
+
+Here is the correct order of the albums for you to copy and paste:
+"Taylor Swift", "Speak Now", "1989", "reputation", "Lover", "folklore", "evermore", "Fearless TV", "Red TV", "Midnights" 
+
+```{r}
+
+# Step 1 create vector with the correct ordered levels and labels. Note that our labels right now must match the values in the data - we cannot create new labels yet.
+
+correct.order.albums <- c("Taylor Swift", "Speak Now", "1989", "reputation", "Lover", "folklore", "evermore", "Fearless TV", "Red TV", "Midnights") 
+
+# Step 2 create a factor using the 
+# character vector with the original values
+# and the ordered level vector created in step 1
+
+taylor.data$album_name <- factor( taylor.data$album_name, 
+                            levels = correct.order.albums,
+                            ordered = TRUE)
+
+# Step 3 print the vector
+# When we run the vector, the order will be the same as the
+# original character vector but now it will have ordered levels
+head(taylor.data$album_name)
+
+```
+
+Now lets try the barplot again:
+
+```{r}
+barplot( table (taylor.data$album_name),
+         main = "Number of Songs on TSwift Albums",
+         ylim = c(0, 30),
+         ylab = "# of Songs",
+         col = c("turquoise", "purple", "lightblue", "black", "pink", "forestgreen", "antiquewhite", "gold", "red","navy"),
+         las = 2,
+         cex.names = .8
+         )
+```
+
+
+**NOTE THAT YOU CAN NOT CHANGE THE NAME AND ORDER OF LEVELS AT THE SAME TIME!**
+
+**Your turn**
+
+Let's look at the key her songs are in. 
+```{r}
+barplot( table (taylor.data$key_name),
+         main = "Keys of Songs on T Swift's Albums",
+         #ylim = c(0, 20),
+         xlab = "key name",
+         ylab = "frequency",
+         col = c("darkolivegreen2", "honeydew" ),
+         cex.names = .8
+         ) 
+```
+
+Create a factor that has the levels ordered so that all of the "sharp" keys come after the non-sharp keys. I know this is silly but we are just practicing here.
+
+```{r}
+taylor.data$key_name = as.factor(taylor.data$key_name)
+
+ordered.keys = c("A", "B", "C", "D", "E", "F", "G", "A#", "C#", "D#", "F#", "G#")
+taylor.data$key_name <- factor(taylor.data$key_name, levels = ordered.keys, ordered = TRUE)
+levels(taylor.data$key_name)
+```
+
+Now, change the name of C# so that instead it says "C Sharp".
+
+```{r}
+levels(taylor.data$key_name) = c("A", "A#", "B", "C", "C Sharp", "D", "D#", "E", "F", "F#", "G", "G#")
+```
+
+Then, make a bar graph to make sure it worked. You should just be able to copy and paste the code from the previous bar graph of the keys.
+
+```{r}
+barplot( table (taylor.data$key_name),
+         main = "Keys of Songs on T Swift's Albums",
+         #ylim = c(0, 20),
+         xlab = "key name",
+         ylab = "frequency",
+         col = c("darkolivegreen2", "honeydew" ),
+         cex.names = .8
+         )
+```
+
+
+#### Cuts and Breaks
+
+We can use some of the tricks we just learned to turn quantitative data into categorical data. Lets start by looking at the duration_sec variable.
+
+```{r}
+taylor.data$duration_sec
+```
+
+Now, we will sort the songs into short songs (under 3.5 minutes), normal length songs (3.5 to 4 minutes), long songs (4 to 6 minutes), and very long songs (over 6 minutes).
+
+We can "cut" this group into the groups we want and assign breaks where we want them. We do this by creating a numeric vector:
+
+```{r}
+breaks.for.song.length <- c(0, 150, 240, 360, 2000)
+```
+
+Now we can use these breaks to cut up the data. We will make a new vector called song.length.
+
+```{r}
+taylor.data$song.length <- cut( taylor.data$duration_sec, breaks = breaks.for.song.length, right = FALSE)
+
+head(taylor.data$song.length, 10)
+```
+
+*Note that the right = False makes the breaks include the lower value of the interval but not the upper value. So songs that are exactly 4 minutes fall into the 3.5 to 4 minute category.*
+
+Now we can change the labels so that they are easier to understand. Let's make the labels "Short", "Normal", "Long", "Very Long".
+
+```{r}
+levels(taylor.data$song.length) <- c("Short", "Normal", "Long", "Very Long")
+```
+
+You can do this using just one chunk of code. It would look like:
+
+```{r}
+
+#breaks vector
+breaks.for.song.length <- c(0, 150, 240, 360, 2000)
+
+#cut up factor vector
+taylor.data$song.length <- cut( taylor.data$duration_sec, breaks = breaks.for.song.length, right = FALSE)
+
+#label factor
+levels(taylor.data$song.length) <- c("Short", "Normal", "Long", "Very Long")
+
+#print to console 
+head(taylor.data$song.length)
+```
+
+
+
+*Your Turn*
+1. Cut the tempo vector into categories based on the following information about tempo I found on the internet. Make this into a NEW vector called tempo.categories. Then make a barplot showing how many songs fall into each tempo category.
+
+Moderato – slower than Allegretto (< 98 BPM)
+Allegretto – moderately fast (98–109 BPM)
+Allegro – fast, quickly and bright (109–132 BPM)
+Vivace – lively and fast (132–140 BPM)
+Vivacissimo - faster? (140-168 BPM)
+Presto – extremely fast (168–178 BPM)
+Prestissimo – even faster than Presto (178 BPM and over)
+
+```{r}
+#breaks vector
+breaks.for.tempo.type <- c(0, 98, 109, 132, 140, 168, 178, 300)
+
+#cut up factor vector
+taylor.data$tempo.type <- cut( taylor.data$tempo, breaks = breaks.for.tempo.type, right = FALSE)
+
+#label factor
+levels(taylor.data$tempo.type) <- c("Moderato", "Allegretto", "Allegro", "Vivace", "Vivacissimo", "Presto", "Prestissimo")
+
+#print to console 
+head(taylor.data$tempo.type)
+```
+
+
+
+2. Make a barplot that shows the frequencies of the different song.lengths (using the new categories you made above) by album. Make sure your barplot has a legend and is labeled and titled. Albums should be on the x-axis.
+
+```{r}
+barplot(table(taylor.data$song.length, taylor.data$album_name),
+        beside = TRUE,
+        legend.text = TRUE,
+        las = 2)
+```

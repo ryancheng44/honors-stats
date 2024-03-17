@@ -1,0 +1,143 @@
+---
+title: "Day 53 Hypothesis Testing and CIs in R: The Easier Way"
+author: "Stephanie Neul"
+date: "2/19/2024"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, error = TRUE)
+```
+
+# Hypothesis Testing and CIs in R: The Easier Way
+
+R has built-in functions for performing hypothesis tests and constructing confidence intervals. We haven't been using these yet because we wanted you to first have an understanding of the mechanics behind the tests and CIs.
+
+## Hypothesis tests for proportions using prop.test
+
+```{r}
+nfl.data <- read.csv("NFL 201920 Game Summaries2.csv")
+head(nfl.data)
+```
+We will perform a hypothesis test to see *if there is a home-field advantage in the NFL*. The data we will use is from the 2019-20 NFL season; it contains information about every regular-season game played that season. Note the variable `HomeWin` that is TRUE if the home team won and FALSE if the visiting team won.
+
+
+### Hypotheses:
+p = proportion of games won by home teams
+H0: p = .5 (no home field advantage)
+Ha: p > .5 (home teams win more of the time)
+
+### Assumptions and conditions:
+Random/Representative: We are assuming that the 2019-2020 NFL season is representative of all NFL seasons in recent history. This means we are saying that we don't think there was anything special about this season in terms of home field advantage compared to other seasons. We randomly selected this season to work with.
+
+Large Enough:
+There are 256 games in this data set.
+n > 30, so we have satisfied Large Enough conditions for means.
+np, nq will be greater than 10 UNLESS we are working with a really small p (< .04)
+
+< 10% of Population:
+Is 256 less than 10% of all of the games we are trying to represent? Yes, that's 10 seasons.
+
+```{r}
+n <- nrow(nfl.data)
+n
+```
+
+
+### Perform test using prop.test
+To perform the test using the built-in R function, we need to specify the following:
+* x = number of successes
+* n = sample size (number of trials)
+* p = null probability (what we decided to use for H0)
+* alternative = do we want to test if p is "less" or "greater" than our null probability, or "two.sided"?
+
+```{r}
+#use this instead of pnorm or 1 - pnorm
+x <- sum(nfl.data$HomeWin == TRUE) #sum up home wins
+n <- nrow(nfl.data)
+p <- .5
+
+prop.test(x, n, p, alternative = "greater")
+```
+p-value = 0.3309
+We fail to reject the null hypothesis; did not find evidence that there is a home field advantage in the NFL!
+
+## Confidence Intervals Using prop.test
+
+Now let's make a 95% confidence interval that estimates the true percentage of games the home team wins.
+We need to specify:
+* x which is the number of successes (numerator of p.hat)
+* n which is the sample size
+* the confidence level we want (in decimal form, not percentage form)
+* correct = FALSE (don't worry about what this means)
+
+```{r}
+prop.test(x, n, conf.level = .95, correct = FALSE)
+```
+95 percent confidence interval:
+(0.4546288, 0.5761592)
+
+## Two-tailed tests
+What if we didn't suspect a home-field advantage, and just wanted to see if there is an advantage one way or another? This is a more realistic situation than what we have been testing so far this unit. When we make hypotheses, more often than not we don't have a sense of what "side" of the null that the true proportion or true mean might lie on. 
+
+### Hypotheses:
+H0: p = .5 (no home field advantage or disadvantage)
+Ha: p NOT equal to .5
+
+### Perform test using prop.test
+
+
+```{r}
+prop.test(x, n, p, alternative = "two.sided")
+```
+
+## Hypothesis tests for means using t.test
+On average how close are the scores in NFL games? I asked someone in Hill House and he said he would consider a possession game to be close, so 8 points. Let's test to see *if the mean score differential in NFL games is greater than 6 points.*
+
+First we need to create a variable for the score differential. We can see how much the winning team won by if we subtract `PtsL` (points earned by losing team) from `PtsW`(points earned by winning team).
+
+```{r}
+nfl.data$PtsDiff <- nfl.data$PtsW - nfl.data$PtsL
+```
+
+mu = mean score difference
+H0: mu = 8
+Ha: mu NOT equal to 8
+
+Now we perform the t.test. All we need to specify is:  
+* the variable we are testing
+* the null hypothesis mu
+* alternative = "greater" "less" or "two.sided"
+
+```{r}
+#this is instead of using pt(t, n-1)
+t.test(nfl.data$PtsDiff, mu = 8, alternative = "two.sided")
+```
+p-value = 9.916e-10
+We reject the null that the mean score difference is 8 points.
+
+## Confidence interval for means using t.test
+To make a confidence interval, it is almost exactly the same code as for the hypothesis test. All you need to specify is:
+* the variable we are testing
+* conf.level (confidence level in decimal form)
+
+```{r}
+t.test(nfl.data$PtsDiff, conf.level = .95)
+```
+95 percent confidence interval:
+10.51 to 12.77 points
+
+### Practice: What does it take to win a game?
+
+Perform a hypothesis test to see if the winning team on average scores more or less than three touchdowns (so 18 points). Then make a 95% confidence interval for the true mean winning score.
+
+How often does the winning team have more turnovers than losing team?
+Carson says 30% of the time. Let's test his claim.
+
+relationship between home win and other stats
+subset?
+
+
+
+
+

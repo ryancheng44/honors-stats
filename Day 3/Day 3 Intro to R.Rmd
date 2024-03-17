@@ -1,0 +1,330 @@
+---
+title: "Day 3 Intro to R"
+author: "Carey Kopeikin & Stephanie Neul"
+updated: "8/12/2022"
+output: pdf_document
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, error=TRUE)
+```
+
+# What you will learn
+
+-   How to do basic arithmetic in R
+-   Assign values to objects
+-   Types of vectors
+-   Sequences
+-   Sorting
+
+
+# Introduction to R Studio
+
+The goal of this lesson is to introduce you to R and RStudio, which you'll be using throughout the course both to learn the statistical concepts discussed in the textbook and also to analyze real data and come to informed conclusions. 
+
+To straighten out which is which: 
+* R is... 
+* RStudio is ...
+
+As the lessons progress, you are encouraged to explore beyond what the lessons dictate; a willingness to experiment will make you a much better programmer. Before we get to that stage, however, you need to build some basic fluency in R. Today we begin with the fundamental building blocks of R and RStudio: the interface, reading in data, and basic commands.
+
+The panel in the upper right contains your *Environment* as well as a history of the commands that you've previously entered. The bottom right contains a *Help* section. The rest of the tabs you can ignore for now. The bottom left contains the console which is where the behind the scenes calculations take place. You should keep this minimized most of the time.
+
+#### R for Basic Math
+
+Math is obviously important for doing statistics. We will want to be able to do all the basic arithmetic operations. R makes those pretty easy and works the way you might expect.
+
+```{r}
+1+1
+
+2*3
+
+4/5
+
+3^2
+
+9^.5
+
+sqrt(9)
+```
+
+Watch out, though, you do need to worry about order of operations.
+
+```{r}
+2+8  /2
+
+(2+8)/2
+```
+
+**Your Turn**: Create a code chunk below and then calculate the product of 4 and 5.
+
+```{r}
+4*5
+```
+
+
+
+
+
+#### Assigning Objects
+
+Often we will calculate values and then want to do more calculations with those values, or we may want to just have a word or phrase that we can use to refer to long lists of numbers. In previous math classes you might have referred to this idea as a *variable*. We may also refer to this an *object* because variable has such new and specific meaning in statistics that we will learn more about later. There are two ways to assign a name to a number or thing in R. You can use the equals sign or you can make a little arrow using the less than and dash <- 
+
+Here are some examples. I will almost always use <- for assignment.
+
+```{r}
+number.of.students.c <- 12
+
+my.sisters.age = 26
+
+sum.of.heart.rates <- 72+70+75+60+70+60+70
+
+avg.heart.rate <- sum.of.heart.rates/7
+
+```
+
+Note that the objects can be named almost anything that you want but when you choose object names you want to make sure that you choose names such that you will remember what they stand for when you are reviewing the document weeks later.
+
+You can see we don't get a lot of output from these assignments.
+
+If you want to see the result of from these assignments you have *call* the object by writing the name of the object alone on a line, like I did with `avg.heart.rate` below. But if you look over at the Environment tab in the top right of your screen you can see a list of the objects that I have created and their values. Then I can use them in future computations.
+
+Here is an example of *calling* the object avg.heart.rate. Run it and see what happens.
+
+```{r}
+
+avg.heart.rate
+
+```
+
+**Your Turn**: Create a new variable called `avg.number.of.students` where you compute the average number of students in Ms. Neul's classes this fall. A block has 12 students, B block has 14 students, D block has 6 students, and E block has 12. Make variables to store the number of students in each block, then find the average using those variables. Then, print out the average number of students by *calling* the object `avg.number.of.students`.
+
+```{r}
+number.students.a = 12
+number.students.b = 14
+number.students.d = 6
+number.students.e = 12
+avg.number.of.students = (number.students.e + number.students.a + number.students.b + number.students.d) / 4
+avg.number.of.students
+```
+
+# Vectors
+
+As we are working with statistics it will be important to work with large sets and lists of numbers. To do this we will the use concept of a *vector*. In R a vector is simply a list of things. To make a list we use the c(...) operation. 'c' stands for concatenation which is a fancy word for putting things together in order. *Reminder to Show Meme*
+
+There are four main types of vectors that we will use in this course: numerical, character, factor, and logical. In order to find out the type of a vector you can use the `class()` function.
+
+##### Numerical Vectors
+
+There are two kinds of numerical vectors that we will be using: integer vectors and double vectors. An integer vector is a vector consisting only of integers. A double vector can have integers and decimals (double precision floating point numbers). Note that when we create our own vectors R will create by default double vectors unless specifically told to create an integer vector. You don't really need to understand the difference but you should recognize both as numerical vectors.
+
+Example 1:
+
+```{r}
+numerical.vector.1 <- c( 5, 7, 3)
+numerical.vector.1
+class(numerical.vector.1)
+```
+
+Example 2:
+
+```{r}
+numerical.vector.2 <- c(2.5, 4.7676, 1)
+numerical.vector.2
+class(numerical.vector.2)
+```
+
+We can add numeric vectors:
+
+```{r}
+
+ 
+```
+
+##### Character Vectors
+
+Character vectors are lists of words. To create a character vector you need to place quotation marks around each word otherwise you will get an error.
+
+Example 1:
+
+```{r, error=TRUE}
+grocery.list.1 <- c("oatmeal", "cheese", "milk")
+grocery.list.1
+class(grocery.list.1)
+```
+
+Example 2:
+
+```{r, error=TRUE}
+grocery.list.2 <- c(oatmeal, "cheese", "milk")
+grocery.list.2
+class(grocery.list.2)
+```
+
+Character vectors are useful for listing the names or id numbers of observations. They are also useful for descriptions or quotes.
+
+**Your Turn**: Create a character vector that consists of the first names of everyone in your table pod. Then print the vector by calling it. Make sure you name the vector something descriptive!
+
+```{r}
+
+
+```
+
+##### Factor Vectors
+
+A factor is a way for R to represent categorical data that has a limited number of categories. Factor vectors contain the list of words but also contain levels which is a way for R to understand that each of the words belongs to the same category. We will work a lot with factors this year, but for now we will keep it fairly simple.
+
+```{r}
+state.born.vector <- c( "MD", "CT", "CT", "NY", "CT", "NY")
+
+state.born.vector <- as.factor(state.born.vector)
+state.born.vector
+class(state.born.vector)
+```
+
+In the example above we have a vector of states that people were born in. Here we would want R to know that all three people born in CT were born in the same state, same thing with the people from NY. If we had a list of peoples first names in a class we would probably want to keep this as a character vector since the three Johns are different people and don't belong in the same category.
+
+```{r}
+first.names.vector <- c( "John", "Dominic", "John", "John", "Bianca")
+first.names.vector
+class(first.names.vector)
+```
+
+**Your Turn**: My CS200 class last year had 11 students in it, and they were in various forms. I have made a vector below that lists their form. Decide if it makes sense to convert this vector to a factor, and if so, do it, and discuss with your table why or why not.
+
+```{r}
+cs.200.forms <- c("3rd", "3rd", "4th", "5th", "5th", "4th", "3rd", "3rd", "4th", "5th", "5th")
+
+```
+
+**Your Turn**: Of the following attributes of my CS200 students, which would make sense to store as a factor vector?
+-Last Name
+-Dorm
+-Height
+
+##### Logical Vectors
+
+The last type of vector that we will use is a logical vector. A logical vector consists of just Trues and Falses. In order for R to understand that true and false are *logical* instead of just words they need to be written in all caps and without quotations. You can use T or F for true and false but it is preferable to write the whole word.
+
+```{r}
+true.false.vector <- c(TRUE, T, FALSE, TRUE, F)
+true.false.vector
+class(true.false.vector)
+```
+
+**Your Turn**: What kind of data could make sense to store as a logical vector? Think about survey questions.
+
+##### More About Vectors
+
+We can also include objects by name in a vector:
+
+```{r}
+student.1.age <- 18
+student.2.age <- 17
+student.3.age <- 18
+student.4.age <- 16
+
+#make a vector that contains all of the ages of these students:
+student.ages <- c(student.1.age, student.2.age, student.3.age, student.4.age)
+```
+
+
+# Sequences
+
+If you just want to make a list of consecutive numbers R has a number of ways to make that happen easily in R. Using the `:` *colon operator* you can generate a sequence starting with the first number and increasing or decreasing by one until it stops at the last number.
+
+```{r}
+
+3:27
+
+10:1
+
+
+```
+
+This works with non-integers as well:
+
+```{r}
+6.5:10.5
+
+```
+
+The number after the colon does not have to be part of the sequence:
+
+```{r}
+
+
+```
+
+We can also create a sequence using the `seq` function
+
+```{r}
+#every third number between 0 and 11
+seq(from = 0, to = 11, by = 3)
+
+#divide the numbers from 8 to 36 into 5 even intervals 
+# "length.out" is to specify how many elements you want in your sequence.
+seq(from = 8, to = 36, length.out = 6)
+```
+
+**Your Turn**: 
+
+1. Use the colon operator to list all of the integers from 100 to 120.
+
+```{r}
+
+```
+
+2.  Create a sequence of all even numbers between 20 and 40.
+
+```{r}
+
+```
+
+**sort function**
+
+Sorting a vector is very useful. Sorting can be done with the `sort` function.
+
+```{r}
+sort( c(3,2,9,0,-9),decreasing = TRUE)
+
+sort( c(3,2,9,0,-9),decreasing = FALSE)
+
+sort( grocery.list.1, decreasing = TRUE)
+
+sort( grocery.list.1, decreasing = FALSE)
+```
+
+**length function**
+
+Many times it would be useful to find the length of a vector. The length is how many elements are in the vector.
+
+```{r}
+length(5:9)
+
+length(student.ages)
+
+```
+
+**Your Turn**: Sort the student.ages vector from youngest to oldest.
+```{r}
+
+```
+
+**reminder show how to create a new r markdown for homework**
+
+##### Optional: more with vectors
+
+We can combine vectors in a vector:
+
+```{r}
+numeric.vector.and.student.ages <- c( numerical.vector.1, student.ages)
+numeric.vector.and.student.ages
+```
+
+**Your Turn**: Below you will see two vectors defined, odd.numbers and even.numbers. Write code that creates a third vector that combines the two given vectors, then print the third vector. You can name your vector whatever you want.
+
+```{r}
+odd.numbers <- c(1, 3, 5)
+even.numbers <- c(2, 4, 6)
+
+```

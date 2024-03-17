@@ -1,0 +1,108 @@
+---
+title: "Day 5 MORE Review for Quiz Solutions"
+author: "Stephanie Neul"
+date: "2022-09-16"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, error = TRUE)
+```
+
+1. Read in the data set ```anothersurvey.csv``` and display the first *8* rows. This data came from this survey - feel free to look at the questions asked in case it's helpful for any of these questions:
+https://docs.google.com/forms/d/e/1FAIpQLSeTE0TN6CykbqhVmQJSlDhWNxu2XVGGlNUX6Gu5GdhoBiQ4GQ/viewform?usp=sf_link
+
+```{r}
+another.survey <- read.csv("anothersurvey.csv")
+head(another.survey, 8)
+```
+
+2. How many people filled out the survey? Support your answer with code, don't just count :)
+```{r}
+nrow(another.survey)
+#OR could look at dim or structure, either would also work:
+str(another.survey)
+dim(another.survey)
+```
+
+3. How many variables are in this data frame?
+```{r}
+ncol(another.survey)
+#again, you could also get this from str() or dim()
+```
+
+4. Explain why the variable `form` should be a factor, then change it to be a factor.
+
+There are a limited number of options (categories) and the form for one person means the same thing as that same form for another person (it's not unique).
+
+5. Choose a variable that you believe should be turned into a logical vector. Explain why, and then change it into a logical vector. There a several possible options, just choose one.
+
+```{r}
+#options include are.you.a.PG and are.you.a.boarder
+#could also choose to do do.you.like.veg.out.monday if you want to get more creative
+#i am choosing are.you.a.boarder
+another.survey$are.you.a.boarder <- another.survey$are.you.a.boarder == "Yes"
+head(another.survey$are.you.a.boarder)
+```
+
+I chose to change are you a boarder because it is a yes/no question.
+
+
+6. Respondents were asked to rate "How neat is your room" on a scale of 0-5. It's more typical to use a scale from 1-5, though, so let's make all 0's into 1's. Change the `how.neat.is.your.room vector` so that any answers of 0 are now 1.
+
+```{r}
+another.survey$how.neat.is.your.room[another.survey$how.neat.is.your.room == 0] <- 1
+head(another.survey$how.neat.is.your.room)
+```
+
+
+7. Make a new column in the data frame called `home.km.away.from.choate` that takes the response to `home.miles.away.from.choate` and converts it into kilometers. If you don't know how many kilometers are in a mile, look it up :)
+
+```{r}
+another.survey$home.km.away.from.choate <- another.survey$home.miles.away.from.choate * 1.609
+head(another.survey)
+```
+
+
+8. Two people answered that their middle names were "n/a". A more descriptive answer would be "No middle name". Change those answers to "No middle name".
+
+```{r}
+another.survey$middle.name[another.survey$middle.name == "n/a"] <- "No middle name"
+head(another.survey$middle.name)
+```
+
+
+9. Use sorting and indexing to print out the greatest number of miles from Choate to a survey respondent's home.
+
+```{r}
+sorted.distances <- sort(another.survey$home.miles.away.from.choate, decreasing = TRUE)
+sorted.distances[1]
+
+#note: you don't necessarily need to make a new vector to do this problem, the following would also work:
+sort(another.survey$home.miles.away.from.choate, decreasing = TRUE)[1]
+```
+
+
+10. Unless you already did this in problem 5, change `do.you.like.veg.out.monday` into a logical vector. Note that you will have to make a choice when doing this; explain why you made the choice that you did.
+
+I am choosing to treat anyone who said "Depends" as "No" since they are not consistent Veg Out Monday supporters.
+```{r}
+another.survey$do.you.like.veg.out.monday <- another.survey$do.you.like.veg.out.monday == "Yes"
+head(another.survey$do.you.like.veg.out.monday)
+```
+
+
+11. Print out all of the distances from Choate to home that are less than 100 miles. 
+
+```{r}
+another.survey$home.miles.away.from.choate[another.survey$home.miles.away.from.choate < 100]
+```
+
+
+12. Is `middle.name` a categorical or quantitative variable? Also, what class is it currently saved as? Is that the best choice of class for this variable?
+
+It is a Categorical variable.
+```{r}
+class(another.survey$middle.name)
+```
+It is saved as a character vector, which is the best choice for this variable.

@@ -1,0 +1,152 @@
+---
+title: "Day 33: Is the data normal?"
+author: "Matthew Bardoe"
+date: "11/7/2019 rev 12/2/2020 rev 11/25/22"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, error=TRUE)
+```
+
+### Percentiles aka Quantiles
+
+One way to discuss where a value is in distribution is its z-score, and z-scores are a very useful concept for data scientists, statisticians, and others, but you probably don't know anyone that reported there SAT score to you as a z-score. Standardized test scores often have arcane scoring systems, so to help students contextualize the results they often use **percentiles**. A percentile indicates what percentage of the distribution is less than or equal to a give score. So if I score in the 78th percentile that means that my score is greater than 78 percent of the other scores. Sometimes percentiles are called **quantiles**.
+
+We have been able to find some percentiles already. When we do a five number summary we see the 0th, 25th, 50th, 75th, and 100th percentiles. These are the percentile way of indicating the min, Q1, median, Q3, and max.
+
+We will use this star wars data set containing information about characters in Star Wars. *Keep in mind that I have NOT told you that any of the data in this set is Normal (yet) so we cannot use the empirical rule (68-95-99.7 rule)!*
+
+```{r}
+starwars <- read.csv("starwars.csv")
+starwars <- starwars[!is.na(starwars$height),] #take out NA values
+summary(starwars$height)
+```
+
+The value for which 25% of heights are less in the data.
+We could also use the quantile command to get the same information.
+
+```{r}
+quantile( starwars$height, .25)
+```
+
+If we want to see a whole set of percentiles we can use a vector with the percentiles of interest.
+
+```{r}
+#can ask for multiple percentiles at once; this is just a 5-num summary
+quantile(starwars$height, c(0, 0.25, 0.5, 0.75, 1.0))
+```
+
+##### Your turn
+
+1.  Find the value for height at which 40% of the characters in the star wars dataset are smaller than.
+
+```{r}
+quantile(starwars$height, 0.4)
+```
+
+2.  Find the high and low bounds for the middle 40% of the character heights in the star wars dataset.
+
+```{r}
+quantile(starwars$height, 0.3)
+quantile(starwars$height, 0.7)
+```
+
+##### Is the distribution of the height of star wars characters Normal?
+
+Brainstorm one way you could (using R) try to figure out if the distribution of the heights of star wars characters is Normal. For now, think about a simple way you could at least get a rough sense.
+
+
+
+A more methodical way:
+
+Test percentiles that correspond to standard deviations in the Normal model, and see if the values in the data are the same as the values the Normal mode dictates they should be.
+
+```{r}
+#find the value in the DATA for that percentile
+quantile(starwars$height, 0.16)
+```
+
+```{r}
+#see what value the NORMAL MODEL says corresponds to that percentile
+qnorm(0.16, mean=mean(starwars$height), sd=sd(starwars$height))
+```
+
+We see that the percentiles in the data do not correspond to the values that the Norma model says they should for Normal data.
+
+#### Height is normal
+
+The *HeightWeightData.csv* is an artificial dataset that we created to simulate normal data. But we will use it to test some ways to identify normality.
+
+```{r}
+heightweight <- read.csv("HeightWeightData.csv")
+head(heightweight)
+```
+
+```{r}
+hist(heightweight$Height)
+```
+
+
+Use the `Height` variable in the height and weight data.
+
+1.  Calculate the mean and standard deviation for the `Height` variable.
+
+```{r}
+mean(heightweight$Height)
+sd(heightweight$Height)
+```
+
+2.  Check a few values the way we did above (the second way) to see if you think this data is Normal.
+
+```{r}
+quantile(heightweight$Height, 0.16)
+qnorm(0.16, mean=67.99311, sd=1.901679)
+```
+
+3.  Do your calculations support the idea that `Height` is normally distributed?
+
+
+
+#### An easier way (taking advantage of technology!)
+
+Doing all of these calculations "by hand" using quantiles is time-consuming and hard. There is a better way to do this using R that does these calculations for every data point and then visualizes the results. You give it a vector of data and R plots the data in sorted order versus its theoretical quantiles from a standard Normal distribution.
+
+We will use a Normal Q-Q Plot:
+```{r}
+qqnorm(starwars$height
+       )
+```
+
+***Remember "normal" here means that it follows a very specific form of the typical one hump pattern that we have seen above.*** It turns out not every one hump pattern is normal. In this course, we will look at some data that does follow that pattern, and some that doesn't.
+
+Let's load up the apple.csv dataset. It contains data about Apple stock prices and trading volume.
+
+```{r}
+apple <- read.csv("AAPL.csv")
+head(apple)
+```
+
+Let's create a new variable to indicate the percent gain/loss of a particular day. If we think about how we would like to do this, we would like to see how much more the close is than the open as a percent. Calculate the percent change and call that variable `Gain`. If you are having trouble determining the formula you could google it, or think of what the percent change should be if opening price was 5 and the closing price was 10.
+
+```{r}
+
+```
+
+####Does `Gain` look normal?
+
+Let's look at a quick histogram first to see if the shape reminds us of something that is normal. Create a histogram of `Gain`.
+
+```{r}
+
+```
+
+
+Make a Q-Q plot for the `Gain` variable.
+
+```{r}
+
+```
+
+Do you think Gain is Normal? Compare to the Normal Q-Q plot for height, which we said was Normal.
+

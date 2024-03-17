@@ -1,0 +1,99 @@
+---
+title: "Homework 8 Boxplots"
+author: "Carey Kopeikin and Steph Neul"
+date: "9/21/2023"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, error = TRUE)
+```
+
+
+Go to the webpage: <https://www.openintro.org/data/index.php?data=ssd_speed>. **Read the description of the data set before starting!**
+
+*If you don't know what a SSD drive is, you can read more about it on Wikipedia: <https://en.wikipedia.org/wiki/Solid-state_drive> or do your own googling*
+
+1.  Read in the data found on ssd_speed.csv and print out the first six rows.
+
+```{r}
+ssd.speed = read.csv("ssd_speed.csv")
+head(ssd.speed)
+```
+
+2. Use R to find the 5-number summary of average read speeds.
+
+```{r}
+summary(ssd.speed$read)
+```
+
+3.  Create a box plot of the average read speeds. Title the plot and label the axis. Make sure that your labels and title make sense. Also, make the colors look nice - I will not give full credit if your graph is black and grey and white. Refer to the R colors png file if you want to see the colors available.
+
+```{r}
+boxplot(ssd.speed$read,
+        main = "Average Read Speeds of SSDs",
+        ylab = "Megabits per second",
+        col = "lightgreen",
+        border = "blue",
+        outcol = "red"
+      )
+```
+
+4.  Where would the "invisible fences" be on this boxplot? (the dotted lines that we drew on the boxplot that we made by hand - we called them "upper fence" and "lower fence", and we talked about how we would erase them at the end). Show your work! You should use R to perform any necessary calculations.
+
+```{r}
+1764 + 1.5*(1764-471.2)
+471.2 - 1.5*(1764-471.2)
+```
+
+5.  Create a boxplot of the `brands` variable. It can be a simple boring boxplot without labels or colors.
+
+6.  Why did you get an error when trying to do question 5? Then you should erase your code for problem 5 otherwise this rmd may not properly knit to PDF.
+
+I got an error because the `brands` variable is of type character. R doesn't know how to represent non-numeric variables in a boxplot!
+
+7.  Create a boxplot of average `read` speeds by brand (like we did for avocados by type and by region). Include a title, and make sure that all of the axis labels make sense and that every label is visible. Include all titles and labels. Make sure that the colors look nice.
+*Hint: you can (and should!) turn the axis labels vertical using code found in the Rmd file from class. Look at the graph that we did for avocado average price by region.*
+
+```{r}
+boxplot(ssd.speed$read~ssd.speed$brand,
+        main = "Average Read Speeds of SSDs",
+        xlab = "Brand",
+        ylab = "Megabits per second",
+        col = c("lightgreen", "pink", "gold"),
+        border = "blue",
+        outcol = "red",
+        las = 2,
+      )
+```
+
+
+8.  Write at least 3 good observations about the boxplot you created in problem 7. Each observation should be about a different aspect of the graph. Try to use vocabulary that we talked about in class.
+
+There are no outliers among all of the boxplots. I don't have any other observations; I was a bit challenged by this problem.
+
+9.  Of all of the brands represented in this data set, Samsung has greatest number of different models of SSD. By subsetting, create a new dataframe that only contains data for SSDs from the brand Samsung. Then, find the mean read speed for Samsung SSDs.
+
+```{r}
+ssd.speed.samsung = ssd.speed[ ssd.speed$brand == "Samsung", ]
+head(ssd.speed.samsung)
+```
+
+10.  Which if any models blew away the competition in terms of their `write` speed? Show all work. There are different ways to go about solving this problem, and answers may vary.
+
+```{r}
+ssd.speed.samsung[ order(ssd.speed.samsung$write, decreasing = TRUE), ]
+boxplot(ssd.speed.samsung$write)
+```
+
+Doesn't seem like any models blew away the competition. There were obviously better and worse models, but no particullar outliers, as shown in both the ordered data frame and boxplot.
+
+11.  Which if any models blew away the competition in terms of number of samples. Show all work. There are different ways to go about solving this problem.
+
+```{r}
+ssd.speed.samsung[ order(ssd.speed.samsung$samples, decreasing = TRUE), ]
+boxplot(ssd.speed.samsung$samples)
+```
+
+860 Evo is an outlier as shown in the boxplot. Also twice as much as the next highest in the sorted data frame.
+

@@ -1,0 +1,165 @@
+---
+title: "Day 16 Factors Practice"
+author: "Stephanie Neul"
+date: "2022-10-14"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, error = TRUE)
+```
+
+1.  Load in the data. The .csv is called `US billion dollar weather events.csv`. You can read about the data here: <https://www.ncei.noaa.gov/access/billions/> This data set contains some information on weather events that cost 1 billion US dollars or more that occurred between 1980 and 2022 (as recently as Hurricane Ian). The costs of each event are CPI adjusted, meaning they reflect how much each event would cost now, taking into account inflation.
+
+```{r}
+weather.events.data = read.csv("US billion dollar weather events.csv")
+head(weather.events.data)
+```
+
+2.  According to this data set, how many weather events since 1980 have cost more than 1 billion US dollars? Do not overthink this.
+
+```{r}
+nrow(weather.events.data)
+```
+
+3.  Make a rough barplot (no colors/labels needed yet) that shows frequency of weather events by month of the year.
+
+```{r}
+barplot(table(weather.events.data$Month))
+```
+
+4.  It would be nice to have the names of the months instead of numbers. Make the `Month` variable into a factor, and then change the levels so that we see the name of the month. You may want to abbreviate certain month names so that it's easier to fit the labels when we graph. Then remake the barplot of events by month, and make it look nice with labels and colors and a title. Make sure you can read all of the month labels. Finally, write a sentence of observation about your graph.
+
+```{r}
+weather.events.data$Month = as.factor(weather.events.data$Month)
+
+levels(weather.events.data$Month) = c("Jan.", "Feb.", "Mar.", "Apr.", "May", "Jun.", "Jul.", "Aug", "Sep.", "Oct.", "Nov.", "Dec.")
+
+barplot(table(weather.events.data$Month),
+        main = "Frequency of Weather Events by Month of the Year",
+        col = c("red", "green", "blue"),
+        xlab = "Month",
+        ylab = "Frequency",
+        las = 2)
+```
+
+It seems as if most of these weather events occur in the first half of the year.
+
+5.  Make a new factor in the data frame called `season` that groups the weather events by season instead of month. Then, make a barplot of frequency of weather events by season. Make it look nice and labeled and titled. It would be good if the order of the seasons in the barplot makes sense. This will take several steps, *don't do it all in one chunk of code.* Then, write a sentence of observation about your graph.
+
+```{r}
+weather.events.data$season = weather.events.data$Month
+levels(weather.events.data$season) = c("Winter", "Winter", "Spring", "Spring", "Spring", "Summer", "Summer", "Summer", "Fall", "Fall", "Fall", "Winter")
+
+barplot(table(weather.events.data$season),
+        main = "Frequency of Weather Events by Season",
+        col = c("red", "green", "blue"),
+        xlab = "Season",
+        ylab = "Frequency")
+```
+
+6.  Now let's look at the cost of these severe weather events. First, though, we have to deal with a slight issue - there is no cost calculated yet for some of the more recent events. One way to deal with this is just to take those rows out of the data set. We can do this using the na.omit() function. *Ask your teacher to show you how to do this.*
+
+```{r}
+weather.events.data = na.omit(weather.events.data)
+```
+
+Then, make a histogram of the `Total.CPIAdjusted.Cost.in.Billions` variable. Describe the distribution of the variable by looking at your histogram.
+
+```{r}
+hist(weather.events.data$Total.CPIAdjusted.Cost.in.Billions)
+```
+
+It is skewed right and unimodal.
+
+7.  This histogram isn't that helpful because so many of the events fall in the 0 - 25 billion dollar range so we can't really get a sense for how many really REALLY costly events there have been.Let's make categories for cost so we can better visualize this information in a barplot. Using the cut() function, make the following categories in a *new* factor vector called `cost.categories`.
+
+-   less than 2 billion
+
+-   2-5 billion
+
+-   5-25 billion
+
+-   25 billion or more
+
+```{r}
+breaks.for.cost.categories = c(0, 2, 5, 25, 1000)
+weather.events.data$cost.categories = cut(weather.events.data$Total.CPIAdjusted.Cost.in.Billions, breaks = breaks.for.cost.categories, right = FALSE)
+```
+
+
+You can choose how to interpret the limits of each category (i.e. how you want to use right =)
+
+```{r}
+
+```
+
+Now, change the names of the levels of the cost categories vector. They can be descriptive (i.e. "< 2 Billion Dollars") or more creative if you'd like.
+
+```{r}
+levels(weather.events.data$cost.categories) = c("Expensive", "More Expensive", "Really Expensive", "Really Really Expensive")
+```
+
+Now make a well-titled and labeled barplot with your new cost categories vector. Make sure all labels are visible. As a reminder, you can adjust the orientation of the labels using las = 2, and you can adjust the size of the text using cex.names = (number less than 1).
+
+```{r}
+barplot(table(weather.events.data$cost.categories),
+        main = "Frequency of Weather Events by Cost Category",
+        xlab = "Category",
+        ylab = "Frequency",
+        col = c("red", "green", "blue"),
+        las = 2)
+```
+
+8.  Make a rough barplot of the `Disaster.type` variable. You will see that there are 7 different types. To simplify things for the purposes of this activity, combine some of the event types so that there are only 4 or 5 categories. You choose which ones make sense to combine. Then make a barplot using the combined types. *Note that you will first have to make Disaster.type into a factor.* Write a sentence of observation about your graph.
+
+```{r}
+weather.events.data$Disaster.type = as.factor(weather.events.data$Disaster.type)
+levels(weather.events.data$Disaster.type) = c("Drought", "Flooding", "Winter Storm", "Severe Storm", "Severe Storm", "Wildfire", "Winter Storm")
+
+barplot(table(weather.events.data$Disaster.type),
+        main = "Frequency of Weather Events by Disaster Type",
+        xlab = "Disaster Type",
+        ylab = "Frequency",
+        las = 2,
+        col = c("red", "green", "blue"))
+```
+
+There are no wildfires.
+
+9.  Time to make some more interesting graphs. Make the following graphs, and **write a sentence or two observation about each graph.** *When it says "by (blank)", it means that variable should be the x-axis variable.* Make sure to include legends.
+
+a.  A stacked OR side-by-side barplot showing frequency of events in each cost category, by season. You decide which is the more helpful visual - stacked or side-by-side.
+
+```{r}
+barplot(table(weather.events.data$cost.categories, weather.events.data$season),
+        beside = TRUE,
+        col = c("red", "orange", "yellow", "green"),
+        legend.text = TRUE,
+        ylab = "Frequency",
+        xlab = "Season",
+        main = "Frequency of Weather Events in Cost Category by Season")
+```
+
+
+b.  A segmented barplot showing the proportion of each season's events that are in each cost category.
+
+```{r}
+barplot(prop.table(table(weather.events.data$season, weather.events.data$cost.categories), 2),
+        main = "Proportion of Each Season's Events in Each Cost Category",
+        xlab = "Cost Category",
+        ylab = "Proportion",
+        col = c("red", "orange", "yellow", "green"),
+        legend.text = TRUE)
+```
+
+
+c.  A side-by-side barplot showing frequency of events of each disaster type (use the combined event types you made in problem 8), by cost category.
+
+d.  A side-by-side barplot showing frequency of events of each cost category, by disaster type (use the combined event types you made in problem 8).
+
+10. Make a graph to investigate how frequency of severe weather events have changed over the past 40\~ years. Try to make a visualization that is easy to read and shows the story clearly. 
+
+11. Is there a type of disaster that has become more frequent over time, relative to other types? Show through a graph and explain your answer in a few sentences.
+
+12. Ask a question about this data that we have not yet answered in our explorations that will require you to subset the data. Then answer your question by making at least two graphs and describing what you found.

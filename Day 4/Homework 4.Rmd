@@ -1,0 +1,156 @@
+---
+title: "Homework 4"
+author: "Carey Kopeikin and Steph Neul"
+date: "8/23/2021"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, error=TRUE)
+```
+
+###Section 1	
+
+1. Create a vector called ```letters.in.name``` that has the number of letters in your first name, your middle name and last name. This would be Kopeikin's answer:
+```{r}
+#Carey Jason Kopeikin
+letters.in.name <- c(5, 5, 8)
+```
+
+Now make your own:
+```{r}
+letters.in.name <- c(4, 5)
+```
+
+
+2. Create a logical vector that is true if the name is longer than 5 letters and false if it is shorter. Do this in the two ways explained below.
+
+  a. Method 1: create the vector ```is.longer.than.5.method.1``` and for each of the names manually type in TRUE if it is longer than 5 and FALSE if not (there should be a true or false for each of the names).
+
+```{r}
+is.longer.than.5.method.1 = c(FALSE, FALSE)
+```
+
+
+  b.  b. Method 2: create the vector ```is.longer.than.5.method.2``` and use *logical tests* to evaluate if each of your names are longer than 5.
+  
+```{r}
+is.longer.than.5.method.2 = letters.in.name > 5
+```
+
+
+3. Create the vector ```some.numbers``` and assign it these numbers 4, 8, 1, -3, 22. Then:
+
+```{r}
+some.numbers = c(4, 8, 1, -3, 22)
+```
+
+
+  a.	sort the numbers from biggest to smallest.
+
+```{r}
+some.numbers = sort(some.numbers, decreasing = TRUE)
+```
+
+
+  b.	sort the numbers from smallest to biggest.
+
+```{r}
+some.numbers = sort(some.numbers, decreasing = FALSE)
+```
+
+
+  c.	find the number of elements in the vector using R.
+
+```{r}
+length(some.numbers)
+```
+
+
+  d.	display only the second element
+
+```{r}
+some.numbers[2]
+```
+
+
+  e.	display the 3rd and last elements
+  
+```{r}
+some.numbers[c(3, length(some.numbers))]
+```
+  
+
+  f.	use a logical statement to print only the numbers less than 5.
+
+```{r}
+some.numbers[some.numbers < 5]
+```
+
+
+###Section 2 
+
+4. Read in the file `mariokart.csv` and save it as a data frame. Information about `mariokart.csv` can be found here: <https://www.openintro.org/data/index.php?data=mariokart>
+*You will need to go to that website to read about the data for some of these questions!*
+
+```{r}
+mario.data = read.csv("mariokart.csv")
+```
+
+
+5. Display the first 6 observations.
+
+```{r}
+head(mario.data)
+```
+
+
+6. Display the first 15 observations:
+
+```{r}
+head(mario.data, 15)
+```
+
+
+7. Display the structure of the data frame:
+
+```{r}
+str(mario.data)
+```
+
+
+8. Display the number of observations (i.e. how many rows!)
+
+```{r}
+nrow(mario.data)
+```
+
+
+9. Display the number of variables
+
+```{r}
+ncol(mario.data)
+```
+
+
+10. What information does the variable `wheels` provide? You will need to read about the data on the website provided in order to answer this question. 
+
+Number of Wii wheels (attachments that simulate driving with a real wheel) included in the auction. 
+
+###Section 3
+
+11. Ebay takes 10.2% of the total price of the games as a sales fee: <https://www.ebay.com/help/selling/fees-credits-invoices/selling-fees?id=4364>. Create a **new column in the data frame* that shows adjusted revenue for the seller after Ebay takes out its fee. Give your new column a name that makes sense.
+
+```{r}
+mario.data$adjusted.price = mario.data$total_pr * ((100 - 10.2) / 100)
+mario.data$adjusted.price
+```
+
+
+12. Ebay also charges a \$0.35 listing price per item. Create a new column in the data frame that shows total revenue for the seller after Ebay takes out **both* its sales fee and listing price. Give your column a new name that makes sense.
+
+```{r}
+mario.data$legit.revenue = mario.data$adjusted.price - 0.35
+mario.data$legit.revenue
+```
+

@@ -1,0 +1,1156 @@
+,movie_name,release_year,director,age_difference,couple_number,older_actor_1_name,younger_actor_2_name,older_character_1_gender,younger_character_2_gender,actor_1_birthdate,actor_2_birthdate,older_actor_1_age,younger_actor_2_age
+1,Harold and Maude,1971,Hal Ashby,52,1,Ruth Gordon,Bud Cort,woman,man,1896-10-30,3/29/48,75,23
+2,Venus,2006,Roger Michell,50,1,Peter O'Toole,Jodie Whittaker,man,woman,8/2/32,6/3/82,74,24
+3,The Quiet American,2002,Phillip Noyce,49,1,Michael Caine,Do Thi Hai Yen,man,woman,3/14/33,10/1/82,69,20
+4,The Big Lebowski,1998,Joel Coen,45,1,David Huddleston,Tara Reid,man,woman,9/17/30,11/8/75,68,23
+5,Beginners,2010,Mike Mills,43,1,Christopher Plummer,Goran Visnjic,man,man,12/13/29,9/9/72,81,38
+6,Poison Ivy,1992,Katt Shea,42,1,Tom Skerritt,Drew Barrymore,man,woman,8/25/33,2/22/75,59,17
+7,Whatever Works,2009,Woody Allen,40,1,Larry David,Evan Rachel Wood,man,woman,7/2/47,9/7/87,62,22
+8,Entrapment,1999,Jon Amiel,39,1,Sean Connery,Catherine Zeta-Jones,man,woman,8/25/30,9/25/69,69,30
+9,Husbands and Wives,1992,Woody Allen,38,1,Woody Allen,Juliette Lewis,man,woman,12/1/35,6/21/73,57,19
+10,Magnolia,1999,Paul Thomas Anderson,38,1,Jason Robards,Julianne Moore,man,woman,7/26/22,12/3/60,77,39
+11,Indiana Jones and the Last Crusade,1989,Steven Spielberg,36,1,Sean Connery,Alison Doody,man,woman,8/25/30,3/9/66,59,23
+12,Mr. Peabody and the Mermaid,1948,Irving Pichel,36,1,William Powell,Ann Blyth,man,woman,1892-06-29,8/16/28,56,20
+13,First Knight,1995,Jerry Zucker,35,1,Sean Connery,Julia Ormond,man,woman,8/25/30,1/4/65,65,30
+14,Something's Gotta Give,2003,Nancy Meyers,35,1,Jack Nicholson,Amanda Peet,man,woman,4/22/37,1/11/72,66,31
+15,Eternal Sunshine of the Spotless Mind,2004,Michel Gondry,34,1,Tom Wilkinson,Kirsten Dunst,man,woman,2/5/48,4/30/82,56,22
+16,Lost in Translation,2003,Sofia Coppola,34,1,Bill Murray,Scarlett Johansson,man,woman,9/21/50,11/22/84,53,19
+17,Shopgirl,2005,Anand Tucker,34,1,Steve Martin,Claire Danes,man,woman,8/14/45,4/12/79,60,26
+18,Wild Target,2010,Jonathan Lynn,34,1,Bill Nighy,Emily Blunt,man,woman,12/12/49,2/23/83,61,27
+19,"Fort Apache, The Bronx",1981,Daniel Petrie,33,1,Paul Newman,Rachel Ticotin,man,woman,1/26/25,11/1/58,56,23
+20,Hollywood Ending,2002,Woody Allen,33,1,Woody Allen,Debra Messing,man,woman,12/1/35,8/15/68,67,34
+21,The Mother,2003,Roger Michell,33,1,Anne Reid,Daniel Craig,woman,man,5/28/35,3/2/68,68,35
+22,Daddy Long Legs,1955,Jean Negulesco,32,1,Fred Astaire,Leslie Caron,man,woman,1899-05-10,7/1/31,56,24
+23,Lolita,1997,Adrian Lyne,32,1,Jeremy Irons,Dominique Swain,man,woman,9/19/48,8/12/80,49,17
+24,Mighty Aphrodite,1995,Woody Allen,32,1,Woody Allen,Mira Sorvino,man,woman,12/1/35,9/28/67,60,28
+25,Stone,2010,John Curran,32,1,Robert De Niro,Milla Jovovich,man,woman,8/18/43,12/17/75,67,35
+26,The Private Lives of Pippa Lee,2009,Rebecca Miller,32,1,Alan Arkin,Robin Wright,man,woman,3/26/34,4/8/66,75,43
+27,Third Person,2013,Paul Haggis,32,1,Liam Neeson,Olivia Wilde,man,woman,6/7/52,3/10/84,61,29
+28,Elegy,2008,Isabel Coixet,31,1,Ben Kingsley,Penelope Cruz,man,woman,12/31/43,4/28/74,65,34
+29,Mighty Aphrodite,1995,Woody Allen,31,2,Woody Allen,Helena Bonham Carter,man,woman,12/1/35,5/26/66,60,29
+30,A View to a Kill,1985,John Glen,30,1,Roger Moore,Mary Stavin,man,woman,10/14/27,8/20/57,58,28
+31,Enemy of the State,1998,Tony Scott,30,1,Jon Voight,Anna Gunn,man,woman,12/29/38,8/11/68,60,30
+32,For Your Eyes Only,1981,John Glen,30,1,Roger Moore,Carole Bouquet,man,woman,10/14/27,8/18/57,54,24
+33,Funny Face,1957,Stanley Donen,30,1,Fred Astaire,Audrey Hepburn,man,woman,1899-05-10,5/4/29,58,28
+34,Houseboat,1958,Melville Shavelson,30,1,Cary Grant,Sophia Loren,man,woman,1/18/04,9/20/34,54,24
+35,Kindergarten Cop 2,2016,Don Michael Paul,30,1,Dolph Lundgren,Darla Taylor,man,woman,11/3/57,1/31/87,59,29
+36,Sabrina,1954,Billy Wilder,30,1,Humphrey Bogart,Audrey Hepburn,man,woman,1899-12-25,5/4/29,55,25
+37,The Quiet American,1958,Joseph L. Mankiewicz,30,2,Michael Redgrave,Giorgia Moll,man,woman,3/20/08,1/14/38,50,20
+38,A Single Man,2009,Tom Ford,29,1,Colin Firth,Nicholas Hoult,man,man,9/10/60,12/7/89,49,20
+39,A View to a Kill,1985,John Glen,29,2,Roger Moore,Fiona Fullerton,man,woman,10/14/27,10/10/56,58,29
+40,Arbitrage,2012,Nicholas Jarecki,29,1,Richard Gere,Laetitia Casta,man,woman,8/31/49,5/11/78,63,34
+41,Bulworth,1998,Warren Beatty,29,1,Warren Beatty,Halle Berry,man,woman,3/30/37,8/14/66,61,32
+42,Mank,2020,David Fincher,29,1,Gary Oldman,Tuppence Middleton,man,woman,3/21/58,2/21/87,62,33
+43,Sense and Sensibility,1995,Ang Lee,29,1,Alan Rickman,Kate Winslet,man,woman,2/21/46,10/5/75,49,20
+44,The Departed,2006,Martin Scorsese,29,1,Jack Nicholson,Kristen Dalton,man,woman,4/22/37,2/14/66,69,40
+45,The Man Who Wasn't There,2001,Joel Coen,29,1,Billy Bob Thornton,Scarlett Johansson,man,woman,8/4/55,11/22/84,46,17
+46,A Perfect Murder,1998,Andrew Davis,28,1,Michael Douglas,Gwyneth Paltrow,man,woman,9/25/44,9/27/72,54,26
+47,A View to a Kill,1985,John Glen,28,3,Roger Moore,Tanya Roberts,man,woman,10/14/27,10/15/55,58,30
+48,Beat the Devil,1953,John Huston,28,1,Humphrey Bogart,Gina Lollobrigida,man,woman,1899-12-25,7/4/27,54,26
+49,Café Society,2016,Woody Allen,28,1,Steve Carell,Kristen Stewart,man,woman,8/16/62,4/9/90,54,26
+50,Crazy Heart,2009,Scott Cooper,28,1,Jeff Bridges,Maggie Gyllenhaal,man,woman,12/4/49,11/16/77,60,32
+51,Gangster Squad,2013,Ruben Fleischer,28,1,Sean Penn,Emma Stone,man,woman,8/17/60,11/6/88,53,25
+52,High Noon,1952,Fred Zinnemann,28,1,Gary Cooper,Grace Kelly,man,woman,5/7/01,11/12/29,51,23
+53,Last Tango in Paris,1972,Bernardo Bertolucci,28,1,Marlon Brando,Maria Schneider,man,woman,4/3/24,3/27/52,48,20
+54,Love in the Afternoon,1957,undefined,28,1,Gary Cooper,Audrey Hepburn,man,woman,5/7/01,5/4/29,56,28
+55,Magic in the Moonlight,2014,Woody Allen,28,1,Colin Firth,Emma Stone,man,woman,9/10/60,11/6/88,54,26
+56,Freeheld,2015,Peter Sollett,27,1,Julianne Moore,Elliot Page,woman,woman,12/3/60,2/21/87,55,28
+57,"Six Days, Seven Nights",1998,Ivan Reitman,27,1,Harrison Ford,Anne Heche,man,woman,7/13/42,5/25/69,56,29
+58,Tadpole,2002,Gary Winick,27,1,Sigourney Weaver,Aaron Stanford,woman,man,10/8/49,12/27/76,53,26
+59,The Oranges,2012,Julian Farino,27,1,Hugh Laurie,Leighton Meester,man,woman,6/11/59,4/9/86,53,26
+60,The Squid and the Whale,2005,Noah Baumbach,27,1,Jeff Daniels,Anna Paquin,man,woman,1/19/55,7/24/82,50,23
+61,You Should Have Left,2020,David Koepp,27,1,Kevin Bacon,Amanda Seyfried,man,woman,7/8/58,12/3/85,62,35
+62,As Good as It Gets,1997,James L. Brooks,26,1,Jack Nicholson,Helen Hunt,man,woman,4/22/37,6/15/63,60,34
+63,Behind the Candelabra,2013,Steven Soderbergh,26,1,Michael Douglas,Matt Damon,man,man,9/25/44,10/8/70,69,43
+64,Black Mass,2015,Scott Cooper,26,1,Johnny Depp,Dakota Johnson,man,woman,6/9/63,10/4/89,52,26
+65,Die Another Day,2002,Lee Tamahori,26,1,Pierce Brosnan,Rosamund Pike,man,woman,5/16/53,1/27/79,49,23
+66,High Society,1956,Charles Walters,26,1,Bing Crosby,Grace Kelly,man,woman,5/3/03,11/12/29,53,27
+67,I Love Trouble,1994,Charles Shyer,26,1,Nick Nolte,Julia Roberts,man,woman,2/8/41,10/28/67,53,27
+68,Indecent Proposal,1993,Adrian Lyne,26,1,Robert Redford,Demi Moore,man,woman,8/18/36,11/11/62,57,31
+69,Manhattan,1979,Woody Allen,26,1,Woody Allen,Mariel Hemingway,man,woman,12/1/35,11/22/61,44,18
+70,Phantom Thread,2017,Paul Thomas Anderson,26,1,Daniel Day-Lewis,Vicky Krieps,man,woman,4/29/57,10/4/83,60,34
+71,The Color of Money,1986,Martin Scorsese,26,1,Paul Newman,Helen Shaver,man,woman,1/26/25,2/24/51,61,35
+72,Amelia,2009,Mira Nair,25,1,Richard Gere,Hilary Swank,man,woman,8/31/49,7/30/74,60,35
+73,Charade,1963,Stanley Donen,25,1,Cary Grant,Audrey Hepburn,man,woman,1/18/04,5/4/29,59,34
+74,Chloe,2009,Atom Egoyan,25,1,Julianne Moore,Amanda Seyfried,woman,woman,12/3/60,12/3/85,49,24
+75,Dark Passage,1947,Delmer Daves,25,1,Humphrey Bogart,Lauren Bacall,man,woman,1899-12-25,9/16/24,48,23
+76,I Married a Witch,1942,René Clair,25,1,Fredric March,Veronica Lake,man,woman,1897-08-31,11/14/22,45,20
+77,Key Largo,1948,John Huston,25,1,Humphrey Bogart,Lauren Bacall,man,woman,1899-12-25,9/16/24,49,24
+78,Knock Knock,2015,Eli Roth,25,1,Keanu Reeves,Lorenza Izzo,man,woman,9/2/64,9/19/89,51,26
+79,Love Actually,2003,Richard Curtis,25,1,Alan Rickman,Heike Makatsch,man,woman,2/21/46,8/13/71,57,32
+80,Rumor Has It...,2005,Rob Reiner,25,1,Richard Jenkins,Jennifer Taylor,man,woman,5/3/47,4/19/72,58,33
+81,Seabiscuit,2003,Gary Ross,25,1,Jeff Bridges,Elizabeth Banks,man,woman,12/4/49,2/10/74,54,29
+82,Spun,2002,Jonas Åkerlund,25,1,Mickey Rourke,Brittany Murphy,man,woman,9/16/52,11/10/77,50,25
+83,State of the Union,1948,Frank Capra,25,1,Spencer Tracy,Angela Lansbury,man,woman,4/5/00,10/16/25,48,23
+84,The Big Sleep,1946,Howard Hawks,25,1,Humphrey Bogart,Lauren Bacall,man,woman,1899-12-25,9/16/24,47,22
+85,The Misfits,1961,John Huston,25,1,Clark Gable,Marilyn Monroe,man,woman,2/1/01,6/1/26,60,35
+86,To Catch a Thief,1955,Alfred Hitchcock,25,1,Cary Grant,Grace Kelly,man,woman,1/18/04,11/12/29,51,26
+87,To Have and Have Not,1944,Howard Hawks,25,1,Humphrey Bogart,Lauren Bacall,man,woman,1899-12-25,9/16/24,45,20
+88,Vertigo,1958,Alfred Hitchcock,25,1,James Stewart,Kim Novak,man,woman,5/20/08,2/13/33,50,25
+89,World's Greatest Dad,2009,Bobcat Goldthwait,25,1,Robin Williams,Alexie Gilmore,man,woman,7/21/51,1/1/76,58,33
+90,15 Minutes,2001,John Herzfeld,24,1,Robert De Niro,Melina Kanakaredes,man,woman,8/18/43,4/23/67,58,34
+91,American Gangster,2007,Ridley Scott,24,1,Denzel Washington,Lymari Nadal,man,woman,12/28/54,2/11/78,53,29
+92,Beyond the Sea,2004,Kevin Spacey,24,1,Kevin Spacey,Kate Bosworth,man,woman,7/26/59,1/2/83,45,21
+93,Cleaner,2007,Renny Harlin,24,1,Ed Harris,Eva Mendes,man,woman,11/28/50,3/5/74,57,33
+94,Dark Shadows,2012,Tim Burton,24,1,Johnny Depp,Bella Heathcote,man,woman,6/9/63,5/27/87,49,25
+95,Halloween III: Season of the Witch,1982,Tommy Lee Wallace,24,1,Tom Atkins,Stacey Nelkin,man,woman,11/13/35,9/10/59,47,23
+96,In a Lonely Place,1950,Nicholas Ray,24,1,Humphrey Bogart,Gloria Grahame,man,woman,1899-12-25,11/28/23,51,27
+97,Indiana Jones and the Last Crusade,1989,Steven Spielberg,24,2,Harrison Ford,Alison Doody,man,woman,7/13/42,3/9/66,47,23
+98,Knock Knock,2015,Eli Roth,24,2,Keanu Reeves,Ana de Armas,man,woman,9/2/64,4/30/88,51,27
+99,Live and Let Die,1973,Guy Hamilton,24,1,Roger Moore,Jane Seymour,man,woman,10/14/27,2/15/51,46,22
+100,Moonraker,1979,Lewis Gilbert,24,1,Roger Moore,Emily Bolton,man,woman,10/14/27,6/15/51,52,28
+101,Rio Bravo,1959,Howard Hawks,24,1,John Wayne,Angie Dickinson,man,woman,5/26/07,9/30/31,52,28
+102,Surrogates,2009,Jonathan Mostow,24,1,Bruce Willis,Rosamund Pike,man,woman,3/19/55,1/27/79,54,30
+103,The Horse Whisperer,1998,Robert Redford,24,1,Robert Redford,Kristin Scott Thomas,man,woman,8/18/36,5/24/60,62,38
+104,The Wrong Man,1956,Alfred Hitchcock,24,1,Henry Fonda,Vera Miles,man,woman,5/16/05,8/23/29,51,27
+105,A Walk in the Woods,2015,Ken Kwapis,23,1,Robert Redford,Emma Thompson,man,woman,8/18/36,4/15/59,79,56
+106,En kongelig affaere,2012,Nikolaj Arcel,23,1,Mads Mikkelsen,Alicia Vikander,man,woman,11/22/65,10/3/88,47,24
+107,Flight,2012,Robert Zemeckis,23,1,Denzel Washington,Kelly Reilly,man,woman,12/28/54,7/18/77,58,35
+108,Hobbs & Shaw,2019,David Leitch,23,1,Jason Statham,Eiza Gonzalez,man,woman,7/26/67,1/30/90,52,29
+109,Moonraker,1979,Lewis Gilbert,23,2,Roger Moore,Corinne Clery,man,woman,10/14/27,3/23/50,52,29
+110,Octopussy,1983,John Glen,23,1,Roger Moore,Kristina Wayborn,man,woman,10/14/27,9/24/50,56,33
+111,Sabrina,1995,Sydney Pollack,23,2,Harrison Ford,Julia Ormond,man,woman,7/13/42,1/4/65,53,30
+112,Seeking a Friend for the End of the World,2012,Lorene Scafaria,23,1,Steve Carell,Keira Knightley,man,woman,8/16/62,3/26/85,50,27
+113,The Details,2011,Jacob Aaron Estes,23,1,Ray Liotta,Kerry Washington,man,woman,12/18/54,1/31/77,57,34
+114,The Duchess,2008,Saul Dibb,23,1,Ralph Fiennes,Keira Knightley,man,woman,12/22/62,3/26/85,46,23
+115,The First Wives Club,1996,Hugh Wilson,23,1,Victor Garber,Elizabeth Berkley,man,woman,3/16/49,7/28/72,47,24
+116,The Man with the Golden Gun,1974,Guy Hamilton,23,1,Christopher Lee,Maud Adams,man,woman,6/27/22,2/12/45,52,29
+117,The Rum Diary,2011,Bruce Robinson,23,1,Johnny Depp,Amber Heard,man,woman,6/9/63,4/22/86,48,25
+118,Autumn in New York,2000,Joan Chen,22,1,Richard Gere,Winona Ryder,man,woman,8/31/49,10/29/71,51,29
+119,Dial M for Murder,1954,Alfred Hitchcock,22,1,Ray Milland,Grace Kelly,man,woman,3/1/07,11/12/29,47,25
+120,Focus,2015,"Glenn Ficarra, John Requa",22,1,Will Smith,Margot Robbie,man,woman,9/25/68,7/2/90,47,25
+121,Live and Let Die,1973,Guy Hamilton,22,2,Roger Moore,Gloria Hendry,man,woman,10/14/27,3/3/49,46,24
+122,Live and Let Die,1973,Guy Hamilton,22,3,Roger Moore,Madeline Smith,man,woman,10/14/27,8/2/49,46,24
+123,Luci del varietà,1951,Federico Fellini,22,1,Peppino De Filippo,Carla Del Poggio,man,woman,8/24/03,12/2/25,48,26
+124,The Mummy,2017,Alex Kurtzman,22,1,Tom Cruise,Annabelle Wallis,man,woman,7/3/62,9/25/84,55,33
+125,The Other Woman,2014,Nick Cassavetes,22,1,Nikolaj Coster-Waldau,Kate Upton,man,woman,7/27/70,6/10/92,44,22
+126,The Prom,2020,Ryan Murphy,22,1,Meryl Streep,Keegan-Michael Key,woman,man,6/22/49,3/22/71,71,49
+127,The Royal Tenenbaums,2001,Wes Anderson,22,1,Bill Murray,Gwyneth Paltrow,man,woman,9/21/50,9/27/72,51,29
+128,Up Close & Personal,1996,Jon Avnet,22,1,Robert Redford,Michelle Pfeiffer,man,woman,8/18/36,4/29/58,60,38
+129,A View to a Kill,1985,John Glen,21,4,Roger Moore,Grace Jones,man,woman,10/14/27,5/19/48,58,37
+130,Blame,2017,Quinn Shephard,21,1,Chris Messina,Quinn Shephard,man,woman,8/11/74,2/28/95,43,22
+131,Bugsy,1991,Barry Levinson,21,1,Warren Beatty,Annette Bening,man,woman,3/30/37,5/29/58,54,33
+132,Deja Vu,2006,Tony Scott,21,1,Denzel Washington,Paula Patton,man,woman,12/28/54,12/5/75,52,31
+133,Don Jon,2013,Joseph Gordon-Levitt,21,1,Julianne Moore,Joseph Gordon-Levitt,woman,man,12/3/60,2/17/81,53,32
+134,Edge of Tomorrow,2014,Doug Liman,21,1,Tom Cruise,Emily Blunt,man,woman,7/3/62,2/23/83,52,31
+135,For Your Eyes Only,1981,John Glen,21,2,Roger Moore,Cassandra Harris,man,woman,10/14/27,12/15/48,54,33
+136,Heat,1995,Michael Mann,21,1,Robert De Niro,Amy Brenneman,man,woman,8/18/43,6/22/64,52,31
+137,Husbands and Wives,1992,Woody Allen,21,2,Sydney Pollack,Judy Davis,man,woman,7/1/34,4/23/55,58,37
+138,It's Complicated,2009,Nancy Meyers,21,1,Alec Baldwin,Lake Bell,man,woman,4/3/58,3/24/79,51,30
+139,Just Go with It,2011,Dennis Dugan,21,1,Adam Sandler,Brooklyn Decker,man,woman,9/9/66,4/12/87,45,24
+140,King Arthur,2004,Antoine Fuqua,21,1,Clive Owen,Keira Knightley,man,woman,10/3/64,3/26/85,40,19
+141,Licence to Kill,1989,John Glen,21,1,Timothy Dalton,Talisa Soto,man,woman,3/21/46,3/27/67,43,22
+142,Modern Times,1936,Charlie Chaplin,21,1,Charlie Chaplin,Paulette Goddard,man,woman,1889-04-16,6/3/10,47,26
+143,My Cousin Vinny,1992,Jonathan Lynn,21,1,Joe Pesci,Marisa Tomei,man,woman,2/9/43,12/4/64,49,28
+144,My Fair Lady,1964,George Cukor,21,1,Rex Harrison,Audrey Hepburn,man,woman,3/5/08,5/4/29,56,35
+145,Rear Window,1954,Alfred Hitchcock,21,1,James Stewart,Grace Kelly,man,woman,5/20/08,11/12/29,46,25
+146,Richard III,1995,Richard Loncraine,21,1,Ian McKellen,Kristin Scott Thomas,man,woman,5/25/39,5/24/60,56,35
+147,Teacher's Pet,1958,George Seaton,21,1,Clark Gable,Doris Day,man,woman,2/1/01,4/3/22,57,36
+148,The Bubble,2022,Judd Apatow,21,1,Pedro Pascal,Maria Bakalova,man,woman,4/2/75,6/4/96,47,26
+149,The Great Dictator,1940,Charlie Chaplin,21,1,Charlie Chaplin,Paulette Goddard,man,woman,1889-04-16,6/3/10,51,30
+150,The Royal Tenenbaums,2001,Wes Anderson,21,2,Gene Hackman,Anjelica Huston,man,woman,1/30/30,7/8/51,71,50
+151,The Verdict,1982,Sidney Lumet,21,1,Paul Newman,Charlotte Rampling,man,woman,1/26/25,2/5/46,57,36
+152,Tomorrow Never Dies,1997,Roger Spottiswoode,21,1,Pierce Brosnan,Cecilie Thomsen,man,woman,5/16/53,10/29/74,44,23
+153,V for Vendetta,2005,James McTeigue,21,1,Hugo Weaving,Natalie Portman,man,woman,4/4/60,6/9/81,45,24
+154,American Beauty,1999,Sam Mendes,20,1,Kevin Spacey,Mena Suvari,man,woman,7/26/59,2/13/79,40,20
+155,Get Smart,2008,Peter Segal,20,1,Steve Carell,Anne Hathaway,man,woman,8/16/62,11/12/82,46,26
+156,Jurassic Park,1993,Steven Spielberg,20,1,Sam Neill,Laura Dern,man,woman,9/14/47,2/10/67,46,26
+157,Killer Joe,2011,William Friedkin,20,1,Matthew McConaughey,Juno Temple,man,woman,11/4/69,7/20/89,42,22
+158,L.A. Story,1991,Mick Jackson,20,1,Steve Martin,Sarah Jessica Parker,man,woman,8/14/45,3/25/65,46,26
+159,Moonraker,1979,Lewis Gilbert,20,3,Roger Moore,Lois Chiles,man,woman,10/14/27,4/15/47,52,32
+160,North by Northwest,1959,Alfred Hitchcock,20,1,Cary Grant,Eva Marie Saint,man,woman,1/18/04,7/4/24,55,35
+161,Notes on a Scandal,2006,Richard Eyre,20,1,Cate Blanchett,Andrew Simpson,woman,man,5/14/69,1/1/89,37,17
+162,Patch Adams,1998,Tom Shadyac,20,1,Robin Williams,Monica Potter,man,woman,7/21/51,6/30/71,47,27
+163,Pushing Tin,1999,Mike Newell,20,1,Billy Bob Thornton,Angelina Jolie,man,woman,8/4/55,6/4/75,44,24
+164,Regarding Henry,1991,Mike Nichols,20,1,Harrison Ford,Rebecca Miller,man,woman,7/13/42,9/15/62,49,29
+165,Singin' in the Rain,1952,"Stanley Donen, Gene Kelly",20,1,Gene Kelly,Debbie Reynolds,man,woman,8/23/12,4/1/32,40,20
+166,The Duchess,2008,Saul Dibb,20,2,Ralph Fiennes,Hayley Atwell,man,woman,12/22/62,4/5/82,46,26
+167,The Fifth Element,1997,Luc Besson,20,1,Bruce Willis,Milla Jovovich,man,woman,3/19/55,12/17/75,42,22
+168,The Northman,2022,Robert Eggers,20,1,Alexander Skarsgard,Anya Taylor-Joy,man,woman,8/25/76,4/16/96,46,26
+169,The Only Living Boy in New York,2017,Marc Webb,20,1,Pierce Brosnan,Kate Beckinsale,man,woman,5/16/53,7/26/73,64,44
+170,The Spy Who Loved Me,1977,Lewis Gilbert,20,1,Roger Moore,Barbara Bach,man,woman,10/14/27,8/27/47,50,30
+171,Training Day,2001,Antoine Fuqua,20,1,Denzel Washington,Eva Mendes,man,woman,12/28/54,3/5/74,47,27
+172,Virginia,2010,Dustin Lance Black,20,1,Ed Harris,Jennifer Connelly,man,woman,11/28/50,12/12/70,60,40
+173,Water for Elephants,2011,Francis Lawrence,20,1,Christoph Waltz,Reese Witherspoon,man,woman,10/4/56,3/21/76,55,35
+174,American Pie,1999,"Paul Weitz, Chris Weitz",19,1,Jennifer Coolidge,Eddie Kay Thomas,woman,man,8/28/61,10/31/80,38,19
+175,An American in Paris,1951,Vincente Minnelli,19,1,Gene Kelly,Leslie Caron,man,woman,8/23/12,7/1/31,39,20
+176,Baby Driver,2017,Edgar Wright,19,1,Jon Hamm,Eiza Gonzalez,man,woman,3/10/71,1/30/90,46,27
+177,Birdman,2014,Alejandro González Iñárritu,19,1,Edward Norton,Emma Stone,man,woman,8/18/69,11/6/88,45,26
+178,Buffalo '66,1998,Vincent Gallo,19,1,Vincent Gallo,Christina Ricci,man,woman,4/11/61,2/12/80,37,18
+179,Firewall,2006,Richard Loncraine,19,1,Harrison Ford,Virginia Madsen,man,woman,7/13/42,9/11/61,64,45
+180,Gone Girl,2014,David Fincher,19,1,Ben Affleck,Emily Ratajkowski,man,woman,8/15/72,6/7/91,42,23
+181,Mighty Aphrodite,1995,Woody Allen,19,3,Peter Weller,Helena Bonham Carter,man,woman,6/24/47,5/26/66,48,29
+182,Mother's Day,2016,Garry Marshall,19,1,Timothy Olyphant,Shay Mitchell,man,woman,5/20/68,4/10/87,48,29
+183,Män som hatar kvinnor,2009,Niels Arden Oplev,19,1,Michael Nyqvist,Noomi Rapace,man,woman,11/8/60,12/28/79,49,30
+184,Skyfall,2012,Sam Mendes,19,1,Daniel Craig,Tonia Sotiropoulou,man,woman,3/2/68,4/28/87,44,25
+185,Star of Midnight,1935,Stephen Roberts,19,1,William Powell,Ginger Rogers,man,woman,1892-06-29,7/16/11,43,24
+186,Street Kings,2008,David Ayer,19,1,Keanu Reeves,Martha Higareda,man,woman,9/2/64,8/24/83,44,25
+187,Suburban Girl,2007,Marc Klein,19,1,Alec Baldwin,Sarah Michelle Gellar,man,woman,4/3/58,4/14/77,49,30
+188,Suicide Squad,2016,David Ayer,19,1,Jared Leto,Margot Robbie,man,woman,12/26/71,7/2/90,45,26
+189,The Bridges of Madison County,1995,Clint Eastwood,19,1,Clint Eastwood,Meryl Streep,man,woman,5/31/30,6/22/49,65,46
+190,The Lord of the Rings,2001,Peter Jackson,19,1,Viggo Mortensen,Liv Tyler,man,woman,10/20/58,7/1/77,43,24
+191,The Mothman Prophecies,2002,Mark Pellington,19,1,Richard Gere,Debra Messing,man,woman,8/31/49,8/15/68,53,34
+192,The Naked Gun,1988,David Zucker,19,1,Leslie Nielsen,Priscilla Presley,man,woman,2/11/26,4/24/45,62,43
+193,Thunderball,1965,Terence Young,19,1,Adolfo Celi,Claudine Auger,man,woman,7/27/22,4/26/41,43,24
+194,Transcendence,2014,Wally Pfister,19,1,Johnny Depp,Rebecca Hall,man,woman,6/9/63,5/3/82,51,32
+195,A Single Man,2009,Tom Ford,18,2,Colin Firth,Matthew Goode,man,man,9/10/60,4/3/78,49,31
+196,All I See Is You,2017,Marc Forster,18,1,Jason Clarke,Blake Lively,man,woman,7/17/69,8/25/87,48,30
+197,Always Be My Maybe,2019,Nahnatchka Khan,18,1,Keanu Reeves,Ali Wong,man,woman,9/2/64,4/19/82,55,37
+198,Austin Powers in Goldmember,2002,Jay Roach,18,1,Mike Myers,Beyonce Knowles,man,woman,4/25/63,9/4/81,39,21
+199,Avengers: Infinity War,2018,Joe & Anthony Russo,18,1,Paul Bettany,Elizabeth Olsen,man,woman,5/27/71,2/16/89,47,29
+200,Big Eyes,2014,Tim Burton,18,1,Christoph Waltz,Amy Adams,man,woman,10/4/56,8/20/74,58,40
+201,Color of Night,1994,Richard Rush,18,1,Bruce Willis,Jane March,man,woman,3/19/55,3/20/73,39,21
+202,Guess Who's Coming to Dinner,1967,John Huston,18,1,Sidney Poitier,Katharine Houghton,man,woman,2/20/27,3/10/45,40,22
+203,Milk,2008,Gus Van Sant,18,1,Sean Penn,James Franco,man,man,8/17/60,4/19/78,48,30
+204,Octopussy,1983,John Glen,18,2,Roger Moore,Maud Adams,man,woman,10/14/27,2/12/45,56,38
+205,Once,2007,John Carney,18,1,Glen Hansard,Marketa Irglova,man,woman,4/21/70,2/28/88,37,19
+206,Pretty Woman,1990,Garry Marshall,18,1,Richard Gere,Julia Roberts,man,woman,8/31/49,10/28/67,41,23
+207,Quantum of Solace,2008,Marc Forster,18,1,Daniel Craig,Gemma Arterton,man,woman,3/2/68,2/2/86,40,22
+208,Raising Helen,2004,Garry Marshall,18,1,John Corbett,Kate Hudson,man,woman,5/9/61,4/19/79,43,25
+209,Random Hearts,1999,Sydney Pollack,18,1,Harrison Ford,Kristin Scott Thomas,man,woman,7/13/42,5/24/60,57,39
+210,Replicas,2018,Jeffrey Nachmanoff,18,1,Keanu Reeves,Alice Eve,man,woman,9/2/64,2/6/82,54,36
+211,Runaway Bride,1999,Garry Marshall,18,1,Richard Gere,Julia Roberts,man,woman,8/31/49,10/28/67,50,32
+212,Rushmore,1998,Wes Anderson,18,1,Bill Murray,Olivia Williams,man,woman,9/21/50,7/26/68,48,30
+213,Scarface,1983,Brian De Palma,18,1,Al Pacino,Michelle Pfeiffer,man,woman,4/25/40,4/29/58,43,25
+214,Something's Gotta Give,2003,Nancy Meyers,18,2,Diane Keaton,Keanu Reeves,woman,man,1/5/46,9/2/64,57,39
+215,St. Vincent,2014,Theodore Melfi,18,1,Bill Murray,Naomi Watts,man,woman,9/21/50,9/28/68,64,46
+216,Tadpole,2002,Gary Winick,18,2,Bebe Neuwirth,Aaron Stanford,woman,man,12/31/58,12/27/76,44,26
+217,The Killing of a Chinese Bookie,1976,John Cassavetes,18,1,Ben Gazzara,Azizi Johari,man,woman,8/28/30,8/24/48,46,28
+218,The Man with the Golden Gun,1974,Guy Hamilton,18,2,Roger Moore,Maud Adams,man,woman,10/14/27,2/12/45,47,29
+219,The Rum Diary,2011,Bruce Robinson,18,2,Aaron Eckhart,Amber Heard,man,woman,3/12/68,4/22/86,43,25
+220,The World Is Not Enough,1999,Michael Apted,18,1,Pierce Brosnan,Denise Richards,man,woman,5/16/53,2/17/71,46,28
+221,Tommy Boy,1995,Peter Segal,18,1,Brian Dennehy,Bo Derek,man,woman,7/9/38,11/20/56,57,39
+222,Whatever Works,2009,Woody Allen,18,2,Larry David,Jessica Hecht,man,woman,7/2/47,6/28/65,62,44
+223,Yes Man,2008,Peyton Reed,18,1,Jim Carrey,Zooey Deschanel,man,woman,1/17/62,1/17/80,46,28
+224,Zombieland: Double Tap,2019,Ruben Fleischer,18,1,Woody Harrelson,Rosario Dawson,man,woman,7/23/61,5/9/79,58,40
+225,47 Ronin,2013,Carl Rinsch,17,1,Keanu Reeves,Ko Shibasaki,man,woman,9/2/64,8/5/81,49,32
+226,An Affair to Remember,1957,Leo McCarey,17,1,Cary Grant,Deborah Kerr,man,woman,1/18/04,9/30/21,53,36
+227,Avengers: Age of Ultron,2015,Joss Whedon,17,1,Mark Ruffalo,Scarlett Johansson,man,woman,11/22/67,11/22/84,48,31
+228,Blade Runner,1982,Ridley Scott,17,1,Harrison Ford,Sean Young,man,woman,7/13/42,11/20/59,40,23
+229,Closer,2004,Mike Nichols,17,1,Clive Owen,Natalie Portman,man,woman,10/3/64,6/9/81,40,23
+230,Draft Day,2014,Ivan Reitman,17,1,Kevin Costner,Jennifer Garner,man,woman,1/18/55,4/17/72,59,42
+231,Free Guy,2021,Shawn Levy,17,1,Ryan Reynolds,Jodie Comer,man,woman,10/23/76,3/11/93,45,28
+232,GoldenEye,1995,Martin Campbell,17,1,Pierce Brosnan,Izabella Scorupco,man,woman,5/16/53,6/4/70,42,25
+233,Green Book,2018,Peter Farrelly,17,1,Viggo Mortensen,Linda Cardellini,man,woman,10/20/58,6/25/75,60,43
+234,Husbands,1970,John Cassavetes,17,1,John Cassavetes,Jenny Runacre,man,woman,12/9/29,8/18/46,41,24
+235,Joker,2019,Todd Phillips,17,1,Joaquin Phoenix,Zazie Beetz,man,woman,10/28/74,5/28/91,45,28
+236,Kindergarten Cop,1990,Ivan Reitman,17,1,Arnold Schwarzenegger,Penelope Ann Miller,man,woman,7/30/47,1/13/64,43,26
+237,Knock Knock,2015,Eli Roth,17,3,Keanu Reeves,Ignacia Allamand,man,woman,9/2/64,8/29/81,51,34
+238,Laggies,2014,Lynn Shelton,17,1,Sam Rockwell,Keira Knightley,man,woman,11/5/68,3/26/85,46,29
+239,Mr. Right,2015,Paco Cabezas,17,1,Sam Rockwell,Anna Kendrick,man,woman,11/5/68,8/9/85,47,30
+240,Oblivion,2013,Joseph Kosinski,17,1,Tom Cruise,Olga Kurylenko,man,woman,7/3/62,11/14/79,51,34
+241,Raging Bull,1980,Martin Scorsese,17,1,Robert De Niro,Cathy Moriarty,man,woman,8/18/43,11/29/60,37,20
+242,Rock of Ages,2012,Adam Shankman,17,1,Alec Baldwin,Russell Brand,man,man,4/3/58,6/4/75,54,37
+243,Secretary,2002,Steven Shainberg,17,1,James Spader,Maggie Gyllenhaal,man,woman,2/7/60,11/16/77,42,25
+244,Sleepy Hollow,1999,Tim Burton,17,1,Johnny Depp,Christina Ricci,man,woman,6/9/63,2/12/80,36,19
+245,Spectre,2015,Sam Mendes,17,1,Daniel Craig,Léa Seydoux,man,woman,3/2/68,7/1/85,47,30
+246,Stepmom,1998,Chris Columbus,17,1,Ed Harris,Julia Roberts,man,woman,11/28/50,10/28/67,48,31
+247,The Cooler,2003,Wayne Kramer,17,1,William H. Macy,Maria Bello,man,woman,3/13/50,4/18/67,53,36
+248,The Girl on the Train,2016,Tate Taylor,17,1,Justin Theroux,Haley Bennett,man,woman,8/10/71,1/7/88,45,28
+249,The Girl with the Dragon Tattoo,2011,David Fincher,17,1,Daniel Craig,Rooney Mara,man,woman,3/2/68,4/17/85,43,26
+250,The Only Living Boy in New York,2017,Marc Webb,17,2,Kate Beckinsale,Callum Turner,woman,man,7/26/73,2/15/90,44,27
+251,The Whole Nine Yards,2000,Jonathan Lynn,17,1,Bruce Willis,Amanda Peet,man,woman,3/19/55,1/11/72,45,28
+252,The Wolverine,2013,James Mangold,17,1,Hugh Jackman,Tao Okamoto,man,woman,10/12/68,5/22/85,45,28
+253,Tomorrow Never Dies,1997,Roger Spottiswoode,17,2,Jonathan Pryce,Teri Hatcher,man,woman,6/1/47,12/8/64,50,33
+254,Trees Lounge,1996,Steve Buscemi,17,1,Steve Buscemi,Chloë Sevigny,man,woman,12/13/57,11/18/74,39,22
+255,A Thousand Words,2012,Brian Robbins,16,1,Eddie Murphy,Kerry Washington,man,woman,4/3/61,1/31/77,51,35
+256,American Hustle,2013,David O. Russell,16,1,Christian Bale,Jennifer Lawrence,man,woman,1/30/74,8/15/90,39,23
+257,Carol,2015,Todd Haynes,16,1,Cate Blanchett,Rooney Mara,woman,woman,5/14/69,4/17/85,46,30
+258,Casablanca,1942,Michael Curtiz,16,1,Humphrey Bogart,Ingrid Bergman,man,woman,1899-12-25,8/29/15,43,27
+259,Damage,1992,Louis Malle,16,1,Jeremy Irons,Juliette Binoche,man,woman,9/19/48,3/9/64,44,28
+260,Elegy,2008,Isabel Coixet,16,2,Ben Kingsley,Patricia Clarkson,man,woman,12/31/43,12/29/59,65,49
+261,First Knight,1995,Jerry Zucker,16,2,Richard Gere,Julia Ormond,man,woman,8/31/49,1/4/65,46,30
+262,Hobbs & Shaw,2019,David Leitch,16,2,Dwayne Johnson,Vanessa Kirby,man,woman,5/2/72,4/18/88,47,31
+263,I Now Pronounce You Chuck and Larry,2007,Dennis Dugan,16,1,Adam Sandler,Jessica Biel,man,woman,9/9/66,3/3/82,41,25
+264,Love Actually,2003,Richard Curtis,16,2,Hugh Grant,Martine McCutcheon,man,woman,9/9/60,5/14/76,43,27
+265,Love Actually,2003,Richard Curtis,16,3,Colin Firth,Lucia Moniz,man,woman,9/10/60,9/9/76,43,27
+266,My Life,1993,Bruce Joel Rubin,16,1,Michael Keaton,Nicole Kidman,man,woman,9/5/51,6/20/67,42,26
+267,Nights in Rodanthe,2008,George C. Wolfe,16,1,Richard Gere,Diane Lane,man,woman,8/31/49,1/21/65,59,43
+268,Now You See Me,2013,Louis Leterrier,16,1,Mark Ruffalo,Melanie Laurent,man,woman,11/22/67,2/21/83,46,30
+269,Regarding Henry,1991,Mike Nichols,16,2,Harrison Ford,Annette Bening,man,woman,7/13/42,5/29/58,49,33
+270,Remember the Titans,2000,Boaz Yakin,16,1,Denzel Washington,Nicole Ari Parker,man,woman,12/28/54,10/7/70,46,30
+271,Rock of Ages,2012,Adam Shankman,16,2,Tom Cruise,Malin Akerman,man,woman,7/3/62,5/12/78,50,34
+272,Safe Haven,2013,Scott Hicks,16,1,Josh Duhamel,Julianne Hough,man,woman,11/14/72,7/20/88,41,25
+273,Scoop,2006,Woody Allen,16,1,Hugh Jackman,Scarlett Johansson,man,woman,10/12/68,11/22/84,38,22
+274,Sister Act,1992,Emile Ardolino,16,1,Harvey Keitel,Whoopi Goldberg,man,woman,5/13/39,11/13/55,53,37
+275,The Diary of a Teenage Girl,2015,Marielle Heller,16,1,Alexander Skarsgard,Bel Powley,man,woman,8/25/76,3/7/92,39,23
+276,The Family Stone,2007,Thomas Bezucha,16,1,Dermot Mulroney,Claire Danes,man,woman,10/31/63,4/12/79,44,28
+277,The Living Daylights,1987,John Glen,16,1,Jeroen Krabbe,Maryam d'Abo,man,woman,12/5/44,12/27/60,43,27
+278,The Lost City,2022,"Adam Nee, Aaron Nee",16,1,Sandra Bullock,Channing Tatum,woman,man,7/26/64,4/26/80,58,42
+279,The Other Boleyn Girl,2008,Justin Chadwick,16,1,Eric Bana,Scarlett Johansson,man,woman,8/9/68,11/22/84,40,24
+280,The Prestige,2006,Christopher Nolan,16,1,Hugh Jackman,Scarlett Johansson,man,woman,10/12/68,11/22/84,38,22
+281,The Raven,2012,James McTeigue,16,1,John Cusack,Alice Eve,man,woman,6/28/66,2/6/82,46,30
+282,The Sand Pebbles,1966,Robert Wise,16,1,Steve McQueen,Candice Bergen,man,woman,3/24/30,5/9/46,36,20
+283,The Wolf of Wall Street,2013,Martin Scorsese,16,1,Leonardo DiCaprio,Margot Robbie,man,woman,11/11/74,7/2/90,39,23
+284,Troy,2004,Wolfgang Petersen,16,1,Brad Pitt,Rose Byrne,man,woman,12/18/63,7/24/79,41,25
+285,Unfaithful,2002,Adrian Lyne,16,1,Richard Gere,Diane Lane,man,woman,8/31/49,1/21/65,53,37
+286,What Lies Beneath,2000,Robert Zemeckis,16,1,Harrison Ford,Michelle Pfeiffer,man,woman,7/13/42,4/29/58,58,42
+287,Why Him?,2016,John Hamburg,16,1,James Franco,Zoey Deutch,man,woman,4/19/78,11/10/94,38,22
+288,Analyze This,1999,Harold Ramis,15,1,Billy Crystal,Lisa Kudrow,man,woman,3/14/48,7/30/63,51,36
+289,Angel Heart,1987,Alan Parker,15,1,Mickey Rourke,Lisa Bonet,man,woman,9/16/52,11/16/67,35,20
+290,Casino,1995,Martin Scorsese,15,1,Robert De Niro,Sharon Stone,man,woman,8/18/43,3/10/58,52,37
+291,Concussion,2015,Peter Landesman,15,1,Will Smith,Gugu Mbatha-Raw,man,woman,9/25/68,4/21/83,47,32
+292,Eternal Sunshine of the Spotless Mind,2004,Michel Gondry,15,2,Mark Ruffalo,Kirsten Dunst,man,woman,11/22/67,4/30/82,37,22
+293,Hollywood Ending,2002,Woody Allen,15,2,Treat Williams,Tea Leoni,man,woman,12/1/51,2/25/66,51,36
+294,Home Again,2017,Hallie Meyers-Shyer,15,1,Reese Witherspoon,Pico Alexander,woman,man,3/21/76,6/3/91,41,26
+295,Liberal Arts,2012,Josh Radnor,15,1,Josh Radnor,Elizabeth Olsen,man,woman,7/29/74,2/16/89,38,23
+296,Licence to Kill,1989,John Glen,15,2,Timothy Dalton,Carey Lowell,man,woman,3/21/46,2/11/61,43,28
+297,Music and Lyrics,2007,Marc Lawrence,15,1,Hugh Grant,Drew Barrymore,man,woman,9/9/60,2/22/75,47,32
+298,Once Upon a Time in Hollywood,2019,Quentin Tarantino,15,1,Leonardo DiCaprio,Lorenza Izzo,man,woman,11/11/74,9/19/89,45,30
+299,Private Parts,1997,Betty Thomas,15,1,Howard Stern,Mary McCormack,man,woman,1/12/54,2/8/69,43,28
+300,Serena,2014,Susanne Bier,15,1,Bradley Cooper,Jennifer Lawrence,man,woman,1/5/75,8/15/90,39,24
+301,Sex and the City,2008,Michael Patrick King,15,1,Kim Cattrall,Jason Lewis,woman,man,8/21/56,6/25/71,52,37
+302,Silver Linings Playbook,2012,David O. Russell,15,1,Bradley Cooper,Jennifer Lawrence,man,woman,1/5/75,8/15/90,37,22
+303,The American,2010,Anton Corbijn,15,1,George Clooney,Violante Placido,man,woman,5/6/61,5/1/76,49,34
+304,The Gift,2000,Sam Raimi,15,1,Greg Kinnear,Katie Holmes,man,woman,6/17/63,12/18/78,37,22
+305,The Lover,1992,Jean-Jacques Annaud,15,1,Tony Leung Ka-fai,Jane March,man,woman,2/1/58,3/20/73,34,19
+306,The Man with the Golden Gun,1974,Guy Hamilton,15,3,Roger Moore,Britt Ekland,man,woman,10/14/27,10/6/42,47,32
+307,The Reader,2008,Stephen Daldry,15,1,Kate Winslet,David Kross,woman,man,10/5/75,7/4/90,33,18
+308,The Whole Truth,2016,Courtney Hunt,15,1,Jim Belushi,Renee Zellweger,man,woman,6/15/54,4/25/69,62,47
+309,Working Girl,1988,Mike Nichols,15,1,Harrison Ford,Melanie Griffith,man,woman,7/13/42,8/9/57,46,31
+310,8 1/2,1963,Federico Fellini,14,1,Marcello Mastroianni,Claudia Cardinale,man,woman,9/28/24,4/15/38,39,25
+311,A Perfect Murder,1998,Andrew Davis,14,2,Viggo Mortensen,Gwyneth Paltrow,man,woman,10/20/58,9/27/72,40,26
+312,Ad Astra,2019,James Gray,14,1,Brad Pitt,Liv Tyler,man,woman,12/18/63,7/1/77,56,42
+313,Always Be My Maybe,2019,Nahnatchka Khan,14,2,Daniel Dae Kim,Ali Wong,man,woman,8/4/68,4/19/82,51,37
+314,An Education,2009,Lone Scherfig,14,1,Peter Sarsgaard,Carey Mulligan,man,woman,3/7/71,5/28/85,38,24
+315,Basic Instinct,1992,Paul Verhoeven,14,1,Michael Douglas,Sharon Stone,man,woman,9/25/44,3/10/58,48,34
+316,Because I Said So,2007,Michael Lehmann,14,1,Tom Everett Scott,Mandy Moore,man,woman,9/7/70,4/10/84,37,23
+317,Dreamgirls,2006,Bill Condon,14,1,Jamie Foxx,Jennifer Hudson,man,woman,12/13/67,9/12/81,39,25
+318,Dreamgirls,2006,Bill Condon,14,2,Jamie Foxx,Beyonce Knowles,man,woman,12/13/67,9/4/81,39,25
+319,Fifty Shades of Black,2016,undefined,14,1,Marlon Wayans,Kali Hawk,man,woman,7/23/72,10/4/86,44,30
+320,French Kiss,1995,Lawrence Kasdan,14,1,Kevin Kline,Meg Ryan,man,woman,10/24/47,11/19/61,48,34
+321,From Russia with Love,1963,Terence Young,14,1,Sean Connery,Aliza Gur,man,woman,8/25/30,4/1/44,33,19
+322,High Society,1956,Charles Walters,14,2,Frank Sinatra,Grace Kelly,man,woman,12/12/15,11/12/29,41,27
+323,Irrational Man,2015,Woody Allen,14,1,Joaquin Phoenix,Emma Stone,man,woman,10/28/74,11/6/88,41,27
+324,Keeping Up with the Joneses,2016,Greg Mottola,14,1,Jon Hamm,Gal Gadot,man,woman,3/10/71,4/30/85,45,31
+325,Licence to Kill,1989,John Glen,14,3,Robert Davi,Talisa Soto,man,woman,6/26/53,3/27/67,36,22
+326,Mission: Impossible III,2006,J.J. Abrams,14,1,Tom Cruise,Michelle Monaghan,man,woman,7/3/62,3/23/76,44,30
+327,Pushing Tin,1999,Mike Newell,14,2,Billy Bob Thornton,Cate Blanchett,man,woman,8/4/55,5/14/69,44,30
+328,Rumor Has It...,2005,Rob Reiner,14,2,Kevin Costner,Jennifer Aniston,man,woman,1/18/55,2/11/69,50,36
+329,Star Wars,1977,George Lucas,14,1,Harrison Ford,Carrie Fisher,man,woman,7/13/42,10/21/56,35,21
+330,Ted 2,2015,Seth MacFarlane,14,1,Mark Wahlberg,Amanda Seyfried,man,woman,6/5/71,12/3/85,44,30
+331,The American President,1995,Rob Reiner,14,1,Michael Douglas,Annette Bening,man,woman,9/25/44,5/29/58,51,37
+332,The Beach,2000,Danny Boyle,14,1,Tilda Swinton,Leonardo DiCaprio,woman,man,12/5/60,11/11/74,40,26
+333,The Crush,1993,Alan Shapiro,14,1,Cary Elwes,Alicia Silverstone,man,woman,10/26/62,10/4/76,31,17
+334,The Favourite,2018,Yorgos Lanthimos,14,1,Olivia Colman,Emma Stone,woman,woman,1/30/74,11/6/88,44,30
+335,The Gift,2000,Sam Raimi,14,2,Keanu Reeves,Katie Holmes,man,woman,9/2/64,12/18/78,36,22
+336,The Legend of Tarzan,2016,David Yates,14,1,Alexander Skarsgard,Margot Robbie,man,woman,8/25/76,7/2/90,40,26
+337,The Living Daylights,1987,John Glen,14,2,Timothy Dalton,Maryam d'Abo,man,woman,3/21/46,12/27/60,41,27
+338,The Quiet American,2002,Phillip Noyce,14,3,Brendan Fraser,Do Thi Hai Yen,man,woman,12/3/68,10/1/82,34,20
+339,We Bought a Zoo,2011,Cameron Crowe,14,1,Matt Damon,Scarlett Johansson,man,woman,10/8/70,11/22/84,41,27
+340,Widows,2018,Steve McQueen,14,1,Jon Bernthal,Elizabeth Debicki,man,woman,9/20/76,8/24/90,42,28
+341,3000 Miles to Graceland,2001,Demian Lichtenstein,13,1,Kurt Russell,Courteney Cox,man,woman,3/17/51,6/15/64,50,37
+342,A Star Is Born,1954,George Cukor,13,1,James Mason,Judy Garland,man,woman,5/15/09,6/10/22,45,32
+343,Aloha,2015,Cameron Crowe,13,1,Bradley Cooper,Emma Stone,man,woman,1/5/75,11/6/88,40,27
+344,Anna Karenina,2012,Joe Wright,13,1,Jude Law,Keira Knightley,man,woman,12/29/72,3/26/85,40,27
+345,Bohemian Rhapsody,2018,Bryan Singer,13,1,Rami Malek,Lucy Boynton,man,woman,5/12/81,1/17/94,37,24
+346,Bridge of Spies,2015,Steven Spielberg,13,1,Tom Hanks,Amy Ryan,man,woman,7/9/56,5/3/69,59,46
+347,Die Another Day,2002,Lee Tamahori,13,2,Pierce Brosnan,Halle Berry,man,woman,5/16/53,8/14/66,49,36
+348,Elf,2003,Jon Favreau,13,1,Will Ferrell,Zooey Deschanel,man,woman,7/16/67,1/17/80,36,23
+349,Emma.,2020,Autumn de Wilde,13,1,Johnny Flynn,Anya Taylor-Joy,man,woman,3/14/83,4/16/96,37,24
+350,Eternal Sunshine of the Spotless Mind,2004,Michel Gondry,13,3,Jim Carrey,Kate Winslet,man,woman,1/17/62,10/5/75,42,29
+351,Feeling Minnesota,1996,Steven Baigelman,13,1,Vincent D'Onofrio,Cameron Diaz,man,woman,6/30/59,8/30/72,37,24
+352,For Your Eyes Only,1981,John Glen,13,3,Chaim Topol,Cassandra Harris,man,woman,9/9/35,12/15/48,46,33
+353,How Stella Got Her Groove Back,1998,Kevin Rodney Sullivan,13,1,Angela Bassett,Taye Diggs,woman,man,8/16/58,1/2/71,40,27
+354,John Q.,2002,Nick Cassavetes,13,1,Denzel Washington,Kimberly Elise,man,woman,12/28/54,4/17/67,48,35
+355,Joy,2015,David O. Russell,13,1,Edgar Ramirez,Jennifer Lawrence,man,woman,3/25/77,8/15/90,38,25
+356,Layer Cake,2004,Matthew Vaughn,13,1,Daniel Craig,Sienna Miller,man,woman,3/2/68,12/28/81,36,23
+357,Love Actually,2003,Richard Curtis,13,4,Alan Rickman,Emma Thompson,man,woman,2/21/46,4/15/59,57,44
+358,Nine Lives,2016,Barry Sonnenfeld,13,1,Kevin Spacey,Jennifer Garner,man,woman,7/26/59,4/17/72,57,44
+359,Palo Alto,2013,Gia Coppola,13,1,James Franco,Emma Roberts,man,woman,4/19/78,2/10/91,35,22
+360,Red Notice,2021,Rawson Marshall Thurber,13,1,Dwayne Johnson,Gal Gadot,man,woman,5/2/72,4/30/85,49,36
+361,Roman Holiday,1953,William Wyler,13,1,Gregory Peck,Audrey Hepburn,man,woman,4/5/16,5/4/29,37,24
+362,Schindler's List,1993,Steven Spielberg,13,1,Liam Neeson,Beatrice Macola,man,woman,6/7/52,12/2/65,41,28
+363,Suicide Squad,2016,David Ayer,13,2,Joel Kinnaman,Cara Delevingne,man,woman,11/25/79,8/12/92,37,24
+364,The Adjustment Bureau,2011,George Nolfi,13,1,Matt Damon,Emily Blunt,man,woman,10/8/70,2/23/83,41,28
+365,The Devil Wears Prada,2006,David Frankel,13,1,Simon Baker,Anne Hathaway,man,woman,7/30/69,11/12/82,37,24
+366,The Heartbreak Kid,2007,"Bobby Farrelly, Peter Farrelly",13,1,Ben Stiller,Malin Akerman,man,woman,11/30/65,5/12/78,42,29
+367,The Illusionist,2006,Neil Burger,13,1,Edward Norton,Jessica Biel,man,woman,8/18/69,3/3/82,37,24
+368,The Other Boleyn Girl,2008,Justin Chadwick,13,2,Eric Bana,Natalie Portman,man,woman,8/9/68,6/9/81,40,27
+369,The Polka King,2018,Maya Forbes,13,1,Jack Black,Jenny Slate,man,woman,8/28/69,3/25/82,49,36
+370,The Sixth Sense,1999,M. Night Shyamalan,13,1,Bruce Willis,Olivia Williams,man,woman,3/19/55,7/26/68,44,31
+371,The World Is Not Enough,1999,Michael Apted,13,2,Pierce Brosnan,Sophie Marceau,man,woman,5/16/53,11/17/66,46,33
+372,When Harry Met Sally...,1989,Rob Reiner,13,1,Billy Crystal,Meg Ryan,man,woman,3/14/48,11/19/61,41,28
+373,Widows,2018,Steve McQueen,13,2,Liam Neeson,Viola Davis,man,woman,6/7/52,8/11/65,66,53
+374,Wonder Boys,2000,Curtis Hanson,13,1,Michael Douglas,Frances McDormand,man,woman,9/25/44,6/23/57,56,43
+375,X-Men: First Class,2015,Matthew Vaughn,13,1,Michael Fassbender,Jennifer Lawrence,man,woman,4/2/77,8/15/90,38,25
+376,Yogi Bear,2010,Eric Brevig,13,1,Tom Cavanagh,Anna Faris,man,woman,10/26/63,11/29/76,47,34
+377,You Only Live Twice,1967,Lewis Gilbert,13,1,Sean Connery,Mie Hama,man,woman,8/25/30,11/20/43,37,24
+378,All About the Benjamins,2002,Kevin Bray,12,1,Tommy Flanagan,Carmen Chaplin,man,woman,7/3/65,7/27/77,37,25
+379,Allied,2016,Robert Zemeckis,12,1,Brad Pitt,Marion Cotillard,man,woman,12/18/63,9/30/75,53,41
+380,Bad Santa,2003,Terry Zwigoff,12,1,Billy Bob Thornton,Lauren Graham,man,woman,8/4/55,3/16/67,48,36
+381,Because I Said So,2007,Michael Lehmann,12,2,Gabriel Macht,Mandy Moore,man,woman,1/22/72,4/10/84,35,23
+382,Beginners,2010,Mike Mills,12,2,Ewan McGregor,Melanie Laurent,man,woman,3/31/71,2/21/83,39,27
+383,Casino Royale,2006,Martin Campbell,12,1,Daniel Craig,Eva Green,man,woman,3/2/68,7/6/80,38,26
+384,Delivery Man,2013,Ken Scott,12,1,Vince Vaughn,Cobie Smulders,man,woman,3/28/70,4/3/82,43,31
+385,Down and Out in Beverly Hills,1986,Paul Mazursky,12,1,Richard Dreyfuss,Elizabeth Peña,man,woman,10/29/47,9/23/59,39,27
+386,From Russia with Love,1963,Terence Young,12,2,Sean Connery,Daniela Bianchi,man,woman,8/25/30,1/31/42,33,21
+387,Gone with the Wind,1939,Victor Fleming,12,1,Clark Gable,Vivien Leigh,man,woman,2/1/01,11/5/13,38,26
+388,Heat,1995,Michael Mann,12,2,Al Pacino,Diane Venora,man,woman,4/25/40,8/10/52,55,43
+389,I Think I Love My Wife,2007,Chris Rock,12,1,Chris Rock,Kerry Washington,man,woman,2/7/65,1/31/77,42,30
+390,In the Heights,2021,John M. Chu,12,1,Daphne Rubin-Vega,Stephanie Beatriz,woman,woman,11/18/69,2/10/81,52,40
+391,Inferno,2016,Ron Howard,12,1,Tom Hanks,Sidse Babett Knudsen,man,woman,7/9/56,11/22/68,60,48
+392,Jack and Jill,2011,Dennis Dugan,12,1,Adam Sandler,Katie Holmes,man,woman,9/9/66,12/18/78,45,33
+393,Jane Eyre,2011,Cary Fukunaga,12,1,Michael Fassbender,Mia Wasikowska,man,woman,4/2/77,10/14/89,34,22
+394,La decima vittima,1965,Elio Petri,12,1,Marcello Mastroianni,Ursula Andress,man,woman,9/28/24,3/19/36,41,29
+395,Last Night,2010,Massy Tadjedin,12,1,Guillaume Canet,Keira Knightley,man,woman,4/10/73,3/26/85,37,25
+396,Lo Sceicco Bianco,1952,Federico Fellini,12,1,Alberto Sordi,Brunella Bovo,man,woman,6/15/20,3/4/32,32,20
+397,Malcolm & Marie,2021,Sam Levinson,12,1,John David Washington,Zendaya,man,woman,7/28/84,9/1/96,37,25
+398,Mr. & Mrs. Smith,2005,Doug Liman,12,1,Brad Pitt,Angelina Jolie,man,woman,12/18/63,6/4/75,42,30
+399,National Treasure,2004,Jon Turteltaub,12,1,Nicolas Cage,Diane Kruger,man,woman,1/7/64,7/15/76,40,28
+400,Natural Born Killers,1994,Oliver Stone,12,1,Woody Harrelson,Juliette Lewis,man,woman,7/23/61,6/21/73,33,21
+401,Stella Dallas,1937,King Vidor,12,1,John Boles,Barbara Stanwyck,man,woman,1895-10-28,7/16/07,42,30
+402,Taken,2008,Pierre Morel,12,1,Liam Neeson,Famke Janssen,man,woman,6/7/52,11/5/64,56,44
+403,Ted,2012,Seth MacFarlane,12,1,Mark Wahlberg,Mila Kunis,man,woman,6/5/71,8/14/83,41,29
+404,The Astronaut's Wife,1999,Rand Ravich,12,1,Johnny Depp,Charlize Theron,man,woman,6/9/63,8/7/75,36,24
+405,The Girl on the Train,2016,Tate Taylor,12,2,Justin Theroux,Emily Blunt,man,woman,8/10/71,2/23/83,45,33
+406,The Girl on the Train,2016,Tate Taylor,12,3,Justin Theroux,Rebecca Ferguson,man,woman,8/10/71,10/19/83,45,33
+407,The Greatest Showman,2017,Michael Gracey,12,1,Hugh Jackman,Michelle Williams,man,woman,10/12/68,9/9/80,49,37
+408,The Proposal,2009,Anne Fletcher,12,1,Sandra Bullock,Ryan Reynolds,woman,man,7/26/64,10/23/76,45,33
+409,The Spy Who Dumped Me,2018,Susanna Fogel,12,1,Justin Theroux,Mila Kunis,man,woman,8/10/71,8/14/83,47,35
+410,The Wrestler,2008,Darren Aronofsky,12,1,Mickey Rourke,Marisa Tomei,man,woman,9/16/52,12/4/64,56,44
+411,Tootsie,1982,Sydney Pollack,12,1,Dustin Hoffman,Jessica Lange,man,woman,8/8/37,4/20/49,45,33
+412,Up in the Air,2009,Jason Reitman,12,1,George Clooney,Vera Farmiga,man,woman,5/6/61,8/6/73,48,36
+413,World War Z,2013,Marc Forster,12,1,Brad Pitt,Mireille Enos,man,woman,12/18/63,9/22/75,50,38
+414,A Good Year,2006,Ridley Scott,11,1,Russell Crowe,Marion Cotillard,man,woman,4/7/64,9/30/75,42,31
+415,A Star Is Born,2018,Bradley Cooper,11,2,Bradley Cooper,Lady Gaga,man,woman,1/5/75,3/28/86,43,32
+416,Annie Hall,1977,Woody Allen,11,1,Woody Allen,Diane Keaton,man,woman,12/1/35,1/5/46,42,31
+417,Barfly,1987,Barbet Schroeder,11,1,Faye Dunaway,Mickey Rourke,woman,man,1/14/41,9/16/52,46,35
+418,Black Panther,2018,Ryan Coogler,11,1,Danai Gurira,Daniel Kaluuya,woman,man,2/14/78,2/24/89,40,29
+419,Blow,2001,Ted Demme,11,1,Johnny Depp,Penelope Cruz,man,woman,6/9/63,4/28/74,38,27
+420,Boogie Nights,1997,Paul Thomas Anderson,11,1,Julianne Moore,Mark Wahlberg,woman,man,12/3/60,6/5/71,37,26
+421,Dreamgirls,2006,Bill Condon,11,3,Eddie Murphy,Anika Noni Rose,man,woman,4/3/61,9/6/72,45,34
+422,Emma,1996,Douglas McGrath,11,1,Jeremy Northam,Gwyneth Paltrow,man,woman,12/1/61,9/27/72,35,24
+423,From Russia with Love,1963,Terence Young,11,3,Sean Connery,Martine Beswick,man,woman,8/25/30,9/26/41,33,22
+424,Henry’s Crime,2010,Malcolm Venville,11,1,Keanu Reeves,Judy Greer,man,woman,9/2/64,7/20/75,46,35
+425,I Could Never Be Your Woman,2007,Amy Heckerling,11,1,Michelle Pfeiffer,Paul Rudd,woman,man,4/29/58,4/6/69,49,38
+426,Indiana Jones and the Temple of Doom,1984,Steven Spielberg,11,1,Harrison Ford,Kate Capshaw,man,woman,7/13/42,11/3/53,42,31
+427,Larry Crowne,2011,Tom Hanks,11,1,Tom Hanks,Julia Roberts,man,woman,7/9/56,10/28/67,55,44
+428,Love Actually,2003,Richard Curtis,11,5,Laura Linney,Rodrigo Santoro,woman,man,2/5/64,8/22/75,39,28
+429,Message in a Bottle,1999,Luis Mandoki,11,1,Kevin Costner,Robin Wright,man,woman,1/18/55,4/8/66,44,33
+430,Monster's Ball,2001,Marc Forster,11,1,Billy Bob Thornton,Halle Berry,man,woman,8/4/55,8/14/66,46,35
+431,Old School,2003,Todd Phillips,11,1,Luke Wilson,Elisha Cuthbert,man,woman,9/21/71,11/30/82,32,21
+432,Passengers,2016,Morten Tyldum,11,1,Chris Pratt,Jennifer Lawrence,man,woman,6/21/79,8/15/90,37,26
+433,Pride & Prejudice,2005,Joe Wright,11,1,Matthew Macfadyen,Keira Knightley,man,woman,10/17/74,3/26/85,31,20
+434,Sabrina,1954,Billy Wilder,11,3,William Holden,Audrey Hepburn,man,woman,4/17/18,5/4/29,36,25
+435,Save the Last Dance,2001,Thomas Carter,11,1,Sean Patrick Thomas,Julia Stiles,man,woman,12/17/70,3/28/81,31,20
+436,Seven Pounds,2008,Gabriele Muccino,11,1,Will Smith,Rosario Dawson,man,woman,9/25/68,5/9/79,40,29
+437,Sex and the City,2008,Michael Patrick King,11,2,Chris Noth,Sarah Jessica Parker,man,woman,11/13/54,3/25/65,54,43
+438,Singin' in the Rain,1952,"Stanley Donen, Gene Kelly",11,2,Gene Kelly,Jean Hagen,man,woman,8/23/12,8/3/23,40,29
+439,Skyfall,2012,Sam Mendes,11,2,Daniel Craig,Berenice Marlohe,man,woman,3/2/68,5/19/79,44,33
+440,Smart People,2008,Noam Murro,11,1,Dennis Quaid,Sarah Jessica Parker,man,woman,4/9/54,3/25/65,54,43
+441,Solo: A Star Wars Story,2018,Ron Howard,11,1,Woody Harrelson,Thandie Newton,man,woman,7/23/61,11/6/72,57,46
+442,Stoker,2013,Park Chan-wook,11,1,Matthew Goode,Mia Wasikowska,man,woman,4/3/78,10/14/89,35,24
+443,Sweet November,2001,Pat O'Connor,11,1,Keanu Reeves,Charlize Theron,man,woman,9/2/64,8/7/75,37,26
+444,The Big Lebowski,1998,Joel Coen,11,2,Jeff Bridges,Julianne Moore,man,woman,12/4/49,12/3/60,49,38
+445,The Decoy Bride,2011,Sheree Folkson,11,1,David Tennant,Alice Eve,man,woman,4/18/71,2/6/82,40,29
+446,The Devil’s Advocate,1997,Taylor Hackford,11,1,Keanu Reeves,Charlize Theron,man,woman,9/2/64,8/7/75,33,22
+447,The Family Stone,2007,Thomas Bezucha,11,2,Jamie Kaler,Elizabeth Reaser,man,woman,9/14/64,6/15/75,43,32
+448,The Fast and the Furious,2001,Rob Cohen,11,1,Vin Diesel,Michelle Rodriguez,man,woman,7/18/67,7/12/78,34,23
+449,The Good Girl,2002,Miguel Arteta,11,1,Jennifer Aniston,Jake Gyllenhaal,woman,man,2/11/69,12/19/80,33,22
+450,The Great Gatsby,2013,Baz Luhrmann,11,1,Leonardo DiCaprio,Carey Mulligan,man,woman,11/11/74,5/28/85,39,28
+451,The Heartbreak Kid,2007,"Bobby Farrelly, Peter Farrelly",11,2,Ben Stiller,Michelle Monaghan,man,woman,11/30/65,3/23/76,42,31
+452,The Invention of Lying,2009,"Ricky Gervais, Matthew Robinson",11,1,Ricky Gervais,Jennifer Garner,man,woman,6/25/61,4/17/72,48,37
+453,The Light Between Oceans,2016,Derek Cianfrance,11,1,Michael Fassbender,Alicia Vikander,man,woman,4/2/77,10/3/88,39,28
+454,The Thomas Crown Affair,1968,Norman Jewison,11,1,Steve McQueen,Faye Dunaway,man,woman,3/24/30,1/14/41,38,27
+455,The Wolf of Wall Street,2013,Martin Scorsese,11,2,Leonardo DiCaprio,Cristin Milioti,man,woman,11/11/74,8/16/85,39,28
+456,Thunderball,1965,Terence Young,11,2,Sean Connery,Claudine Auger,man,woman,8/25/30,4/26/41,35,24
+457,Tomorrow Never Dies,1997,Roger Spottiswoode,11,3,Pierce Brosnan,Teri Hatcher,man,woman,5/16/53,12/8/64,44,33
+458,Trainwreck,2015,Judd Apatow,11,1,Mike Birbiglia,Brie Larson,man,woman,6/20/78,10/1/89,37,26
+459,While You Were Sleeping,1995,Jon Turteltaub,11,1,Bill Pullman,Sandra Bullock,man,woman,12/17/53,7/26/64,42,31
+460,Wimbledon,2004,Richard Loncraine,11,1,Paul Bettany,Kirsten Dunst,man,woman,5/27/71,4/30/82,33,22
+461,Win a Date with Tad Hamilton!,2004,Robert Luketic,11,1,Josh Duhamel,Kate Bosworth,man,woman,11/14/72,1/2/83,32,21
+462,Year One,2009,Harold Ramis,11,1,Jack Black,June Diane Raphael,man,woman,8/28/69,1/4/80,40,29
+463,You Only Live Twice,1967,Lewis Gilbert,11,2,Sean Connery,Akiko Wakabayashi,man,woman,8/25/30,8/26/41,37,26
+464,Zombieland: Double Tap,2019,Ruben Fleischer,11,2,Jesse Eisenberg,Zoey Deutch,man,woman,10/5/83,11/10/94,36,25
+465,27 Dresses,2008,Anne Fletcher,10,1,Edward Burns,Malin Akerman,man,woman,1/29/68,5/12/78,40,30
+466,Ant-Man,2015,Peyton Reed,10,1,Paul Rudd,Evangeline Lilly,man,woman,4/6/69,8/3/79,46,36
+467,Bedtime Stories,2008,Adam Shankman,10,1,Adam Sandler,Keri Russell,man,woman,9/9/66,3/23/76,42,32
+468,Big Daddy,1999,Dennis Dugan,10,1,Jon Stewart,Leslie Mann,man,woman,11/28/62,3/26/72,37,27
+469,Braveheart,1995,Mel Gibson,10,1,Mel Gibson,Sophie Marceau,man,woman,1/3/56,11/17/66,39,29
+470,Daddy's Home,2015,Sean Anders,10,1,Mark Wahlberg,Alessandra Ambrosio,man,woman,6/5/71,4/11/81,44,34
+471,Death to Smoochy,2002,Danny DeVito,10,1,Catherine Keener,Edward Norton,woman,man,3/23/59,8/18/69,43,33
+472,Diamonds Are Forever,1971,Guy Hamilton,10,1,Sean Connery,Jill St. John,man,woman,8/25/30,8/19/40,41,31
+473,Django Unchained,2012,Quentin Tarantino,10,1,Jamie Foxx,Kerry Washington,man,woman,12/13/67,1/31/77,45,35
+474,EDtv,1999,Ron Howard,10,1,Woody Harrelson,Jenna Elfman,man,woman,7/23/61,9/30/71,38,28
+475,Ever After,1998,Andy Tennant,10,1,Dougray Scott,Drew Barrymore,man,woman,11/26/65,2/22/75,33,23
+476,Forrest Gump,1994,Robert Zemeckis,10,1,Tom Hanks,Robin Wright,man,woman,7/9/56,4/8/66,38,28
+477,Ghost,1990,Jerry Zucker,10,1,Patrick Swayze,Demi Moore,man,woman,8/18/52,11/11/62,38,28
+478,Ghost Rider,2007,Mark Steven Johnson,10,1,Nicolas Cage,Eva Mendes,man,woman,1/7/64,3/5/74,43,33
+479,Girl with a Pearl Earring,2003,Peter Webber,10,1,Colin Firth,Essie Davis,man,woman,9/10/60,11/30/70,43,33
+480,High School High,1996,Hart Bochner,10,1,Jon Lovitz,Tia Carrere,man,woman,7/21/57,1/2/67,39,29
+481,How to Lose a Guy in 10 Days,2003,Donald Petrie,10,1,Matthew McConaughey,Kate Hudson,man,woman,11/4/69,4/19/79,34,24
+482,Husbands and Wives,1992,Woody Allen,10,3,Woody Allen,Mia Farrow,man,woman,12/1/35,2/9/45,57,47
+483,Little Black Book,2004,Nick Hurran,10,1,Ron Livingston,Brittany Murphy,man,woman,6/5/67,11/10/77,37,27
+484,Made of Honor,2008,Paul Weiland,10,1,Patrick Dempsey,Michelle Monaghan,man,woman,1/13/66,3/23/76,42,32
+485,Man of Steel,2013,Zack Snyder,10,1,Kevin Costner,Diane Lane,man,woman,1/18/55,1/21/65,58,48
+486,Nightmare Alley,2021,Guillermo del Toro,10,1,Bradley Cooper,Rooney Mara,man,woman,1/5/75,4/17/85,46,36
+487,Prima della rivoluzione,1964,Michelangelo Antonioni,10,1,Adriana Asti,Francesco Barilli,woman,man,4/30/33,2/4/43,31,21
+488,Pulp Fiction,1994,Quentin Tarantino,10,1,Bruce Willis,Maria de Medeiros,man,woman,3/19/55,8/19/65,39,29
+489,Rebecca,1940,Alfred Hitchcock,10,1,Laurence Olivier,Jane Fontaine,man,woman,5/22/07,10/22/17,33,23
+490,Return to Me,2000,Bonnie Hunt,10,1,David Duchovny,Minnie Driver,man,woman,8/7/60,1/31/70,40,30
+491,Smokey and the Bandit,1977,Hal Needham,10,1,Burt Reynolds,Sally Field,man,woman,2/11/36,11/6/46,41,31
+492,Snowden,2016,Oliver Stone,10,1,Joseph Gordon-Levitt,Shailene Woodley,man,woman,2/17/81,11/15/91,35,25
+493,Spanglish,2004,James L. Brooks,10,1,Adam Sandler,Paz Vega,man,woman,9/9/66,1/2/76,38,28
+494,Stranger Than Fiction,2006,Marc Forster,10,1,Will Ferrell,Maggie Gyllenhaal,man,woman,7/16/67,11/16/77,39,29
+495,Sweet Home Alabama,2002,Andy Tennant,10,1,Patrick Dempsey,Reese Witherspoon,man,woman,1/13/66,3/21/76,36,26
+496,Thank You for Smoking,2006,Jason Reitman,10,1,Aaron Eckhart,Katie Holmes,man,woman,3/12/68,12/18/78,38,28
+497,The Aviator,2004,Martin Scorsese,10,1,Leonardo DiCaprio,Kelli Garner,man,woman,11/11/74,4/11/84,30,20
+498,The Best Little Whorehouse in Texas,1982,Colin Higgins,10,1,Burt Reynolds,Dolly Parton,man,woman,2/11/36,1/19/46,46,36
+499,The Cable Guy,1996,Ben Stiller,10,1,Matthew Broderick,Leslie Mann,man,woman,3/21/62,3/26/72,34,24
+500,The Gift,2000,Sam Raimi,10,3,Keanu Reeves,Hilary Swank,man,woman,9/2/64,7/30/74,36,26
+501,The Mask,1994,Chuck Russell,10,1,Jim Carrey,Cameron Diaz,man,woman,1/17/62,8/30/72,32,22
+502,The Next Three Days,2010,Paul Haggis,10,1,Russell Crowe,Elizabeth Banks,man,woman,4/7/64,2/10/74,46,36
+503,The Normal Heart,2014,Ryan Murphy,10,1,Mark Ruffalo,Matt Bomer,man,man,11/22/67,10/11/77,47,37
+504,The Nutty Professor,1996,Tom Shadyac,10,1,Eddie Murphy,Jada Pinkett,man,woman,4/3/61,9/18/71,35,25
+505,The Prestige,2006,Christopher Nolan,10,2,Christian Bale,Scarlett Johansson,man,woman,1/30/74,11/22/84,32,22
+506,The Time Traveler's Wife,2009,Robert Schwentke,10,1,Eric Bana,Rachel McAdams,man,woman,8/9/68,11/17/78,41,31
+507,Water for Elephants,2011,Francis Lawrence,10,2,Reese Witherspoon,Robert Pattinson,woman,man,3/21/76,5/13/86,35,25
+508,Wedding Crashers,2005,David Dobkin,10,1,Owen Wilson,Rachel McAdams,man,woman,11/18/68,11/17/78,37,27
+509,What's Eating Gilbert Grape,1993,Lasse Hallström,10,1,Johnny Depp,Juliette Lewis,man,woman,6/9/63,6/21/73,30,20
+510,42,2013,Brian Helgeland,9,1,Chadwick Boseman,Nicole Beharie,man,woman,11/29/76,1/3/85,37,28
+511,50 First Dates,2004,Peter Segal,9,1,Adam Sandler,Drew Barrymore,man,woman,9/9/66,2/22/75,38,29
+512,A History of Violence,2005,David Cronenberg,9,1,Viggo Mortensen,Maria Bello,man,woman,10/20/58,4/18/67,47,38
+513,A Star Is Born,1937,William A. Wellman,9,3,Fredric March,Janet Gaynor,man,woman,1897-08-31,10/6/06,40,31
+514,Accepted,2006,Steve Pink,9,1,Justin Long,Blake Lively,man,woman,6/2/78,8/25/87,28,19
+515,Amelie,2001,Jean-Pierre Jeunet,9,1,Mathieu Kassovitz,Audrey Tautou,man,woman,8/3/67,8/9/76,34,25
+516,Body of Lies,2008,Ridley Scott,9,1,Leonardo DiCaprio,Golshifteh Farahani,man,woman,11/11/74,7/10/83,34,25
+517,Boogie Nights,1997,Paul Thomas Anderson,9,2,William H. Macy,Nina Hartley,man,woman,3/13/50,3/11/59,47,38
+518,Bridget Jones's Baby,2016,Sharon Maguire,9,1,Colin Firth,Renee Zellweger,man,woman,9/10/60,4/25/69,56,47
+519,Bridget Jones's Diary,2001,Sharon Maguire,9,2,Hugh Grant,Renee Zellweger,man,woman,9/9/60,4/25/69,41,32
+520,Bridget Jones's Diary,2001,Sharon Maguire,9,1,Colin Firth,Renee Zellweger,man,woman,9/10/60,4/25/69,41,32
+521,Bull Durham,1988,Ron Shelton,9,1,Susan Sarandon,Kevin Costner,woman,man,10/4/46,1/18/55,42,33
+522,Call Me by Your Name,2017,Luca Guadagnino,9,1,Armie Hammer,Timothée Chalamet,man,man,8/28/86,12/27/95,31,22
+523,Closer,2004,Mike Nichols,9,2,Jude Law,Natalie Portman,man,woman,12/29/72,6/9/81,32,23
+524,Crank,2006,"Mark Neveldine, Brian Taylor",9,1,Jason Statham,Amy Smart,man,woman,7/26/67,3/26/76,39,30
+525,Crazy Rich Asians,2018,Jon M. Chu,9,1,Pierre Png,Gemma Chan,man,woman,10/29/73,11/29/82,45,36
+526,Don't Mess with the Zohan,2008,Dennis Dugan,9,1,Adam Sandler,Emmanuelle Chriqui,man,woman,9/9/66,12/10/75,42,33
+527,Everything Everywhere All at Once,2022,"Dan Kwan, Daniel Scheinert",9,1,Michelle Yeoh,Ke Huy Quan,woman,man,8/6/62,8/20/71,60,51
+528,He's Just Not That Into You,2009,Ken Kwapis,9,1,Bradley Cooper,Scarlett Johansson,man,woman,1/5/75,11/22/84,34,25
+529,Heartbreakers,2001,David Mirkin,9,1,Jason Lee,Jennifer Love Hewitt,man,woman,4/25/70,2/21/79,31,22
+530,Heat,1995,Michael Mann,9,3,Val Kilmer,Ashley Judd,man,woman,12/31/59,4/19/68,36,27
+531,I Love You Phillip Morris,2009,"Glenn Ficarra, John Requa",9,1,Jim Carrey,Ewan McGregor,man,man,1/17/62,3/31/71,47,38
+532,It's Complicated,2009,Nancy Meyers,9,2,Meryl Streep,Alec Baldwin,woman,man,6/22/49,4/3/58,60,51
+533,Just Like Heaven,2005,Mark Waters,9,1,Mark Ruffalo,Reese Witherspoon,man,woman,11/22/67,3/21/76,38,29
+534,Last Night,2010,Massy Tadjedin,9,2,Sam Worthington,Keira Knightley,man,woman,8/2/76,3/26/85,34,25
+535,Love Stinks,1999,Jeff Franklin,9,1,French Stewart,Bridgette Wilson,man,woman,2/20/64,9/25/73,35,26
+536,Man of Steel,2013,Zack Snyder,9,2,Amy Adams,Henry Cavill,woman,man,8/20/74,5/5/83,39,30
+537,Mona Lisa Smile,2003,Mike Newell,9,1,Jordan Bridges,Kirsten Dunst,man,woman,11/13/73,4/30/82,30,21
+538,My Best Friend's Wedding,1997,P.J. Hogan,9,1,Dermot Mulroney,Cameron Diaz,man,woman,10/31/63,8/30/72,34,25
+539,Pusher,1996,Nicolas Winding Refn,9,1,Kim Bodnia,Laura Drasbæk,man,woman,4/12/65,12/22/74,31,22
+540,Pushing Tin,1999,Mike Newell,9,3,John Cusack,Angelina Jolie,man,woman,6/28/66,6/4/75,33,24
+541,RED,2010,Robert Schwentke,9,1,Bruce Willis,Mary-Louise Parker,man,woman,3/19/55,8/2/64,55,46
+542,Raiders of the Lost Ark,1981,Steven Spielberg,9,1,Harrison Ford,Karen Allen,man,woman,7/13/42,10/5/51,39,30
+543,Seven,1995,David Fincher,9,1,Brad Pitt,Gwyneth Paltrow,man,woman,12/18/63,9/27/72,32,23
+544,Something's Gotta Give,2003,Nancy Meyers,9,3,Jack Nicholson,Diane Keaton,man,woman,4/22/37,1/5/46,66,57
+545,Talladega Nights: The Ballad of Ricky Bobby,2006,Adam McKay,9,1,John C. Reilly,Leslie Bibb,man,woman,5/24/65,11/17/74,41,32
+546,The Count of Monte Cristo,2002,Kevin Reynolds,9,1,Guy Pearce,Dagmara Dominczyk,man,woman,10/5/67,7/17/76,35,26
+547,The Fabulous Baker Boys,1989,Steve Kloves,9,1,Jeff Bridges,Michelle Pfeiffer,man,woman,12/4/49,4/29/58,40,31
+548,The Girl on the Train,2016,Tate Taylor,9,4,Luke Evans,Haley Bennett,man,woman,4/15/79,1/7/88,37,28
+549,The Good Shepherd,2006,Robert De Niro,9,1,Martina Gedeck,Matt Damon,woman,man,9/14/61,10/8/70,45,36
+550,The Great Gatsby,1974,Jack Clayton,9,2,Robert Redford,Mia Farrow,man,woman,8/18/36,2/9/45,38,29
+551,The Greatest Showman,2017,Michael Gracey,9,2,Zac Efron,Zendaya,man,woman,10/18/87,9/1/96,30,21
+552,The Happening,2008,M. Night Shyamalan,9,1,Mark Wahlberg,Zooey Deschanel,man,woman,6/5/71,1/17/80,37,28
+553,The Mask of Zorro,1998,Martin Campbell,9,1,Antonio Banderas,Catherine Zeta-Jones,man,woman,8/10/60,9/25/69,38,29
+554,The Other Woman,2014,Nick Cassavetes,9,2,Cameron Diaz,Taylor Kinney,woman,man,8/30/72,7/15/81,42,33
+555,The Wedding Singer,1998,Frank Coraci,9,1,Adam Sandler,Drew Barrymore,man,woman,9/9/66,2/22/75,32,23
+556,Tomorrow Never Dies,1997,Roger Spottiswoode,9,4,Pierce Brosnan,Michelle Yeoh,man,woman,5/16/53,8/6/62,44,35
+557,Walk Hard,2007,Jake Kasdan,9,1,John C. Reilly,Jenna Fischer,man,woman,5/24/65,3/7/74,42,33
+558,Wild Things,1998,John McNaughton,9,1,Matt Dillon,Neve Campbell,man,woman,2/18/64,10/3/73,34,25
+559,X-Men,2000,Bryan Singer,9,1,Famke Janssen,James Marsden,woman,man,11/5/64,9/18/73,36,27
+560,X-Men Origins: Wolverine,2009,Gavin Hood,9,1,Hugh Jackman,Lynn Collins,man,woman,10/12/68,5/16/77,41,32
+561,Y tu mamá también,2001,Alfonso Cuarón,9,1,Maribel Verdú,Diego Luna,woman,man,10/2/70,12/29/79,31,22
+562,A Happening of Monumental Proportions,2017,Judy Greer,8,1,Keanu Reeves,Jennifer Garner,man,woman,9/2/64,4/17/72,53,45
+563,A Very Long Engagement,2004,Jean-Pierre Jeunet,8,1,Audrey Tautou,Gaspard Ulliel,woman,man,8/9/76,11/25/84,28,20
+564,Alex & Emma,2003,Rob Reiner,8,1,Luke Wilson,Kate Hudson,man,woman,9/21/71,4/19/79,32,24
+565,Always Be My Maybe,2019,Nahnatchka Khan,8,3,Randall Park,Ali Wong,man,woman,3/23/74,4/19/82,45,37
+566,American Hustle,2013,David O. Russell,8,2,Jack Huston,Jennifer Lawrence,man,woman,12/7/82,8/15/90,31,23
+567,Batman Forever,1995,Joel Schumacher,8,1,Val Kilmer,Nicole Kidman,man,woman,12/31/59,6/20/67,36,28
+568,Blue Is The Warmest Color,2013,Abdellatif Kechiche,8,1,Léa Seydoux,Adèle Exarchopoulos,woman,woman,7/1/85,11/22/93,28,20
+569,Chloe,2009,Atom Egoyan,8,2,Liam Neeson,Julianne Moore,man,woman,6/7/52,12/3/60,57,49
+570,"Crazy, Stupid, Love",2011,"Glenn Ficarra, John Requa",8,1,Ryan Gosling,Emma Stone,man,woman,11/12/80,11/6/88,31,23
+571,Crimson Peak,2015,Guillermo del Toro,8,1,Tom Hiddleston,Mia Wasikowska,man,woman,2/9/81,10/14/89,34,26
+572,Daddy's Home,2015,Sean Anders,8,2,Will Ferrell,Linda Cardellini,man,woman,7/16/67,6/25/75,48,40
+573,Dan in Real Life,2007,Peter Hedges,8,1,Juliette Binoche,Dane Cook,woman,man,3/9/64,3/18/72,43,35
+574,Deepwater Horizon,2016,Peter Berg,8,1,Mark Wahlberg,Kate Hudson,man,woman,6/5/71,4/19/79,45,37
+575,Dirty Dancing,1987,Emile Ardolino,8,1,Patrick Swayze,Jennifer Grey,man,woman,8/18/52,3/26/60,35,27
+576,Edward Scissorhands,1990,Tim Burton,8,1,Johnny Depp,Winona Ryder,man,woman,6/9/63,10/29/71,27,19
+577,Enchanted,2007,Kevin Lima,8,1,Patrick Dempsey,Amy Adams,man,woman,1/13/66,8/20/74,41,33
+578,Fantastic Beasts and Where to Find Them,2016,David Yates,8,1,Dan Fogler,Alison Sudol,man,woman,10/20/76,12/23/84,40,32
+579,Feeling Minnesota,1996,Steven Baigelman,8,2,Keanu Reeves,Cameron Diaz,man,woman,9/2/64,8/30/72,32,24
+580,From Here to Eternity,1953,Fred Zinnemann,8,1,Burt Lancaster,Deborah Kerr,man,woman,11/2/13,9/30/21,40,32
+581,Girl with a Pearl Earring,2003,Peter Webber,8,2,Cillian Murphy,Scarlett Johansson,man,woman,5/25/76,11/22/84,27,19
+582,Groundhog Day,1993,Harold Ramis,8,1,Bill Murray,Andie MacDowell,man,woman,9/21/50,4/21/58,43,35
+583,"I, Tonya",2017,Craig Gillespie,8,1,Sebastian Stan,Margot Robbie,man,woman,8/13/82,7/2/90,35,27
+584,Killing Zoe,1994,Roger Avary,8,1,Eric Stoltz,Julie Delpy,man,woman,9/30/61,12/21/69,33,25
+585,Leatherheads,2008,George Clooney,8,1,George Clooney,Renee Zellweger,man,woman,5/6/61,4/25/69,47,39
+586,Love Actually,2003,Richard Curtis,8,6,Chiwetel Ejiofor,Keira Knightley,man,woman,7/10/77,3/26/85,26,18
+587,Love Stinks,1999,Jeff Franklin,8,2,Bill Bellamy,Tyra Banks,man,woman,4/7/65,12/4/73,34,26
+588,Magic Mike,2012,Steven Soderbergh,8,1,Channing Tatum,Cody Horn,man,woman,4/26/80,6/12/88,32,24
+589,Manhattan,1979,Woody Allen,8,2,Michael Murphy,Diane Keaton,man,woman,5/5/38,1/5/46,41,33
+590,Meet Joe Black,1998,Martin Brest,8,1,Brad Pitt,Claire Forlani,man,woman,12/18/63,12/17/71,35,27
+591,Mo' Better Blues,1990,Spike Lee,8,1,Denzel Washington,Joie Lee,man,woman,12/28/54,6/22/62,36,28
+592,National Lampoon's Vacation,1983,Harold Ramis,8,1,Chevy Chase,Beverly D'Angelo,man,woman,10/8/43,11/15/51,40,32
+593,Out of Sight,1998,Steven Soderbergh,8,1,George Clooney,Jennifer Lopez,man,woman,5/6/61,7/24/69,37,29
+594,P.S. I Love You,2007,Richard LaGravenese,8,1,Jeffrey Dean Morgan,Hilary Swank,man,woman,4/22/66,7/30/74,41,33
+595,Pirates of the Caribbean,2003,Gore Verbinski,8,1,Orlando Bloom,Keira Knightley,man,woman,1/13/77,3/26/85,26,18
+596,Prime,2005,Ben Younger,8,1,Uma Thurman,Bryan Greenberg,woman,man,4/29/70,5/24/78,35,27
+597,Professor Marston and the Wonder Women,2017,Angela Robinson,8,1,Luke Evans,Bella Heathcote,man,woman,4/15/79,5/27/87,38,30
+598,Proof of Life,2000,Taylor Hackford,8,1,David Morse,Meg Ryan,man,woman,10/11/53,11/19/61,47,39
+599,Red Planet,2000,Antony Hoffman,8,1,Val Kilmer,Carrie-Anne Moss,man,woman,12/31/59,8/21/67,41,33
+600,Snow Dogs,2002,Brian Levant,8,1,Cuba Gooding Jr.,Joanna Bacalso,man,woman,1/2/68,8/10/76,34,26
+601,Solaris,2002,Steven Soderbergh,8,1,George Clooney,Natascha McElhone,man,woman,5/6/61,12/14/69,41,33
+602,Sorry to Bother You,2018,Boots Riley,8,1,Tessa Thompson,Lakeith Stanfield,woman,man,10/3/83,8/12/91,35,27
+603,That Thing You Do!,1996,Tom Hanks,8,1,Johnathon Schaech,Liv Tyler,man,woman,9/10/69,7/1/77,27,19
+604,The African Queen,1951,John Huston,8,1,Humphrey Bogart,Katharine Hepburn,man,woman,1899-12-25,5/12/07,52,44
+605,The Bodyguard,1992,Mick Jackson,8,1,Kevin Costner,Whitney Houston,man,woman,1/18/55,8/9/63,37,29
+606,The Constant Gardener,2005,Fernando Meirelles,8,1,Ralph Fiennes,Rachel Weisz,man,woman,12/22/62,3/7/70,43,35
+607,The Count of Monte Cristo,2002,Kevin Reynolds,8,2,Jim Caviezel,Dagmara Dominczyk,man,woman,9/26/68,7/17/76,34,26
+608,The Dark Knight Rises,2012,Christopher Nolan,8,1,Christian Bale,Anne Hathaway,man,woman,1/30/74,11/12/82,38,30
+609,The Incredible Hulk,2008,Louis Leterrier,8,1,Edward Norton,Liv Tyler,man,woman,8/18/69,7/1/77,39,31
+610,The Invention of Lying,2009,"Ricky Gervais, Matthew Robinson",8,2,Rob Lowe,Jennifer Garner,man,woman,3/17/64,4/17/72,45,37
+611,The Judge,2014,David Dobkin,8,1,Robert Downey Jr.,Vera Farmiga,man,woman,4/4/65,8/6/73,49,41
+612,The Prestige,2006,Christopher Nolan,8,3,Christian Bale,Rebecca Hall,man,woman,1/30/74,5/3/82,32,24
+613,The Secret Life of Walter Mitty,2013,Ben Stiller,8,1,Ben Stiller,Kristen Wiig,man,woman,11/30/65,8/22/73,48,40
+614,The Water Boy,1998,Frank Coraci,8,1,Adam Sandler,Fairuza Balk,man,woman,9/9/66,5/21/74,32,24
+615,The World Is Not Enough,1999,Michael Apted,8,3,Pierce Brosnan,Serena Scott Thomas,man,woman,5/16/53,9/21/61,46,38
+616,Third Person,2013,Paul Haggis,8,2,Adrien Brody,Moran Atias,man,woman,4/14/73,4/9/81,40,32
+617,Tommy Boy,1995,Peter Segal,8,2,Bo Derek,Rob Lowe,woman,man,11/20/56,3/17/64,39,31
+618,Top Gun: Maverick,2022,Joseph Kosinski,8,1,Tom Cruise,Jennifer Connelly,man,woman,7/3/62,12/12/70,60,52
+619,Y tu mamá también,2001,Alfonso Cuarón,8,2,Maribel Verdú,Gael García Bernal,woman,man,10/2/70,11/30/78,31,23
+620,You Only Live Twice,1967,Lewis Gilbert,8,3,Sean Connery,Karin Dor,man,woman,8/25/30,2/22/38,37,29
+621,A Walk on the Moon,1999,Tony Goldwyn,7,1,Viggo Mortensen,Diane Lane,man,woman,10/20/58,1/21/65,41,34
+622,Aquaman,2018,James Wan,7,1,Temuera Morrison,Nicole Kidman,man,woman,12/26/60,6/20/67,58,51
+623,Aquaman,2018,James Wan,7,2,Jason Momoa,Amber Heard,man,woman,8/1/79,4/22/86,39,32
+624,Austin Powers: The Spy Who Shagged Me,1999,Jay Roach,7,1,Mike Myers,Heather Graham,man,woman,4/25/63,1/29/70,36,29
+625,Away We Go,2009,Sam Mendes,7,1,Maya Rudolph,John Krasinski,woman,man,7/27/72,10/20/79,37,30
+626,Barbershop,2002,Tim Story,7,1,Ice Cube,Jazsmin Lewis,man,woman,6/15/69,3/22/76,33,26
+627,Billy Madison,1995,Tamra Davis,7,1,Adam Sandler,Bridgette Wilson,man,woman,9/9/66,9/25/73,29,22
+628,Black Panther,2018,Ryan Coogler,7,2,Chadwick Boseman,Lupita Nyong'o,man,woman,11/29/76,3/1/83,42,35
+629,Bruce Almighty,2003,Tom Shadyac,7,1,Jim Carrey,Jennifer Aniston,man,woman,1/17/62,2/11/69,41,34
+630,Café Society,2016,Woody Allen,7,2,Jesse Eisenberg,Kristen Stewart,man,woman,10/5/83,4/9/90,33,26
+631,Captain Blood,1935,Michael Curtiz,7,1,Errol Flynn,Olivia de Havilland,man,woman,6/20/09,7/1/16,26,19
+632,Cast Away,2000,Robert Zemeckis,7,1,Tom Hanks,Helen Hunt,man,woman,7/9/56,6/15/63,44,37
+633,Cat on a Hot Tin Roof,1958,Richard Brooks,7,1,Paul Newman,Elizabeth Taylor,man,woman,1/26/25,2/27/32,33,26
+634,Click,2006,Frank Coraci,7,1,Adam Sandler,Kate Beckinsale,man,woman,9/9/66,7/26/73,40,33
+635,Clueless,1995,Amy Heckerling,7,2,Stacey Dash,Donald Faison,woman,man,1/20/67,6/22/74,28,21
+636,Clueless,1995,Amy Heckerling,7,1,Paul Rudd,Alicia Silverstone,man,woman,4/6/69,10/4/76,26,19
+637,Con Air,1997,Simon West,7,1,Nicolas Cage,Monica Potter,man,woman,1/7/64,6/30/71,33,26
+638,Contact,1997,Robert Zemeckis,7,1,Jodie Foster,Matthew McConaughey,woman,man,11/19/62,11/4/69,35,28
+639,"Crouching Tiger, Hidden Dragon",2000,Ang Lee,7,1,Chow Yun-fat,Michelle Yeoh,man,woman,5/18/55,8/6/62,45,38
+640,Delicatessen,1991,Jean-Pierre Jeunet,7,1,Dominique Pinon,Marie-Laure Dougnac,man,woman,3/4/55,2/1/62,36,29
+641,Destination Wedding,2018,Victor Levin,7,1,Keanu Reeves,Winona Ryder,man,woman,9/2/64,10/29/71,54,47
+642,Die Hard,1988,John McTiernan,7,1,Bonnie Bedelia,Bruce Willis,woman,man,3/25/48,3/19/55,40,33
+643,Divergent,2014,Neil Burger,7,1,Theo James,Shailene Woodley,man,woman,12/16/84,11/15/91,30,23
+644,Ex Machina,2014,Alex Garland,7,1,Oscar Isaac,Sonoya Mizuno,man,woman,3/9/79,7/1/86,35,28
+645,Fifty Shades Darker,2017,James Foley,7,1,Jamie Dornan,Dakota Johnson,man,woman,5/1/82,10/4/89,35,28
+646,Fifty Shades of Grey,2015,Sam Taylor-Johnson,7,1,Jamie Dornan,Dakota Johnson,man,woman,5/1/82,10/4/89,33,26
+647,For Love of the Game,1999,Sam Raimi,7,1,Kevin Costner,Kelly Preston,man,woman,1/18/55,10/13/62,44,37
+648,Forget Paris,1995,Billy Crystal,7,1,Billy Crystal,Debra Winger,man,woman,3/14/48,5/16/55,47,40
+649,Goldfinger,1964,Guy Hamilton,7,1,Sean Connery,Shirley Eaton,man,woman,8/25/30,1/12/37,34,27
+650,Gone Girl,2014,David Fincher,7,2,Ben Affleck,Rosamund Pike,man,woman,8/15/72,1/27/79,42,35
+651,Guess Who's Coming to Dinner,1967,John Huston,7,2,Spencer Tracy,Katharine Hepburn,man,woman,4/5/00,5/12/07,67,60
+652,Home Again,2017,Hallie Meyers-Shyer,7,2,Michael Sheen,Reese Witherspoon,man,woman,2/5/69,3/21/76,48,41
+653,Honey,2003,Bille Woodruff,7,1,Mekhi Phifer,Jessica Alba,man,woman,12/29/74,4/28/81,29,22
+654,"I Love You, Man",2009,John Hamburg,7,1,Paul Rudd,Rashida Jones,man,woman,4/6/69,2/25/76,40,33
+655,Il Bidone,1954,Federico Fellini,7,1,Richard Basehart,Giulietta Masina,man,woman,8/31/14,2/22/21,40,33
+656,In the Heights,2021,John M. Chu,7,2,Corey Hawkins,Leslie Grace,man,woman,10/22/88,1/7/95,33,26
+657,Iron Man,2008,Jon Favreau,7,1,Robert Downey Jr.,Gwyneth Paltrow,man,woman,4/4/65,9/27/72,43,36
+658,Jerry Maguire,2006,Cameron Crowe,7,1,Tom Cruise,Renee Zellweger,man,woman,7/3/62,4/25/69,44,37
+659,John Wick,2014,Chad Stahelski,7,1,Keanu Reeves,Bridget Moynahan,man,woman,9/2/64,4/28/71,50,43
+660,Kate & Leopold,2001,James Mangold,7,1,Meg Ryan,Hugh Jackman,woman,man,11/19/61,10/12/68,40,33
+661,Keeping Up with the Joneses,2016,Greg Mottola,7,2,Zach Galifianakis,Isla Fisher,man,woman,10/1/69,2/3/76,47,40
+662,Laws of Attraction,2004,Peter Howitt,7,1,Pierce Brosnan,Julianne Moore,man,woman,5/16/53,12/3/60,51,44
+663,Long Shot,2019,Jonathan Levine,7,1,Charlize Theron,Seth Rogen,woman,man,8/7/75,4/15/82,44,37
+664,Lord of War,2005,Andrew Niccol,7,1,Nicolas Cage,Bridget Moynahan,man,woman,1/7/64,4/28/71,41,34
+665,Love Actually,2003,Richard Curtis,7,7,Martin Freeman,Joanna Page,man,woman,9/8/71,3/23/78,32,25
+666,Lucky You,2007,Curtis Hanson,7,1,Eric Bana,Drew Barrymore,man,woman,8/9/68,2/22/75,39,32
+667,Maid in Manhattan,2002,Wayne Wang,7,1,Ralph Fiennes,Jennifer Lopez,man,woman,12/22/62,7/24/69,40,33
+668,Mamma Mia!,2008,Phyllida Lloyd,7,1,Dominic Cooper,Amanda Seyfried,man,woman,6/2/78,12/3/85,30,23
+669,"Me, Myself & Irene",2000,"Bobby Farrelly, Peter Farrelly",7,1,Jim Carrey,Renee Zellweger,man,woman,1/17/62,4/25/69,38,31
+670,Mrs. Doubtfire,1993,Chris Columbus,7,1,Sally Field,Pierce Brosnan,woman,man,11/6/46,5/16/53,47,40
+671,Never Been Kissed,1999,Raja Gosnell,7,1,Michael Vartan,Drew Barrymore,man,woman,11/27/68,2/22/75,31,24
+672,Notting Hill,1999,Roger Michell,7,1,Hugh Grant,Julia Roberts,man,woman,9/9/60,10/28/67,39,32
+673,Old School,2003,Todd Phillips,7,2,Craig Kilborn,Ellen Pompeo,man,woman,8/24/62,11/10/69,41,34
+674,Remember the Titans,2000,Boaz Yakin,7,2,Ryan Hurst,Kate Bosworth,man,woman,6/19/76,1/2/83,24,17
+675,Road House,1989,Rowdy Herrington,7,1,Patrick Swayze,Kelly Lynch,man,woman,8/18/52,1/31/59,37,30
+676,Serendipity,2001,Peter Chelsom,7,1,John Cusack,Kate Beckinsale,man,woman,6/28/66,7/26/73,35,28
+677,Spider-Man,2002,Sam Raimi,7,1,Tobey Maguire,Kirsten Dunst,man,woman,6/27/75,4/30/82,27,20
+678,State of the Union,1948,Frank Capra,7,2,Spencer Tracy,Katharine Hepburn,man,woman,4/5/00,5/12/07,48,41
+679,Talladega Nights: The Ballad of Ricky Bobby,2006,Adam McKay,7,2,Will Ferrell,Leslie Bibb,man,woman,7/16/67,11/17/74,39,32
+680,That Thing You Do!,1996,Tom Hanks,7,2,Tom Everett Scott,Liv Tyler,man,woman,9/7/70,7/1/77,26,19
+681,The Book of Love,2017,Bill Purple,7,1,Jason Sudeikis,Jessica Biel,man,woman,9/18/75,3/3/82,42,35
+682,The Duchess,2008,Saul Dibb,7,3,Dominic Cooper,Keira Knightley,man,woman,6/2/78,3/26/85,30,23
+683,The Fast and the Furious,2001,Rob Cohen,7,2,Paul Walker,Jordana Brewster,man,woman,9/12/73,4/26/80,28,21
+684,The Hustler,1961,Robert Rossen,7,1,Paul Newman,Piper Laurie,man,woman,1/26/25,1/22/32,36,29
+685,The Kids Are All Right,2010,Lisa Cholodenko,7,1,Julianne Moore,Mark Ruffalo,woman,man,12/3/60,11/22/67,50,43
+686,The Promise,2016,Terry George,7,1,Oscar Isaac,Charlotte Le Bon,man,woman,3/9/79,9/4/86,37,30
+687,The Sting,1973,George Roy Hill,7,1,Paul Newman,Eileen Brennan,man,woman,1/26/25,9/3/32,48,41
+688,There's Something About Mary,1998,"Bobby Farrelly, Peter Farrelly",7,1,Ben Stiller,Cameron Diaz,man,woman,11/30/65,8/30/72,33,26
+689,Thunderball,1965,Terence Young,7,3,Sean Connery,Luciana Paluzzi,man,woman,8/25/30,6/10/37,35,28
+690,What Women Want,2000,Nancy Meyers,7,1,Mel Gibson,Helen Hunt,man,woman,1/3/56,6/15/63,44,37
+691,Wild Things,1998,John McNaughton,7,2,Matt Dillon,Denise Richards,man,woman,2/18/64,2/17/71,34,27
+692,A Beautiful Mind,2001,Ron Howard,6,1,Russell Crowe,Jennifer Connelly,man,woman,4/7/64,12/12/70,37,31
+693,A Star Is Born,1975,Frank Pierson,6,4,Kris Kristofferson,Barbra Streisand,man,woman,6/22/36,4/24/42,39,33
+694,A Walk to Remember,2002,Adam Shankman,6,1,Shane West,Mandy Moore,man,woman,6/10/78,4/10/84,24,18
+695,American Sniper,2014,Clint Eastwood,6,1,Bradley Cooper,Sienna Miller,man,woman,1/5/75,12/28/81,39,33
+696,An Officer and a Gentleman,1982,Taylor Hackford,6,1,Richard Gere,Debra Winger,man,woman,8/31/49,5/16/55,33,27
+697,Atonement,2007,Joe Wright,6,1,James McAvoy,Keira Knightley,man,woman,4/21/79,3/26/85,28,22
+698,Bridesmaids,2011,Paul Feig,6,1,Kristen Wiig,Chris O'Dowd,woman,man,8/22/73,10/9/79,38,32
+699,Chasing Liberty,2004,Andy Cadiff,6,1,Matthew Goode,Mandy Moore,man,woman,4/3/78,4/10/84,26,20
+700,Chef,2014,Jon Favreau,6,1,Jon Favreau,Sofia Vergara,man,woman,10/19/66,7/10/72,48,42
+701,Desperado,1995,Robert Rodriguez,6,1,Antonio Banderas,Salma Hayek,man,woman,8/10/60,9/2/66,35,29
+702,Down to Earth,2001,"Paul Weitz, Chris Weitz",6,1,Chris Rock,Regina King,man,woman,2/7/65,1/15/71,36,30
+703,Dr. No,1962,Terence Young,6,1,Sean Connery,Ursula Andress,man,woman,8/25/30,3/19/36,32,26
+704,Empire,2002,Franc. Reyes,6,1,John Leguizamo,Delilah Cotto,man,woman,7/22/64,11/26/70,38,32
+705,Four Christmases,2008,Seth Gordon,6,1,Vince Vaughn,Reese Witherspoon,man,woman,3/28/70,3/21/76,38,32
+706,Funny People,2009,Judd Apatow,6,1,Adam Sandler,Leslie Mann,man,woman,9/9/66,3/26/72,43,37
+707,Garden State,2004,Zach Braff,6,1,Zach Braff,Natalie Portman,man,woman,4/6/75,6/9/81,29,23
+708,Hitch,2005,Andy Tennant,6,1,Will Smith,Eva Mendes,man,woman,9/25/68,3/5/74,37,31
+709,In Good Company,2004,Paul Weitz,6,1,Topher Grace,Scarlett Johansson,man,woman,7/19/78,11/22/84,26,20
+710,L'Avventura,1960,Michelangelo Antonioni,6,1,Gabriele Ferzetti,Monica Vitti,man,woman,3/17/25,11/3/31,35,29
+711,La Strada,1954,Federico Fellini,6,1,Anthony Quinn,Giulietta Masina,man,woman,4/21/15,2/22/21,39,33
+712,Legally Blonde,2001,Robert Luketic,6,1,Selma Blair,Matthew Davis,woman,man,6/23/72,5/8/78,29,23
+713,Meet Bill,2007,"Bernie Goldmann, Melisa Wallack",6,2,Aaron Eckhart,Elizabeth Banks,man,woman,3/12/68,2/10/74,39,33
+714,Meet Bill,2007,"Bernie Goldmann, Melisa Wallack",6,1,Timothy Olyphant,Elizabeth Banks,man,woman,5/20/68,2/10/74,39,33
+715,Nightmare Alley,2021,Guillermo del Toro,6,2,Cate Blanchett,Bradley Cooper,woman,man,5/14/69,1/5/75,52,46
+716,On Her Majesty's Secret Service,1969,Peter R. Hunt,6,1,George Lazenby,Angela Scoular,man,woman,9/5/39,11/8/45,30,24
+717,Prince of Persia: The Sands of Time,2010,Jordan Mechner,6,1,Jake Gyllenhaal,Gemma Arterton,man,woman,12/19/80,2/2/86,30,24
+718,Raising Arizona,1987,Joel Coen,6,1,Holly Hunter,Nicolas Cage,woman,man,3/20/58,1/7/64,29,23
+719,Savages,2007,undefined,6,1,Taylor Kitsch,Blake Lively,man,woman,4/8/81,8/25/87,26,20
+720,Schindler's List,1993,Steven Spielberg,6,2,Ralph Fiennes,Magdalena Komornicka,man,woman,12/22/62,10/10/68,31,25
+721,Shutter Island,2010,Martin Scorsese,6,1,Leonardo DiCaprio,Michelle Williams,man,woman,11/11/74,9/9/80,36,30
+722,Slumdog Millionaire,2008,Danny Boyle,6,1,Freida Pinto,Dev Patel,woman,man,10/18/84,4/23/90,24,18
+723,Sound of Music,1965,Robert Wise,6,1,Christopher Plummer,Julie Andrews,man,woman,12/13/29,10/1/35,36,30
+724,Spider-Man: Homecoming,2017,Jon Watts,6,1,Laura Harrier,Tom Holland,woman,man,3/28/90,6/1/96,27,21
+725,Stone,2010,John Curran,6,2,Edward Norton,Milla Jovovich,man,woman,8/18/69,12/17/75,41,35
+726,Summer Catch,2001,Michael Tollin,6,1,Freddie Prinze Jr.,Jessica Biel,man,woman,3/8/76,3/3/82,25,19
+727,The Age of Adaline,2015,Lee Toland Krieger,6,1,Michiel Huisman,Blake Lively,man,woman,7/18/81,8/25/87,34,28
+728,The Curious Case of Benjamin Button,2008,David Fincher,6,1,Brad Pitt,Cate Blanchett,man,woman,12/18/63,5/14/69,45,39
+729,The Devil Wears Prada,2006,David Frankel,6,2,Adrian Grenier,Anne Hathaway,man,woman,7/10/76,11/12/82,30,24
+730,The Family Stone,2007,Thomas Bezucha,6,3,Sarah Jessica Parker,Luke Wilson,woman,man,3/25/65,9/21/71,42,36
+731,The Godfather,1972,Francis Ford Coppola,6,2,Marlon Brando,Morgana King,man,woman,4/3/24,6/4/30,48,42
+732,The Godfather,1972,Francis Ford Coppola,6,1,Al Pacino,Diane Keaton,man,woman,4/25/40,1/5/46,32,26
+733,The Graduate,1967,Mike Nichols,6,1,Anne Bancroft,Dustin Hoffman,woman,man,9/17/31,8/8/37,36,30
+734,The Holiday,2006,Nancy Meyers,6,1,Jack Black,Kate Winslet,man,woman,8/28/69,10/5/75,37,31
+735,The Hollars,2016,John Krasinski,6,1,John Krasinski,Anna Kendrick,man,woman,10/20/79,8/9/85,37,31
+736,The King's Speech,2010,Tom Hooper,6,1,Colin Firth,Helena Bonham Carter,man,woman,9/10/60,5/26/66,50,44
+737,The Replacements,2000,Howard Deutch,6,1,Keanu Reeves,Brooke Langton,man,woman,9/2/64,11/27/70,36,30
+738,The Way We Were,1973,Sydney Pollack,6,1,Robert Redford,Barbra Streisand,man,woman,8/18/36,4/24/42,37,31
+739,W.,2008,Oliver Stone,6,1,Josh Brolin,Elizabeth Banks,man,woman,2/12/68,2/10/74,40,34
+740,Wedding Crashers,2005,David Dobkin,6,2,Vince Vaughn,Isla Fisher,man,woman,3/28/70,2/3/76,35,29
+741,Zoolander,2001,Ben Stiller,6,1,Ben Stiller,Christine Taylor,man,woman,11/30/65,7/30/71,36,30
+742,13 Going on 30,2004,Gary Winick,5,1,Mark Ruffalo,Jennifer Garner,man,woman,11/22/67,4/17/72,37,32
+743,27 Dresses,2008,Anne Fletcher,5,2,James Marsden,Katherine Heigl,man,woman,9/18/73,11/24/78,35,30
+744,A View to a Kill,1985,John Glen,5,5,Christopher Walken,Grace Jones,man,woman,3/31/43,5/19/48,42,37
+745,About Time,2013,Richard Curtis,5,1,Rachel McAdams,Domhnall Gleeson,woman,man,11/17/78,5/12/83,35,30
+746,Adrift,2018,Baltasar Kormákur,5,1,Sam Claflin,Shailene Woodley,man,woman,6/27/86,11/15/91,32,27
+747,All About the Benjamins,2002,Kevin Bray,5,2,Ice Cube,Valarie Rae Miller,man,woman,6/15/69,4/16/74,33,28
+748,American Pie,1999,"Paul Weitz, Chris Weitz",5,3,Shannon Elizabeth,Jason Biggs,woman,man,9/7/73,5/12/78,26,21
+749,American Pie,1999,"Paul Weitz, Chris Weitz",5,2,Tara Reid,Thomas Ian Nicholas,woman,man,11/8/75,7/10/80,24,19
+750,Anna Karenina,2012,Joe Wright,5,2,Keira Knightley,Aaron Taylor-Johnson,woman,man,3/26/85,6/13/90,27,22
+751,Armageddon,1998,Michael Bay,5,1,Ben Affleck,Liv Tyler,man,woman,8/15/72,7/1/77,26,21
+752,Baby Driver,2017,Edgar Wright,5,2,Lily James,Ansel Elgort,woman,man,4/5/89,3/14/94,28,23
+753,Blue Crush,2002,John Stockwell,5,1,Matthew Davis,Kate Bosworth,man,woman,5/8/78,1/2/83,24,19
+754,Captain America: Civil War,2016,Joe & Anthony Russo,5,1,Chris Evans,Emily VanCamp,man,woman,6/13/81,5/12/86,35,30
+755,Chips,2017,Dax Shepard,5,1,Dax Shepard,Kristen Bell,man,woman,1/2/75,7/18/80,42,37
+756,Cinderella Man,2005,Ron Howard,5,1,Russell Crowe,Renee Zellweger,man,woman,4/7/64,4/25/69,41,36
+757,Closer,2004,Mike Nichols,5,3,Julia Roberts,Jude Law,woman,man,10/28/67,12/29/72,37,32
+758,Cold Mountain,2003,Anthony Minghella,5,1,Nicole Kidman,Jude Law,woman,man,6/20/67,12/29/72,36,31
+759,Crazy Rich Asians,2018,Jon M. Chu,5,2,Constance Wu,Henry Golding,woman,man,3/22/82,2/5/87,36,31
+760,Days of Thunder,1990,Tony Scott,5,1,Tom Cruise,Nicole Kidman,man,woman,7/3/62,6/20/67,28,23
+761,Dear John,2010,Lasse Hallström,5,1,Channing Tatum,Amanda Seyfried,man,woman,4/26/80,12/3/85,30,25
+762,Ed Wood,1994,Tim Burton,5,1,Johnny Depp,Patricia Arquette,man,woman,6/9/63,4/8/68,31,26
+763,Elizabethtown,2005,Cameron Crowe,5,1,Orlando Bloom,Kirsten Dunst,man,woman,1/13/77,4/30/82,28,23
+764,Evan Almighty,2007,Tom Shadyac,5,1,Steve Carell,Lauren Graham,man,woman,8/16/62,3/16/67,45,40
+765,Ex Machina,2014,Alex Garland,5,2,Domhnall Gleeson,Alicia Vikander,man,woman,5/12/83,10/3/88,31,26
+766,Forgetting Sarah Marshall,2008,Nicholas Stoller,5,1,Russell Brand,Kristen Bell,man,woman,6/4/75,7/18/80,33,28
+767,Goldfinger,1964,Guy Hamilton,5,2,Honor Blackman,Sean Connery,woman,man,8/22/25,8/25/30,39,34
+768,He's Just Not That Into You,2009,Ken Kwapis,5,2,Jennifer Connelly,Bradley Cooper,woman,man,12/12/70,1/5/75,39,34
+769,Head over Heels,2001,Mark Waters,5,1,Monica Potter,Freddie Prinze Jr.,woman,man,6/30/71,3/8/76,30,25
+770,Heartbreakers,2001,David Mirkin,5,2,Sigourney Weaver,Ray Liotta,woman,man,10/8/49,12/18/54,52,47
+771,Here on Earth,2000,Mark Piznarski,5,1,Josh Hartnett,Leelee Sobieski,man,woman,7/21/78,6/10/83,22,17
+772,Jersey Girl,2004,Kevin Smith,5,1,Ben Affleck,Liv Tyler,man,woman,8/15/72,7/1/77,32,27
+773,King Kong,2005,Peter Jackson,5,1,Naomi Watts,Adrien Brody,woman,man,9/28/68,4/14/73,37,32
+774,L.A. Story,1991,Mick Jackson,5,2,Steve Martin,Victoria Tennant,man,woman,8/14/45,9/30/50,46,41
+775,Laggies,2014,Lynn Shelton,5,2,Mark Webber,Keira Knightley,man,woman,7/19/80,3/26/85,34,29
+776,Le Mans,1971,Lee H. Katzin,5,1,Steve McQueen,Elga Andersen,man,woman,3/24/30,2/2/35,41,36
+777,Legally Blonde,2001,Robert Luketic,5,2,Luke Wilson,Reese Witherspoon,man,woman,9/21/71,3/21/76,30,25
+778,Les Miserables,2012,Tom Hooper,5,1,Helena Bonham Carter,Sacha Baron Cohen,woman,man,5/26/66,10/13/71,46,41
+779,Magnolia,1999,Paul Thomas Anderson,5,2,Melora Walters,John C. Reilly,woman,man,10/21/60,5/24/65,39,34
+780,Mona Lisa Smile,2003,Mike Newell,5,2,John Slattery,Julia Roberts,man,woman,8/13/62,10/28/67,41,36
+781,Monster,2003,Patty Jenkins,5,1,Charlize Theron,Christina Ricci,woman,woman,8/7/75,2/12/80,28,23
+782,Mr. Deeds,2002,Steven Brill,5,1,Adam Sandler,Winona Ryder,man,woman,9/9/66,10/29/71,36,31
+783,Mrs. Doubtfire,1993,Chris Columbus,5,2,Sally Field,Robin Williams,woman,man,11/6/46,7/21/51,47,42
+784,On Her Majesty's Secret Service,1969,Peter R. Hunt,5,2,George Lazenby,Catherine Schell,man,woman,9/5/39,7/17/44,30,25
+785,P.S. I Love You,2007,Richard LaGravenese,5,2,Gerard Butler,Hilary Swank,man,woman,11/13/69,7/30/74,38,33
+786,Pearl Harbor,2001,Michael Bay,5,1,Kate Beckinsale,Josh Hartnett,woman,man,7/26/73,7/21/78,28,23
+787,Professor Marston and the Wonder Women,2017,Angela Robinson,5,2,Rebecca Hall,Bella Heathcote,woman,woman,5/3/82,5/27/87,35,30
+788,Push,2009,Paul McGuigan,5,1,Chris Evans,Camilla Belle,man,woman,6/13/81,10/2/86,28,23
+789,Queen of the Damned,2002,Michael Rymer,5,1,Stuart Townsend,Marguerite Moreau,man,woman,12/15/72,4/25/77,30,25
+790,Romeo + Juliet,1996,Baz Luhrmann,5,1,Leonardo DiCaprio,Claire Danes,man,woman,11/11/74,4/12/79,22,17
+791,Sleepless in Seattle,1993,Nora Ephron,5,1,Tom Hanks,Meg Ryan,man,woman,7/9/56,11/19/61,37,32
+792,Sweet Home Alabama,2002,Andy Tennant,5,2,Josh Lucas,Reese Witherspoon,man,woman,6/20/71,3/21/76,31,26
+793,Tag,2018,Jeff Tomsic,5,1,Jon Hamm,Rashida Jones,man,woman,3/10/71,2/25/76,47,42
+794,The Amazing Spider-Man,2012,Marc Webb,5,1,Andrew Garfield,Emma Stone,man,woman,8/20/83,11/6/88,29,24
+795,The Aviator,2004,Martin Scorsese,5,2,Cate Blanchett,Leonardo DiCaprio,woman,man,5/14/69,11/11/74,35,30
+796,The Big Sick,2017,Michael Showalter,5,1,Kumail Nanjiani,Zoe Kazan,man,woman,2/21/78,9/9/83,39,34
+797,The Decoy Bride,2011,Sheree Folkson,5,2,David Tennant,Kelly Macdonald,man,woman,4/18/71,2/23/76,40,35
+798,The Dictator,2012,Larry Charles,5,1,Sacha Baron Cohen,Anna Faris,man,woman,10/13/71,11/29/76,41,36
+799,The Good Shepherd,2006,Robert De Niro,5,2,Matt Damon,Angelina Jolie,man,woman,10/8/70,6/4/75,36,31
+800,The Notebook,2004,Nick Cassavetes,5,1,James Marsden,Rachel McAdams,man,woman,9/18/73,11/17/78,31,26
+801,The Royal Tenenbaums,2001,Wes Anderson,5,3,Danny Glover,Anjelica Huston,man,woman,7/22/46,7/8/51,55,50
+802,The Whole Nine Yards,2000,Jonathan Lynn,5,2,Matthew Perry,Natasha Henstridge,man,woman,8/19/69,8/15/74,31,26
+803,The Whole Truth,2016,Courtney Hunt,5,2,Keanu Reeves,Renee Zellweger,man,woman,9/2/64,4/25/69,52,47
+804,The Wood,1999,Rick Famuyiwa,5,1,LisaRaye McCoy,Taye Diggs,woman,man,9/23/66,1/2/71,33,28
+805,Third Person,2013,Paul Haggis,5,3,James Franco,Mila Kunis,man,woman,4/19/78,8/14/83,35,30
+806,Top Gun,1986,Tony Scott,5,1,Kelly McGillis,Tom Cruise,woman,man,7/9/57,7/3/62,29,24
+807,What's Your Number?,2011,Mark Mylod,5,1,Anna Faris,Chris Evans,woman,man,11/29/76,6/13/81,35,30
+808,When a Man Loves a Woman,1994,Luis Mandoki,5,1,Andy Garcia,Meg Ryan,man,woman,4/12/56,11/19/61,38,33
+809,Win a Date with Tad Hamilton!,2004,Robert Luketic,5,2,Topher Grace,Kate Bosworth,man,woman,7/19/78,1/2/83,26,21
+810,Wonder Woman,2017,Patty Jenkins,5,1,Chris Pine,Gal Gadot,man,woman,8/26/80,4/30/85,37,32
+811,Zombieland,2009,Ruben Fleischer,5,1,Jesse Eisenberg,Emma Stone,man,woman,10/5/83,11/6/88,26,21
+812,Zombieland: Double Tap,2019,Ruben Fleischer,5,3,Jesse Eisenberg,Emma Stone,man,woman,10/5/83,11/6/88,36,31
+813,300,2007,Zack Snyder,4,1,Gerard Butler,Lena Headey,man,woman,11/13/69,10/3/73,38,34
+814,50/50,2011,Jonathan Levine,4,1,Joseph Gordon-Levitt,Anna Kendrick,man,woman,2/17/81,8/9/85,30,26
+815,A Walk in the Clouds,1995,Alfonso Arau,4,1,Keanu Reeves,Aitana Sánchez-Gijón,man,woman,9/2/64,11/5/68,31,27
+816,A Walk in the Clouds,1995,Alfonso Arau,4,2,Keanu Reeves,Debra Messing,man,woman,9/2/64,8/15/68,31,27
+817,All About the Benjamins,2002,Kevin Bray,4,3,Mike Epps,Eva Mendes,man,woman,11/18/70,3/5/74,32,28
+818,All the Pretty Horses,2000,Billy Bob Thornton,4,1,Matt Damon,Penelope Cruz,man,woman,10/8/70,4/28/74,30,26
+819,Along Came Polly,2004,John Hamburg,4,1,Ben Stiller,Jennifer Aniston,man,woman,11/30/65,2/11/69,39,35
+820,American Beauty,1999,Sam Mendes,4,2,Wes Bentley,Thora Birch,man,woman,9/4/78,3/11/82,21,17
+821,Anchorman: The Legend of Ron Burgundy,2004,Adam McKay,4,1,Will Ferrell,Christina Applegate,man,woman,7/16/67,11/25/71,37,33
+822,Avengers: Age of Ultron,2015,Joss Whedon,4,2,Jeremy Renner,Linda Cardellini,man,woman,1/7/71,6/25/75,44,40
+823,Batman Begins,2005,Christopher Nolan,4,1,Christian Bale,Katie Holmes,man,woman,1/30/74,12/18/78,31,27
+824,Boogie Nights,1997,Paul Thomas Anderson,4,4,Melora Walters,Don Cheadle,woman,man,10/21/60,11/29/64,37,33
+825,Boogie Nights,1997,Paul Thomas Anderson,4,3,Philip Seymour Hoffman,Mark Wahlberg,man,man,7/23/67,6/5/71,30,26
+826,Broken Hill,2009,Dagen Merrill,4,1,Luke Arnold,Alexa PenaVega,man,woman,1/24/84,8/27/88,25,21
+827,Brooklyn,2015,John Crowley,4,1,Emory Cohen,Saoirse Ronan,man,woman,3/13/90,4/12/94,25,21
+828,Café Society,2016,Woody Allen,4,3,Jesse Eisenberg,Blake Lively,man,woman,10/5/83,8/25/87,33,29
+829,Chasing Amy,1997,Kevin Smith,4,1,Joey Lauren Adams,Ben Affleck,woman,man,1/9/68,8/15/72,29,25
+830,Chicago,2002,Rob Marshall,4,1,John C. Reilly,Renee Zellweger,man,woman,5/24/65,4/25/69,37,33
+831,Chinatown,1974,Roman Polanski,4,1,Jack Nicholson,Faye Dunaway,man,woman,4/22/37,1/14/41,37,33
+832,Crimson Peak,2015,Guillermo del Toro,4,2,Jessica Chastain,Tom Hiddleston,woman,man,3/24/77,2/9/81,38,34
+833,Dr. No,1962,Terence Young,4,2,Zena Marshall,Sean Connery,woman,man,1/1/26,8/25/30,36,32
+834,First Man,2018,Damien Chazelle,4,1,Ryan Gosling,Claire Foy,man,woman,11/12/80,4/16/84,38,34
+835,Funny People,2009,Judd Apatow,4,2,Eric Bana,Leslie Mann,man,woman,8/9/68,3/26/72,41,37
+836,Grosse Pointe Blank,1997,George Armitage,4,1,John Cusack,Minnie Driver,man,woman,6/28/66,1/31/70,31,27
+837,Happy Gilmore,1996,Dennis Dugan,4,1,Adam Sandler,Julie Bowen,man,woman,9/9/66,3/3/70,30,26
+838,Here on Earth,2000,Mark Piznarski,4,2,Chris Klein,Leelee Sobieski,man,woman,3/14/79,6/10/83,21,17
+839,Hidden Figures,2016,Theodore Melfi,4,1,Taraji P. Henson,Mahershala Ali,woman,man,9/11/70,2/16/74,46,42
+840,I Think I Love My Wife,2007,Chris Rock,4,2,Chris Rock,Gina Torres,man,woman,2/7/65,4/25/69,42,38
+841,In Time,2011,Andrew Niccol,4,1,Justin Timberlake,Amanda Seyfried,man,woman,1/31/81,12/3/85,30,26
+842,It's Complicated,2009,Nancy Meyers,4,3,Steve Martin,Meryl Streep,man,woman,8/14/45,6/22/49,64,60
+843,Juno,2007,Jason Reitman,4,1,J.K. Simmons,Allison Janney,man,woman,1/9/55,11/19/59,52,48
+844,Knocked Up,2007,Judd Apatow,4,1,Katherine Heigl,Seth Rogen,woman,man,11/24/78,4/15/82,29,25
+845,La Dolce Vita,1960,Federico Fellini,4,1,Marcello Mastroianni,Yvonne Furneaux,man,woman,9/28/24,5/11/28,36,32
+846,Leap Year,2010,Anand Tucker,4,1,Amy Adams,Matthew Goode,woman,man,8/20/74,4/3/78,36,32
+847,Mamma Mia!,2008,Phyllida Lloyd,4,2,Meryl Streep,Pierce Brosnan,woman,man,6/22/49,5/16/53,59,55
+848,Meet the Parents,2000,Jay Roach,4,1,Ben Stiller,Teri Polo,man,woman,11/30/65,6/1/69,35,31
+849,Midsommar,2019,Ari Aster,4,1,Jack Reynor,Florence Pugh,man,woman,1/23/92,1/3/96,27,23
+850,Moulin Rouge!,2001,Baz Luhrmann,4,1,Nicole Kidman,Ewan McGregor,woman,man,6/20/67,3/31/71,34,30
+851,My Best Friend's Wedding,1997,P.J. Hogan,4,2,Dermot Mulroney,Julia Roberts,man,woman,10/31/63,10/28/67,34,30
+852,Peter Rabbit,2018,Will Gluck,4,1,Rose Byrne,Domhnall Gleeson,woman,man,7/24/79,5/12/83,39,35
+853,Reservation Road,2007,Terry George,4,1,Jennifer Connelly,Joaquin Phoenix,woman,man,12/12/70,10/28/74,37,33
+854,Sex and the City,2008,Michael Patrick King,4,3,Evan Handler,Kristin Davis,man,woman,1/10/61,2/24/65,47,43
+855,Siberia,2018,Matthew Ross,4,1,Keanu Reeves,Molly Ringwald,man,woman,9/2/64,2/18/68,54,50
+856,Soul Food,1997,George Tillman Jr.,4,2,Vivica A. Fox,Jeffrey D. Sams,woman,man,7/30/64,6/18/68,33,29
+857,Soul Food,1997,George Tillman Jr.,4,1,Nia Long,Mekhi Phifer,woman,man,10/30/70,12/29/74,27,23
+858,Source Code,2011,Duncan Jones,4,1,Michelle Monaghan,Jake Gyllenhaal,woman,man,3/23/76,12/19/80,35,31
+859,Spectre,2015,Sam Mendes,4,2,Monica Bellucci,Daniel Craig,woman,man,9/30/64,3/2/68,51,47
+860,The Artist,2011,Michel Hazanavicius,4,1,Jean Dujardin,Berenice Bejo,man,woman,6/19/72,6/7/76,39,35
+861,The Bourne Identity,2002,Doug Liman,4,1,Matt Damon,Franka Potente,man,woman,10/8/70,7/22/74,32,28
+862,The Favourite,2018,Yorgos Lanthimos,4,2,Mark Gatiss,Rachel Weisz,man,woman,10/17/66,3/7/70,52,48
+863,The Favourite,2018,Yorgos Lanthimos,4,3,Rachel Weisz,Olivia Colman,woman,woman,3/7/70,1/30/74,48,44
+864,The Good Girl,2002,Miguel Arteta,4,2,John C. Reilly,Jennifer Aniston,man,woman,5/24/65,2/11/69,37,33
+865,The Hudsucker Proxy,1994,Joel Coen,4,1,Tim Robbins,Jennifer Jason Leigh,man,woman,10/18/58,2/5/62,36,32
+866,The Italian Job,2003,F. Gary Gray,4,1,Mark Wahlberg,Charlize Theron,man,woman,6/5/71,8/7/75,32,28
+867,The Princess Bride,1987,Rob Reiner,4,1,Cary Elwes,Robin Wright,man,woman,10/26/62,4/8/66,25,21
+868,The Rock,1996,Michael Bay,4,1,Nicolas Cage,Vanessa Marcil,man,woman,1/7/64,10/15/68,32,28
+869,The Scarlet Letter,1995,Roland Joffé,4,1,Gary Oldman,Demi Moore,man,woman,3/21/58,11/11/62,37,33
+870,The Spanish Prisoner,1997,David Mamet,4,1,Campbell Scott,Rebecca Pidgeon,man,woman,7/19/61,10/10/65,36,32
+871,This Means War,2012,McG,4,1,Reese Witherspoon,Chris Pine,woman,man,3/21/76,8/26/80,36,32
+872,Twilight,2008,Catherine Hardwicke,4,1,Robert Pattinson,Kristen Stewart,man,woman,5/13/86,4/9/90,22,18
+873,Two Weeks Notice,2002,Marc Lawrence,4,1,Hugh Grant,Sandra Bullock,man,woman,9/9/60,7/26/64,42,38
+874,Walk the Line,2005,James Mangold,4,1,Joaquin Phoenix,Ginnifer Goodwin,man,woman,10/28/74,5/22/78,31,27
+875,Wayne's World,1993,Penelope Spheeris,4,1,Mike Myers,Tia Carrere,man,woman,4/25/63,1/2/67,30,26
+876,We Are Your Friends,2015,Max Joseph,4,1,Zac Efron,Emily Ratajkowski,man,woman,10/18/87,6/7/91,28,24
+877,Whatever Works,2009,Woody Allen,4,3,Henry Cavill,Evan Rachel Wood,man,woman,5/5/83,9/7/87,26,22
+878,X-Men,2000,Bryan Singer,4,2,Famke Janssen,Hugh Jackman,woman,man,11/5/64,10/12/68,36,32
+879,A Woman Under the Influence,1974,John Cassavetes,3,1,Peter Falk,Gena Rowlands,man,woman,9/16/27,6/19/30,47,44
+880,Amelia,2009,Mira Nair,3,2,Ewan McGregor,Hilary Swank,man,woman,3/31/71,7/30/74,38,35
+881,American Beauty,1999,Sam Mendes,3,3,Peter Gallagher,Annette Bening,man,woman,8/19/55,5/29/58,44,41
+882,Arbitrage,2012,Nicholas Jarecki,3,2,Susan Sarandon,Richard Gere,woman,man,10/4/46,8/31/49,66,63
+883,Becoming Jane,2007,Julian Jarrold,3,1,James McAvoy,Anne Hathaway,man,woman,4/21/79,11/12/82,28,25
+884,Bottle Rocket,1996,Wes Anderson,3,1,Lumi Cavazos,Luke Wilson,woman,man,12/21/68,9/21/71,28,25
+885,Bridget Jones's Baby,2016,Sharon Maguire,3,2,Patrick Dempsey,Renee Zellweger,man,woman,1/13/66,4/25/69,50,47
+886,Cinderella,2015,Kenneth Branagh,3,1,Richard Madden,Lily James,man,woman,6/18/86,4/5/89,29,26
+887,City of Angels,1998,Brad Silberling,3,1,Meg Ryan,Nicolas Cage,woman,man,11/19/61,1/7/64,37,34
+888,Closer,2004,Mike Nichols,3,4,Clive Owen,Julia Roberts,man,woman,10/3/64,10/28/67,40,37
+889,Coyote Ugly,2000,David McNally,3,1,Adam Garcia,Piper Perabo,man,woman,6/1/73,10/31/76,27,24
+890,"Crouching Tiger, Hidden Dragon",2000,Ang Lee,3,2,Chang Chen,Zhang Ziyi,man,woman,10/14/76,2/9/79,24,21
+891,Deadpool,2016,Tim Miller,3,1,Ryan Reynolds,Morena Baccarin,man,woman,10/23/76,6/2/79,40,37
+892,Don Jon,2013,Joseph Gordon-Levitt,3,2,Joseph Gordon-Levitt,Scarlett Johansson,man,woman,2/17/81,11/22/84,32,29
+893,Enemy of the State,1998,Tony Scott,3,2,Will Smith,Regina King,man,woman,9/25/68,1/15/71,30,27
+894,Fight Club,1999,David Fincher,3,2,Brad Pitt,Helena Bonham Carter,man,woman,12/18/63,5/26/66,36,33
+895,Fight Club,1999,David Fincher,3,1,Helena Bonham Carter,Edward Norton,woman,man,5/26/66,8/18/69,33,30
+896,Fools Rush In,1997,Andy Tennant,3,1,Salma Hayek,Matthew Perry,woman,man,9/2/66,8/19/69,31,28
+897,Forgetting Sarah Marshall,2008,Nicholas Stoller,3,2,Jason Segel,Mila Kunis,man,woman,1/18/80,8/14/83,28,25
+898,Gigli,2003,Martin Brest,3,1,Jennifer Lopez,Ben Affleck,woman,man,7/24/69,8/15/72,34,31
+899,Hacksaw Ridge,2016,Mel Gibson,3,1,Andrew Garfield,Teresa Palmer,man,woman,8/20/83,2/26/86,33,30
+900,He's Just Not That Into You,2009,Ken Kwapis,3,3,Jennifer Aniston,Ben Affleck,woman,man,2/11/69,8/15/72,40,37
+901,His Girl Friday,1940,Howard Hawks,3,1,Cary Grant,Rosalind Russell,man,woman,1/18/04,6/4/07,36,33
+902,I Know What You Did Last Summer,1997,Jim Gillespie,3,2,Ryan Phillippe,Sarah Michelle Gellar,man,woman,9/10/74,4/14/77,23,20
+903,I Know What You Did Last Summer,1997,Jim Gillespie,3,1,Freddie Prinze Jr.,Jennifer Love Hewitt,man,woman,3/8/76,2/21/79,21,18
+904,Idle Hands,1999,Rodman Flender,3,1,Devon Sawa,Jessica Alba,man,woman,9/7/78,4/28/81,21,18
+905,Imagine Me & You,2005,Ol Parker,3,1,Lena Headey,Piper Perabo,woman,woman,10/3/73,10/31/76,32,29
+906,Independence Day: Resurgence,2016,Roland Emmerich,3,1,Liam Hemsworth,Maika Monroe,man,woman,1/13/90,5/29/93,26,23
+907,Inferno,2016,Ron Howard,3,2,Ben Foster,Felicity Jones,man,woman,10/29/80,10/17/83,36,33
+908,Inventing the Abbotts,1997,Pat O'Connor,3,1,Joaquin Phoenix,Liv Tyler,man,woman,10/28/74,7/1/77,23,20
+909,Invincible,2006,Ericson Core,3,1,Mark Wahlberg,Elizabeth Banks,man,woman,6/5/71,2/10/74,35,32
+910,Juno,2007,Jason Reitman,3,2,Jason Bateman,Jennifer Garner,man,woman,1/14/69,4/17/72,38,35
+911,Just Go with It,2011,Dennis Dugan,3,2,Adam Sandler,Jennifer Aniston,man,woman,9/9/66,2/11/69,45,42
+912,Knocked Up,2007,Judd Apatow,3,2,Paul Rudd,Leslie Mann,man,woman,4/6/69,3/26/72,38,35
+913,La ragazza con la valigia,1961,Valerio Zurlini,3,1,Claudia Cardinale,Jacques Perrin,woman,man,4/15/38,7/13/41,23,20
+914,Les Miserables,2012,Tom Hooper,3,2,Eddie Redmayne,Amanda Seyfried,man,woman,1/26/82,12/3/85,30,27
+915,Liar Liar,1997,Tom Shadyac,3,1,Jim Carrey,Maura Tierney,man,woman,1/17/62,2/3/65,35,32
+916,Look Who's Talking,1989,Amy Heckerling,3,1,Kirstie Alley,John Travolta,woman,man,1/12/51,2/18/54,38,35
+917,Made of Honor,2008,Paul Weiland,3,2,Kevin McKidd,Michelle Monaghan,man,woman,8/9/73,3/23/76,35,32
+918,Me Before You,2016,Thea Sharrock,3,1,Emilia Clarke,Matthew Lewis,woman,man,10/23/86,6/27/89,30,27
+919,Mickey Blue Eyes,1999,Kelly Makin,3,1,Hugh Grant,Jeanne Tripplehorn,man,woman,9/9/60,6/10/63,39,36
+920,Mirror Mirror,2012,Tarsem Singh,3,1,Armie Hammer,Lily Collins,man,woman,8/28/86,3/18/89,26,23
+921,Mona Lisa Smile,2003,Mike Newell,3,3,Topher Grace,Julia Stiles,man,woman,7/19/78,3/28/81,25,22
+922,Neighbors,2014,Nicholas Stoller,3,1,Rose Byrne,Seth Rogen,woman,man,7/24/79,4/15/82,35,32
+923,On the Basis of Sex,2018,Mimi Leder,3,1,Felicity Jones,Armie Hammer,woman,man,10/17/83,8/28/86,35,32
+924,One Fine Day,1996,Michael Hoffman,3,1,Michelle Pfeiffer,George Clooney,woman,man,4/29/58,5/6/61,38,35
+925,Palo Alto,2013,Gia Coppola,3,2,Emma Roberts,Nat Wolff,woman,man,2/10/91,12/17/94,22,19
+926,Pete's Dragon,2016,David Lowery,3,1,Wes Bentley,Bryce Dallas Howard,man,woman,9/4/78,3/2/81,38,35
+927,Professor Marston and the Wonder Women,2017,Angela Robinson,3,3,Luke Evans,Rebecca Hall,man,woman,4/15/79,5/3/82,38,35
+928,Pushing Tin,1999,Mike Newell,3,4,John Cusack,Cate Blanchett,man,woman,6/28/66,5/14/69,33,30
+929,Ready Player One,2018,Steven Spielberg,3,1,Olivia Cooke,Tye Sheridan,woman,man,12/27/93,11/11/96,25,22
+930,Risky Business,1983,Paul Brickman,3,1,Rebecca De Mornay,Tom Cruise,woman,man,8/29/59,7/3/62,24,21
+931,Robin Hood: Prince of Thieves,1991,Kevin Reynolds,3,1,Kevin Costner,Mary Elizabeth Mastrantonio,man,woman,1/18/55,11/17/58,36,33
+932,Savages,2007,undefined,3,2,Blake Lively,Aaron Taylor-Johnson,woman,man,8/25/87,6/13/90,20,17
+933,Selma,2014,Ava DuVernay,3,1,Carmen Ejogo,David Oyelowo,woman,man,1/1/73,4/1/76,41,38
+934,She's All That,1999,Robert Iscove,3,1,Freddie Prinze Jr.,Rachael Leigh Cook,man,woman,3/8/76,10/4/79,23,20
+935,"Six Days, Seven Nights",1998,Ivan Reitman,3,2,David Schwimmer,Anne Heche,man,woman,11/2/66,5/25/69,32,29
+936,Solo: A Star Wars Story,2018,Ron Howard,3,2,Emilia Clarke,Alden Ehrenreich,woman,man,10/23/86,11/22/89,32,29
+937,Soul Food,1997,George Tillman Jr.,3,3,Michael Beach,Gina Ravera,man,woman,10/30/63,5/20/66,34,31
+938,Tag,2018,Jeff Tomsic,3,2,Jeremy Renner,Leslie Bibb,man,woman,1/7/71,11/17/74,47,44
+939,The 40-Year Old Virgin,2005,Judd Apatow,3,1,Catherine Keener,Steve Carell,woman,man,3/23/59,8/16/62,46,43
+940,The Age of Adaline,2015,Lee Toland Krieger,3,2,Blake Lively,Anthony Ingruber,woman,man,8/25/87,2/5/90,28,25
+941,The Beach,2000,Danny Boyle,3,2,Guillaume Canet,Virginie Ledoyen,man,woman,4/10/73,11/15/76,27,24
+942,The Best of me,2014,Michael Hoffman,3,1,James Marsden,Michelle Monaghan,man,woman,9/18/73,3/23/76,41,38
+943,The Dark Knight,2008,Christopher Nolan,3,1,Christian Bale,Maggie Gyllenhaal,man,woman,1/30/74,11/16/77,34,31
+944,The Departed,2006,Martin Scorsese,3,2,Matt Damon,Vera Farmiga,man,woman,10/8/70,8/6/73,36,33
+945,The Disaster Artist,2017,James Franco,3,1,Alison Brie,Dave Franco,woman,man,12/29/82,6/12/85,35,32
+946,The Fault in Our Stars,2014,Josh Boone,3,1,Shailene Woodley,Ansel Elgort,woman,man,11/15/91,3/14/94,23,20
+947,The Favourite,2018,Yorgos Lanthimos,3,4,Emma Stone,Joe Alwyn,woman,man,11/6/88,2/21/91,30,27
+948,The Five-Year Engagement,2012,Nicholas Stoller,3,1,Jason Segel,Emily Blunt,man,woman,1/18/80,2/23/83,32,29
+949,The Graduate,1967,Mike Nichols,3,2,Dustin Hoffman,Katharine Ross,man,woman,8/8/37,1/29/40,30,27
+950,The Lucky One,2012,Scott Hicks,3,1,Taylor Schilling,Zac Efron,woman,man,7/27/84,10/18/87,28,25
+951,The Matrix,1999,"Lana Wachowski, Lilly Wachowski",3,1,Keanu Reeves,Carrie-Anne Moss,man,woman,9/2/64,8/21/67,35,32
+952,The Only Living Boy in New York,2017,Marc Webb,3,3,Callum Turner,Kiersey Clemons,man,woman,2/15/90,12/17/93,27,24
+953,The Spy Who Dumped Me,2018,Susanna Fogel,3,2,Sam Heughan,Mila Kunis,man,woman,4/30/80,8/14/83,38,35
+954,The Story of Us,1999,Rob Reiner,3,1,Bruce Willis,Michelle Pfeiffer,man,woman,3/19/55,4/29/58,44,41
+955,The Vow,2012,Michael Sucsy,3,1,Scott Speedman,Rachel McAdams,man,woman,9/1/75,11/17/78,37,34
+956,Trainwreck,2015,Judd Apatow,3,2,Bill Hader,Amy Schumer,man,woman,6/7/78,6/1/81,37,34
+957,Twilight,2008,Catherine Hardwicke,3,2,Jackson Rathbone,Ashley Greene,man,woman,12/14/84,4/21/87,24,21
+958,Twilight,2008,Catherine Hardwicke,3,3,Kellan Lutz,Nikki Reed,man,woman,3/15/85,5/17/88,23,20
+959,Us,2019,Jordan Peele,3,1,Lupita Nyong'o,Winston Duke,woman,man,3/1/83,11/15/86,36,33
+960,Wedding Crashers,2005,David Dobkin,3,3,Bradley Cooper,Rachel McAdams,man,woman,1/5/75,11/17/78,30,27
+961,White Men Can't Jump,1992,Ron Shelton,3,1,Woody Harrelson,Rosie Perez,man,woman,7/23/61,9/6/64,31,28
+962,Widows,2018,Steve McQueen,3,3,Michelle Rodriguez,Manuel Garcia-Rulfo,woman,man,7/12/78,2/25/81,40,37
+963,X2: X-Men United,2003,Bryan Singer,3,1,Shawn Ashmore,Anna Paquin,man,woman,10/7/79,7/24/82,24,21
+964,10 Things I Hate About You,1999,Gil Junger,2,1,Heath Ledger,Julia Stiles,man,woman,4/24/79,3/28/81,20,18
+965,A Most Violent Year,2014,J.C. Chandor,2,1,Jessica Chastain,Oscar Isaac,woman,man,3/24/77,3/9/79,37,35
+966,A Simple Favor,2018,Paul Feig,2,1,Anna Kendrick,Henry Golding,woman,man,8/9/85,2/5/87,33,31
+967,A Walk on the Moon,1999,Tony Goldwyn,2,2,Diane Lane,Liev Schreiber,woman,man,1/21/65,10/4/67,34,32
+968,Ace Ventura: Pet Detective,1994,Tom Shadyac,2,1,Jim Carrey,Courteney Cox,man,woman,1/17/62,6/15/64,32,30
+969,Aladdin,2019,Guy Ritchie,2,1,Mena Massoud,Naomi Scott,man,woman,9/17/91,5/6/93,28,26
+970,And So It Goes,2014,Rob Reiner,2,1,Michael Douglas,Diane Keaton,man,woman,9/25/44,1/5/46,70,68
+971,Anger Management,2003,Peter Segal,2,1,Marisa Tomei,Adam Sandler,woman,man,12/4/64,9/9/66,39,37
+972,Annihilation,2018,Alex Garland,2,1,Oscar Isaac,Natalie Portman,man,woman,3/9/79,6/9/81,39,37
+973,Austin Powers: International Man of Mystery,1997,Jay Roach,2,1,Mike Myers,Elizabeth Hurley,man,woman,4/25/63,6/10/65,34,32
+974,Ben-Hur,2016,Timur Bekmambetov,2,1,Nazanin Boniadi,Jack Huston,woman,man,5/22/80,12/7/82,36,34
+975,Big Daddy,1999,Dennis Dugan,2,2,Adam Sandler,Joey Lauren Adams,man,woman,9/9/66,1/9/68,33,31
+976,Bridesmaids,2011,Paul Feig,2,2,Jon Hamm,Kristen Wiig,man,woman,3/10/71,8/22/73,40,38
+977,Brokeback Mountain,2005,Ang Lee,2,1,Jake Gyllenhaal,Anne Hathaway,man,woman,12/19/80,11/12/82,25,23
+978,Casanova,2005,Lasse Hallström,2,1,Heath Ledger,Sienna Miller,man,woman,4/24/79,12/28/81,26,24
+979,"Crazy, Stupid, Love",2011,"Glenn Ficarra, John Requa",2,3,Kevin Bacon,Julianne Moore,man,woman,7/8/58,12/3/60,53,51
+980,"Crazy, Stupid, Love",2011,"Glenn Ficarra, John Requa",2,2,Julianne Moore,Steve Carell,woman,man,12/3/60,8/16/62,51,49
+981,Dan in Real Life,2007,Peter Hedges,2,2,Steve Carell,Juliette Binoche,man,woman,8/16/62,3/9/64,45,43
+982,Dave,1993,Ivan Reitman,2,1,Kevin Kline,Sigourney Weaver,man,woman,10/24/47,10/8/49,46,44
+983,Doctor Strange,2016,Scott Derrickson,2,1,Benedict Cumberbatch,Rachel McAdams,man,woman,7/19/76,11/17/78,40,38
+984,Down and Out in Beverly Hills,1986,Paul Mazursky,2,2,Bette Midler,Richard Dreyfuss,woman,man,12/1/45,10/29/47,41,39
+985,EDtv,1999,Ron Howard,2,2,Matthew McConaughey,Jenna Elfman,man,woman,11/4/69,9/30/71,30,28
+986,Easy A,2010,Will Gluck,2,1,Penn Badgley,Emma Stone,man,woman,11/1/86,11/6/88,24,22
+987,Ed Wood,1994,Tim Burton,2,2,Johnny Depp,Sarah Jessica Parker,man,woman,6/9/63,3/25/65,31,29
+988,Enchanted,2007,Kevin Lima,2,2,Idina Menzel,James Marsden,woman,man,5/30/71,9/18/73,36,34
+989,Enemy at the Gates,2001,Jean-Jacques Annaud,2,1,Rachel Weisz,Jude Law,woman,man,3/7/70,12/29/72,31,29
+990,Fantastic Beasts and Where to Find Them,2016,David Yates,2,2,Katherine Waterston,Eddie Redmayne,woman,man,3/3/80,1/26/82,36,34
+991,Fifty Shades of Grey,2015,Sam Taylor-Johnson,2,2,Luke Grimes,Eloise Mumford,man,woman,1/21/84,9/24/86,31,29
+992,Four Weddings and a Funeral,1994,Mike Newell,2,1,Andie MacDowell,Hugh Grant,woman,man,4/21/58,9/9/60,36,34
+993,Friends with Benefits,2011,Will Gluck,2,1,Justin Timberlake,Mila Kunis,man,woman,1/31/81,8/14/83,30,28
+994,Gangs of New York,2002,Martin Scorsese,2,1,Cameron Diaz,Leonardo DiCaprio,woman,man,8/30/72,11/11/74,30,28
+995,I Don't Know How She Does It,2011,Douglas McGrath,2,1,Greg Kinnear,Sarah Jessica Parker,man,woman,6/17/63,3/25/65,48,46
+996,Imagine Me & You,2005,Ol Parker,2,2,Piper Perabo,Matthew Goode,woman,man,10/31/76,4/3/78,29,27
+997,Inventing the Abbotts,1997,Pat O'Connor,2,2,Billy Crudup,Jennifer Connelly,man,woman,7/8/68,12/12/70,29,27
+998,Jeux d'enfants,2003,Yann Samuell,2,1,Guillaume Canet,Marion Cotillard,man,woman,4/10/73,9/30/75,30,28
+999,Jurassic World,2015,Colin Trevorrow,2,1,Chris Pratt,Bryce Dallas Howard,man,woman,6/21/79,3/2/81,36,34
+1000,Last Holiday,2006,Wayne Wang,2,1,LL Cool J,Queen Latifah,man,woman,1/14/68,3/18/70,38,36
+1001,Last Night,2010,Massy Tadjedin,2,3,Eva Mendes,Sam Worthington,woman,man,3/5/74,8/2/76,36,34
+1002,Le notti di Cabiria,1957,Federico Fellini,2,1,François Périer,Giulietta Masina,man,woman,11/10/19,2/22/21,38,36
+1003,Legally Blonde,2001,Robert Luketic,2,3,Reese Witherspoon,Matthew Davis,woman,man,3/21/76,5/8/78,25,23
+1004,Little Nicky,2000,Steven Brill,2,1,Adam Sandler,Patricia Arquette,man,woman,9/9/66,4/8/68,34,32
+1005,Love & Basketball,2000,Gina Prince-Bythewood,2,1,Sanaa Lathan,Omar Epps,woman,man,9/19/71,7/20/73,29,27
+1006,Love & Other Drugs,2010,Edward Zwick,2,1,Jake Gyllenhaal,Anne Hathaway,man,woman,12/19/80,11/12/82,30,28
+1007,Love Story,1970,Arthur Hiller,2,1,Ali MacGraw,Ryan O'Neal,woman,man,4/1/39,4/20/41,31,29
+1008,Mona Lisa Smile,2003,Mike Newell,2,4,Julia Roberts,Dominic West,woman,man,10/28/67,10/15/69,36,34
+1009,Office Space,1999,Mike Judge,2,1,Ron Livingston,Jennifer Aniston,man,woman,6/5/67,2/11/69,32,30
+1010,Old School,2003,Todd Phillips,2,3,Ellen Pompeo,Luke Wilson,woman,man,11/10/69,9/21/71,34,32
+1011,Pitch Perfect,2012,Jason Moore,2,1,Anna Kendrick,Skylar Astin,woman,man,8/9/85,9/23/87,27,25
+1012,Robin Hood,2018,Otto Bathurst,2,1,Taron Egerton,Eve Hewson,man,woman,11/10/89,7/7/91,29,27
+1013,Rumor Has It...,2005,Rob Reiner,2,3,Mark Ruffalo,Jennifer Aniston,man,woman,11/22/67,2/11/69,38,36
+1014,Safe Men,1998,John Hamburg,2,1,Sam Rockwell,Christina Kirk,man,woman,11/5/68,11/10/70,30,28
+1015,Sex and the City,2008,Michael Patrick King,2,4,David Eigenberg,Cynthia Nixon,man,woman,5/17/64,4/9/66,44,42
+1016,Shakespeare in Love,1998,John Madden,2,1,Joseph Fiennes,Gwyneth Paltrow,man,woman,5/27/70,9/27/72,28,26
+1017,Sister Act,1992,Emile Ardolino,2,2,Bill Nunn,Whoopi Goldberg,man,woman,10/20/53,11/13/55,39,37
+1018,Something New,2006,Sanaa Hamri,2,1,Simon Baker,Sanaa Lathan,man,woman,7/30/69,9/19/71,37,35
+1019,Spider-Man: Far From Home,2019,Jon Watts,2,1,Marisa Tomei,Jon Favreau,woman,man,12/4/64,10/19/66,55,53
+1020,Tag,2018,Jeff Tomsic,2,4,Ed Helms,Isla Fisher,man,woman,1/24/74,2/3/76,44,42
+1021,Tag,2018,Jeff Tomsic,2,3,Rashida Jones,Jake Johnson,woman,man,2/25/76,5/28/78,42,40
+1022,The Beach,2000,Danny Boyle,2,3,Leonardo DiCaprio,Virginie Ledoyen,man,woman,11/11/74,11/15/76,26,24
+1023,The Butterfly Effect,2004,"Eric Bress, J. Mackye Gruber",2,1,Amy Smart,Ashton Kutcher,woman,man,3/26/76,2/7/78,28,26
+1024,The English Patient,1996,Anthony Minghella,2,1,Kristin Scott Thomas,Ralph Fiennes,woman,man,5/24/60,12/22/62,36,34
+1025,The Family Stone,2007,Thomas Bezucha,2,4,Craig T. Nelson,Diane Keaton,man,woman,4/4/44,1/5/46,63,61
+1026,The Family Stone,2007,Thomas Bezucha,2,5,Dermot Mulroney,Sarah Jessica Parker,man,woman,10/31/63,3/25/65,44,42
+1027,The Girl with the Dragon Tattoo,2011,David Fincher,2,2,Robin Wright,Daniel Craig,woman,man,4/8/66,3/2/68,45,43
+1028,The Good Shepherd,2006,Robert De Niro,2,3,Matt Damon,Tammy Blanchard,man,woman,10/8/70,12/14/72,36,34
+1029,The Hunger Games: Mockingjay Part 2,2015,Francis Lawrence,2,1,Jennifer Lawrence,Josh Hutcherson,woman,man,8/15/90,10/12/92,25,23
+1030,The Kids Are All Right,2010,Lisa Cholodenko,2,2,Annette Bening,Julianne Moore,woman,woman,5/29/58,12/3/60,52,50
+1031,The Last Time I Committed Suicide,1997,Stephen T. Kay,2,1,Thomas Jane,Claire Forlani,man,woman,2/22/69,12/17/71,28,26
+1032,The Mummy,1999,Stephen Sommers,2,2,Brendan Fraser,Rachel Weisz,man,woman,12/3/68,3/7/70,31,29
+1033,The Notebook,2004,Nick Cassavetes,2,2,Rachel McAdams,Ryan Gosling,woman,man,11/17/78,11/12/80,26,24
+1034,The Other Woman,2014,Nick Cassavetes,2,3,Nikolaj Coster-Waldau,Leslie Mann,man,woman,7/27/70,3/26/72,44,42
+1035,The Other Woman,2014,Nick Cassavetes,2,4,Nikolaj Coster-Waldau,Cameron Diaz,man,woman,7/27/70,8/30/72,44,42
+1036,The Private Lives of Pippa Lee,2009,Rebecca Miller,2,2,Keanu Reeves,Robin Wright,man,woman,9/2/64,4/8/66,45,43
+1037,The Twilight Saga: New Moon,2009,Chris Weitz,2,1,Kristen Stewart,Taylor Lautner,woman,man,4/9/90,2/11/92,19,17
+1038,The Vow,2012,Michael Sucsy,2,2,Rachel McAdams,Channing Tatum,woman,man,11/17/78,4/26/80,34,32
+1039,The Wood,1999,Rick Famuyiwa,2,2,Sanaa Lathan,Omar Epps,woman,man,9/19/71,7/20/73,28,26
+1040,The Young Victoria,2009,Jean-Marc Vallée,2,1,Rupert Friend,Emily Blunt,man,woman,10/1/81,2/23/83,28,26
+1041,Thor,2011,Kenneth Branagh,2,1,Natalie Portman,Chris Hemsworth,woman,man,6/9/81,8/11/83,30,28
+1042,Tristan + Isolde,2006,Kevin Reynolds,2,1,James Franco,Sophia Myles,man,woman,4/19/78,3/18/80,28,26
+1043,Twilight,2008,Catherine Hardwicke,2,4,Peter Facinelli,Elizabeth Reaser,man,woman,11/26/73,6/15/75,35,33
+1044,Unforgettable,2017,Denise Di Novi,2,1,Geoff Stults,Rosario Dawson,man,woman,12/15/77,5/9/79,40,38
+1045,Virginia,2010,Dustin Lance Black,2,2,Emma Roberts,Harrison Gilbertson,woman,man,2/10/91,6/29/93,19,17
+1046,Walk the Line,2005,James Mangold,2,2,Joaquin Phoenix,Reese Witherspoon,man,woman,10/28/74,3/21/76,31,29
+1047,We Were Soldiers,2002,Randall Wallace,2,1,Mel Gibson,Madeleine Stowe,man,woman,1/3/56,8/18/58,46,44
+1048,Why Him?,2016,John Hamburg,2,2,Bryan Cranston,Megan Mullally,man,woman,3/7/56,11/12/58,60,58
+1049,500 Days of Summer,2009,Marc Webb,1,1,Zooey Deschanel,Joseph Gordon-Levitt,woman,man,1/17/80,2/17/81,29,28
+1050,9 1/2 Weeks,1986,Adrian Lyne,1,1,Mickey Rourke,Kim Basinger,man,woman,9/16/52,12/8/53,34,33
+1051,A Knight's Tale,2001,Brian Helgeland,1,1,Shannyn Sossamon,Heath Ledger,woman,man,10/3/78,4/24/79,23,22
+1052,Angel Eyes,2001,Luis Mandoki,1,1,Jim Caviezel,Jennifer Lopez,man,woman,9/26/68,7/24/69,33,32
+1053,Australia,2008,Baz Luhrmann,1,1,Nicole Kidman,Hugh Jackman,woman,man,6/20/67,10/12/68,41,40
+1054,Baywatch,2017,Seth Gordon,1,1,Alexandra Daddario,Zac Efron,woman,man,3/16/86,10/18/87,31,30
+1055,Because I Said So,2007,Michael Lehmann,1,3,Diane Keaton,Stephen Collins,woman,man,1/5/46,10/1/47,61,60
+1056,Before Sunrise,1995,Richard Linklater,1,1,Julie Delpy,Ethan Hawke,woman,man,12/21/69,11/6/70,26,25
+1057,Beverly Hills Ninja,1997,Dennis Dugan,1,1,Nicollette Sheridan,Chris Farley,woman,man,11/21/63,2/15/64,34,33
+1058,Breakfast at Tiffany's,1961,Blake Edwards,1,1,George Peppard,Audrey Hepburn,man,woman,10/1/28,5/4/29,33,32
+1059,Breathe,2017,Andy Serkis,1,1,Andrew Garfield,Claire Foy,man,woman,8/20/83,4/16/84,34,33
+1060,Brokeback Mountain,2005,Ang Lee,1,2,Heath Ledger,Jake Gyllenhaal,man,man,4/24/79,12/19/80,26,25
+1061,Brokeback Mountain,2005,Ang Lee,1,3,Heath Ledger,Michelle Williams,man,woman,4/24/79,9/9/80,26,25
+1062,Captain America: The First Avenger,2011,Joe Johnston,1,1,Chris Evans,Hayley Atwell,man,woman,6/13/81,4/5/82,30,29
+1063,Chocolat,2000,Lasse Hallström,1,1,Johnny Depp,Juliette Binoche,man,woman,6/9/63,3/9/64,37,36
+1064,Cocktail,1988,Homi Adajania,1,1,Tom Cruise,Elisabeth Shue,man,woman,7/3/62,10/6/63,26,25
+1065,Dodgeball,2004,Rawson Marshall Thurber,1,1,Vince Vaughn,Christine Taylor,man,woman,3/28/70,7/30/71,34,33
+1066,Dr. No,1962,Terence Young,1,3,Sean Connery,Eunice Gayson,man,woman,8/25/30,3/17/31,32,31
+1067,Fever Pitch,2005,"Bobby Farrelly, Peter Farrelly",1,1,Jimmy Fallon,Drew Barrymore,man,woman,9/19/74,2/22/75,31,30
+1068,French Kiss,1995,Lawrence Kasdan,1,2,Timothy Hutton,Meg Ryan,man,woman,8/16/60,11/19/61,35,34
+1069,Friday,1995,F. Gary Gray,1,1,Ice Cube,Nia Long,man,woman,6/15/69,10/30/70,26,25
+1070,Get Out,2017,Jordan Peele,1,1,Allison Williams,Daniel Kaluuya,woman,man,4/13/88,2/24/89,29,28
+1071,Guardians of the Galaxy,2014,James Gunn,1,1,Zoe Saldana,Chris Pratt,woman,man,6/19/78,6/21/79,36,35
+1072,Hardball,2001,Brian Robbins,1,1,Keanu Reeves,Diane Lane,man,woman,9/2/64,1/21/65,37,36
+1073,He's Just Not That Into You,2009,Ken Kwapis,1,4,Kevin Connolly,Drew Barrymore,man,woman,3/5/74,2/22/75,35,34
+1074,Hustle & Flow,2005,Craig Brewer,1,1,Terrence Howard,Taraji P. Henson,man,woman,3/11/69,9/11/70,36,35
+1075,In the Heights,2021,John M. Chu,1,3,Melissa Barrera,Anthony Ramos,woman,man,7/4/90,11/1/91,31,30
+1076,Inception,2010,Christopher Nolan,1,1,Leonardo DiCaprio,Marion Cotillard,man,woman,11/11/74,9/30/75,36,35
+1077,Indecent Proposal,1993,Adrian Lyne,1,2,Woody Harrelson,Demi Moore,man,woman,7/23/61,11/11/62,32,31
+1078,Juno,2007,Jason Reitman,1,3,Elliot Page,Michael Cera,woman,man,2/21/87,6/7/88,20,19
+1079,Jury Duty,1995,John Fortenberry,1,1,Tia Carrere,Pauly Shore,woman,man,1/2/67,2/1/68,28,27
+1080,Lady Bird,2017,Greta Gerwig,1,1,Saoirse Ronan,Timothée Chalamet,woman,man,4/12/94,12/27/95,23,22
+1081,Layer Cake,2004,Matthew Vaughn,1,2,Ben Whishaw,Sienna Miller,man,woman,10/14/80,12/28/81,24,23
+1082,Leap Year,2010,Anand Tucker,1,2,Adam Scott,Amy Adams,man,woman,4/3/73,8/20/74,37,36
+1083,Marriage Story,2019,Noah Baumbach,1,1,Adam Driver,Scarlett Johansson,man,woman,11/19/83,11/22/84,36,35
+1084,Miss Congeniality,2000,Donald Petrie,1,1,Benjamin Bratt,Sandra Bullock,man,woman,12/16/63,7/26/64,37,36
+1085,Monster Trucks,2017,Chris Wedge,1,1,Jane Levy,Lucas Till,woman,man,12/29/89,8/10/90,28,27
+1086,Mother's Day,2016,Garry Marshall,1,2,Timothy Olyphant,Jennifer Aniston,man,woman,5/20/68,2/11/69,48,47
+1087,My Big Fat Greek Wedding,2002,Joel Zwick,1,1,John Corbett,Nia Vardalos,man,woman,5/9/61,9/24/62,41,40
+1088,On Her Majesty's Secret Service,1969,Peter R. Hunt,1,3,Diana Rigg,George Lazenby,woman,man,7/20/38,9/5/39,31,30
+1089,Pearl Harbor,2001,Michael Bay,1,2,Ben Affleck,Kate Beckinsale,man,woman,8/15/72,7/26/73,29,28
+1090,Pride & Prejudice,2005,Joe Wright,1,2,Rosamund Pike,Simon Woods,woman,man,1/27/79,1/7/80,26,25
+1091,Punch-Drunk Love,2002,Paul Thomas Anderson,1,1,Adam Sandler,Emily Watson,man,woman,9/9/66,1/14/67,36,35
+1092,Requiem for a Dream,2000,Darren Aronofsky,1,1,Jennifer Connelly,Jared Leto,woman,man,12/12/70,12/26/71,30,29
+1093,Ride Along,2014,Tim Story,1,1,Kevin Hart,Tika Sumpter,man,woman,7/6/79,6/20/80,35,34
+1094,Rumble Fish,1983,Francis Ford Coppola,1,1,Matt Dillon,Diane Lane,man,woman,2/18/64,1/21/65,19,18
+1095,Sense and Sensibility,1995,Ang Lee,1,2,Emma Thompson,Hugh Grant,woman,man,4/15/59,9/9/60,36,35
+1096,Shopgirl,2005,Anand Tucker,1,2,Claire Danes,Jason Schwartzman,woman,man,4/12/79,6/26/80,26,25
+1097,Skyscraper,2018,Rawson Marshall Thurber,1,1,Dwayne Johnson,Neve Campbell,man,woman,5/2/72,10/3/73,46,45
+1098,Slackers,2002,Dewey Nicks,1,1,Devon Sawa,Jaime King,man,woman,9/7/78,4/23/79,24,23
+1099,Star Trek,2009,J.J. Abrams,1,1,Zachary Quinto,Zoe Saldana,man,woman,6/2/77,6/19/78,32,31
+1100,Stella Dallas,1937,King Vidor,1,2,Anne Shirley,Tim Holt,woman,man,4/17/18,2/5/19,19,18
+1101,Stomp the Yard,2007,Sylvain White,1,1,Meagan Good,Columbus Short,woman,man,8/8/81,9/19/82,26,25
+1102,Tadpole,2002,Gary Winick,1,3,John Ritter,Sigourney Weaver,man,woman,9/17/48,10/8/49,54,53
+1103,The Aviator,2004,Martin Scorsese,1,3,Kate Beckinsale,Leonardo DiCaprio,woman,man,7/26/73,11/11/74,31,30
+1104,The Break-Up,2006,Peyton Reed,1,1,Jennifer Aniston,Vince Vaughn,woman,man,2/11/69,3/28/70,37,36
+1105,The Departed,2006,Martin Scorsese,1,3,Vera Farmiga,Leonardo DiCaprio,woman,man,8/6/73,11/11/74,33,32
+1106,The Details,2011,Jacob Aaron Estes,1,2,Elizabeth Banks,Tobey Maguire,woman,man,2/10/74,6/27/75,37,36
+1107,The Family Stone,2007,Thomas Bezucha,1,6,Brian J. White,Tyrone Giordano,man,man,4/21/75,4/18/76,32,31
+1108,The Last of the Mohicans,1992,Michael Mann,1,1,Daniel Day-Lewis,Madeleine Stowe,man,woman,4/29/57,8/18/58,35,34
+1109,The Martian,2015,Ridley Scott,1,1,Sebastian Stan,Kate Mara,man,woman,8/13/82,2/27/83,33,32
+1110,The Painted Veil,2006,John Curran,1,1,Naomi Watts,Edward Norton,woman,man,9/28/68,8/18/69,38,37
+1111,The Sum of All Fears,2002,Phil Alden Robinson,1,1,Bridget Moynahan,Ben Affleck,woman,man,4/28/71,8/15/72,31,30
+1112,The Theory of Everything,2014,James Marsh,1,1,Eddie Redmayne,Felicity Jones,man,woman,1/26/82,10/17/83,32,31
+1113,The Thomas Crown Affair,1999,John McTiernan,1,2,Pierce Brosnan,Rene Russo,man,woman,5/16/53,2/17/54,46,45
+1114,This Means War,2012,McG,1,2,Reese Witherspoon,Tom Hardy,woman,man,3/21/76,9/15/77,36,35
+1115,Titanic,1997,James Cameron,1,1,Leonardo DiCaprio,Kate Winslet,man,woman,11/11/74,10/5/75,23,22
+1116,Tommy Boy,1995,Peter Segal,1,3,Chris Farley,Julie Warner,man,woman,2/15/64,2/9/65,31,30
+1117,Transformers: Dark of the Moon,2011,Michael Bay,1,1,Shia LaBeouf,Rosie Huntington-Whiteley,man,woman,6/11/86,4/18/87,25,24
+1118,Troy,2004,Wolfgang Petersen,1,2,Diane Kruger,Orlando Bloom,woman,man,7/15/76,1/13/77,28,27
+1119,Unfaithful,2002,Adrian Lyne,1,2,Diane Lane,Olivier Martinez,woman,man,1/21/65,1/12/66,37,36
+1120,Unforgettable,2017,Denise Di Novi,1,2,Geoff Stults,Katherine Heigl,man,woman,12/15/77,11/24/78,40,39
+1121,Wild Mountain Thyme,2020,John Patrick Shanley,1,1,Jamie Dornan,Emily Blunt,man,woman,5/1/82,2/23/83,38,37
+1122,Wonder,2017,Stephen Chbosky,1,1,Julia Roberts,Owen Wilson,woman,man,10/28/67,11/18/68,50,49
+1123,X-Men: First Class,2015,Matthew Vaughn,1,2,Nicholas Hoult,Jennifer Lawrence,man,woman,12/7/89,8/15/90,26,25
+1124,Year One,2009,Harold Ramis,1,2,Michael Cera,Juno Temple,man,woman,6/7/88,7/20/89,21,20
+1125,Yesterday,2019,Danny Boyle,1,1,Lily James,Himesh Patel,woman,man,4/5/89,10/13/90,30,29
+1126,10 Things I Hate About You,1999,Gil Junger,0,2,Joseph Gordon-Levitt,Larisa Oleynik,man,woman,2/17/81,6/7/81,18,18
+1127,A Happening of Monumental Proportions,2017,Judy Greer,0,2,Common,Jennifer Garner,man,woman,3/13/72,4/17/72,45,45
+1128,A Simple Favor,2018,Paul Feig,0,2,Henry Golding,Blake Lively,man,woman,2/5/87,8/25/87,31,31
+1129,American Hustle,2013,David O. Russell,0,3,Christian Bale,Amy Adams,man,woman,1/30/74,8/20/74,39,39
+1130,American Pie,1999,"Paul Weitz, Chris Weitz",0,4,Mena Suvari,Chris Klein,woman,man,2/13/79,3/14/79,20,20
+1131,Blue Valentine,2010,Derek Cianfrance,0,1,Michelle Williams,Ryan Gosling,woman,man,9/9/80,11/12/80,30,30
+1132,Catch Me If You Can,2002,Steven Spielberg,0,1,Amy Adams,Leonardo DiCaprio,woman,man,8/20/74,11/11/74,28,28
+1133,Chicago,2002,Rob Marshall,0,2,Renee Zellweger,Dominic West,woman,man,4/25/69,10/15/69,33,33
+1134,Daddy's Little Girls,2007,Tyler Perry,0,1,Idris Elba,Gabrielle Union,man,woman,9/6/72,10/29/72,35,35
+1135,Empire,2002,Franc. Reyes,0,2,Denise Richards,Peter Sarsgaard,woman,man,2/17/71,3/7/71,31,31
+1136,Good Will Hunting,1997,Gus Van Sant,0,1,Minnie Driver,Matt Damon,woman,man,1/31/70,10/8/70,27,27
+1137,He's Just Not That Into You,2009,Ken Kwapis,0,5,Ginnifer Goodwin,Justin Long,woman,man,5/22/78,6/2/78,31,31
+1138,Killing Me Softly,2002,Chen Kaige,0,1,Heather Graham,Joseph Fiennes,woman,man,1/29/70,5/27/70,32,32
+1139,Magic Mike,2012,Steven Soderbergh,0,2,Channing Tatum,Olivia Munn,man,woman,4/26/80,7/3/80,32,32
+1140,Me Before You,2016,Thea Sharrock,0,2,Sam Claflin,Emilia Clarke,man,woman,6/27/86,10/23/86,30,30
+1141,Mona Lisa Smile,2003,Mike Newell,0,5,Ginnifer Goodwin,Ebon Moss-Bachrach,woman,man,5/22/78,8/17/78,25,25
+1142,Red Riding Hood,2011,Catherine Hardwicke,0,1,Shiloh Fernandez,Amanda Seyfried,man,woman,2/26/85,12/3/85,26,26
+1143,She's Out of My League,2010,Jim Field Smith,0,1,Alice Eve,Jay Baruchel,woman,man,2/6/82,4/9/82,28,28
+1144,Slackers,2002,Dewey Nicks,0,2,Jason Segel,Laura Prepon,man,woman,1/18/80,3/7/80,22,22
+1145,Soul Food,1997,George Tillman Jr.,0,4,Vanessa Williams,Michael Beach,woman,man,3/18/63,10/30/63,34,34
+1146,Spanglish,2004,James L. Brooks,0,2,Tea Leoni,Adam Sandler,woman,man,2/25/66,9/9/66,38,38
+1147,Speed,1994,Jan de Bont,0,1,Sandra Bullock,Keanu Reeves,woman,man,7/26/64,9/2/64,30,30
+1148,Spider-Man: Far From Home,2019,Jon Watts,0,2,Tom Holland,Zendaya,man,woman,6/1/96,9/1/96,23,23
+1149,The Crush,1993,Alan Shapiro,0,2,Jennifer Rubin,Cary Elwes,woman,man,4/3/62,10/26/62,31,31
+1150,The Holiday,2006,Nancy Meyers,0,2,Cameron Diaz,Jude Law,woman,man,8/30/72,12/29/72,34,34
+1151,The Hunger Games: Catching Fire,2013,Francis Lawrence,0,1,Liam Hemsworth,Jennifer Lawrence,man,woman,1/13/90,8/15/90,23,23
+1152,The Lake House,2006,Alejandro Agresti,0,1,Sandra Bullock,Keanu Reeves,woman,man,7/26/64,9/2/64,42,42
+1153,Tolkien,2019,Dome Karukoski,0,1,Lily Collins,Nicholas Hoult,woman,man,3/18/89,12/7/89,30,30
+1154,Transformers,2007,Michael Bay,0,1,Megan Fox,Shia LaBeouf,woman,man,5/16/86,6/11/86,21,21
+1155,X-Men: First Class,2015,Matthew Vaughn,0,3,James McAvoy,Rose Byrne,man,woman,4/21/79,7/24/79,36,36

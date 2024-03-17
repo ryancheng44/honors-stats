@@ -1,0 +1,300 @@
+---
+title: "Day 09 Quantitative Stats Part 3: Histograms"
+author: "Carey Kopeikin and Matthew Bardoe"
+date: "8/9/2021"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+ 
+Go to the following website and read about the loan50 data set:
+
+https://www.openintro.org/data/index.php?data=loan50
+
+Make sure to read the descriptions of the data set and variables before loading it.
+
+
+```{r}
+loan.data <- read.csv("loan50.csv")
+head(loan.data)
+```
+
+
+###Dotplots
+
+```{r}
+sort(loan.data$interest_rate)
+```
+
+```{r}
+boxplot(loan.data$interest_rate,
+        main = "Interest Rates on Loans to 50 People",
+        ylab = "Number of Loans",
+        xlab = "Interest Rate (rounded to nearest %)",
+        cex = 1,
+        pch = 20,
+        col = "orange",
+        outcol = "red",
+        horizontal = TRUE
+        )
+        
+stripchart(loan.data$interest_rate,
+            method = "jitter",
+           jitter = ,
+           cex = 1,
+           pch = 20,
+           col = "blue",
+           add = TRUE)
+```
+
+
+
+```{r}
+stripchart(trunc(loan.data$interest_rate),
+           main = "Interest Rates on Loans to 50 People",
+           ylab = "Number of Loans",
+           xlab = "Interest Rate (truncated to nearest %)",
+           method = "stack",
+           cex = 3.5,
+           pch = 20,
+           ylim = c(0, 12),
+           col = "orange")
+
+abline(h=.5)
+
+
+axis(2,
+     seq(2, 12, 2),
+     las = 2)
+
+
+```
+
+
+
+
+
+
+### Histograms
+
+A histogram is a plot that shows how often numbers in your dataset are in a specific range. Histograms are most useful when the variable is continuous. Let's look at a histogram of for the interest rate data.
+
+
+```{r}
+hist(loan.data$interest_rate,
+     main = "Interest Rates on Loans to 50 People",
+     xlim = c(4, 30),
+     ylim = c(0, 12),
+     ylab = "Number of Loans",
+     xlab = "Interest Rate (rounded to nearest %)",
+     breaks = c(4:28),
+     include.lowest = FALSE,
+     pch = 20,
+     col = "orange")
+
+```
+
+
+### Breaks and Bins
+
+One of the main challenges of histograms is that they are very much affected by the number of bins or the placement of the breaks. A **bin** is one of the ranges that we fit our data in. Most of the time the bins are all of equal width, so you can simply tell ```R``` how many bins you want by giving a single number to the ```breaks=``` option in the ```hist``` function. 
+
+
+This code has R choose the number of bins:
+```{r}
+hist(loan.data$interest_rate,
+     main = "Interest Rates on Loans to 50 People",
+     ylab = "Number of Loans",
+     xlab = "Interest Rate (rounded to nearest %)",
+     pch = 20,
+     col = "orange")
+
+```
+
+Here we will tell R to use 10 bins:
+```{r}
+hist(loan.data$interest_rate,
+     main = "Interest Rates on Loans to 50 People",
+     xlim = c(4, 30),
+     ylim = c(0, 12),
+     ylab = "Number of Loans",
+     xlab = "Interest Rate (rounded to nearest %)",
+     pch = 20,
+     col = "orange")
+
+```
+
+So how do we tell how many bins to put in, or where the breaks should be? Well this is one of the great drawbacks with histograms, there aren't solid rules of thumb. You need to play around until the graph shows what you think it is trying to say.
+
+
+***Your Turn***
+
+1. Make a histogram for the variable ```annual income```. Make sure you adjust the title, lims, labels, and color. Try several different bin sizes and try to figure out which one tells the most accurate story.
+
+```{r}
+hist(loan.data$annual_income,
+     main = "Annual Income of 50 People Receiving Loans",
+     xlim = c(0, 350000),
+     ylim = c(0, 20),
+     ylab = "Number of Loans",
+     xlab = "Annual Income",
+     breaks = 15,
+     include.lowest = FALSE,
+     col = "orange")
+```
+
+
+
+2. Describe your histogram.
+
+Shape: unimodal, skewed right, possible outliers on the high end of incomes
+
+### What is the point of a histogram
+
+A boxplot shows us several useful things about a variable. It gives us a sense of what a typical value is by showing us the median and the box that gives the middle 50% of the data. It gives us a sense of the variability of the data by looking at the size of the box, and how large the range is. It also helps us identify if there are any outliers in the data.
+
+A histogram gives us a different kind of knowledge about a variable. By looking at the histogram we can see where the data is concentrated, and importantly, is it concentrated in one or several places. Is there some pattern to the way the data is distributed. We look at this pattern by analyzing the graphs ```shape```, ```center```, and ```spread```.
+
+#### Shape
+
+A histogram's shape refers to its ```modality```, ```skewness```, and the existence of ```outliers```.  
+
+##### Modes
+
+The modes refer to the number of peaks in the graph. A histogram can be unimodal, bimodal, multimodal or uniform. 
+
+
+An example of a unimodal histogram:
+```{r}
+sample.of.unimodal.1 <- rnorm(1000, 100, 10 )
+hist(sample.of.unimodal.1)
+
+```
+
+An example of a bimodal histogram:
+```{r}
+sample.of.unimodal.2 <- rnorm(1000, 30, 20 )
+sample.of.bimodal <- c(sample.of.unimodal.1,sample.of.unimodal.2)
+hist(sample.of.bimodal)
+```
+Example of bimodal data in the world:
+Lawyers salaries: https://www.nalp.org/salarydistrib
+
+
+
+An example of a uniform histogram:
+```{r}
+sample.of.uniform <- runif(1000, 500, 1000 )
+hist(sample.of.uniform)
+```
+Example of uniform data in the world: 
+https://www.somesolvedproblems.com/2019/04/real-life-examples-of-various.html
+
+
+##### Skew
+
+The skew is the symmetry or asymmetry of a graph. A graph can be symmetric:
+```{r}
+hist(rnorm(1000, 50, 5))
+```
+
+or skewed to the right:
+
+```{r}
+hist(rchisq(1000, 4))
+```
+or skewed to the left:
+
+```{r}
+hist(rbeta(1000,5,2))
+```
+
+
+
+##### Center
+The center of a histogram refers to the mean and the median of the data graphed in the histogram. 
+
+
+```{r}
+hist(loan.data$interest_rate,
+     main = "Interest Rates on Loans to 50 People",
+     xlim = c(4, 30),
+     ylim = c(0, 20),
+     ylab = "Number of Loans",
+     xlab = "Interest Rate (rounded to nearest %)",
+     breaks = seq(4, 30, 4),
+     pch = 20,
+     col = "orange")
+
+abline(v=mean(loan.data$interest_rate),
+       lwd = 3,
+       col = "blue")
+
+text( mean(loan.data$interest_rate) +1.1, y = 20,
+      labels = "mean",
+      col = "blue")
+
+abline(v=median(loan.data$interest_rate),
+       lwd = 3,
+       col = "dark green")
+
+text( median(loan.data$interest_rate) -1.4, y = 20,
+      labels = "median",
+      col = "dark green")
+```
+
+**Your turn**
+1.Go to https://www.openintro.org/data/index.php?data=age_at_mar and read about the data set we will be using for the next few problems.
+
+
+2. What does the variable `age` represent?
+
+
+Before actually exploring the data, answer questions 3-5:
+
+3. Would you *expect* the shape of the variable `age` to be? Why? Answer in complete sentences. Remember, shape includes modality, skew, and outliers.
+
+
+
+
+4. What would you *expect* the mean and median of the variable `age` to be? If you think they differ from each other, why?
+
+
+
+
+5. What would you *expect* the IQR of the variable `age` to be? Why?
+
+
+
+
+6. Load in the data called age_at_mar.csv.
+```{r}
+
+```
+
+
+7. Make a good boxplot of the variable `age`. 
+```{r}
+
+```
+
+
+8. Make a good histogram of the variable `age`.
+```{r}
+
+```
+
+9. What, if anything, does the histogram show you that the boxplot doesn't?
+
+
+10. Find the mean, median, IQR, and standard deviation of the variable `age`. (You don't need to do any calculations by hand, use R!)
+
+```{r}
+
+```
+
+
+11. Tell the story of the variable `age`. Write in complete sentences. (This should include describing the distribution then contextualizing it. What does the distribution say about age at marriage, at least for the sample contained in this data set?)
+

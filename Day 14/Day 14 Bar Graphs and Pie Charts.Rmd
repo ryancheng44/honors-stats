@@ -1,0 +1,204 @@
+---
+title: "Bar Graphs and Pie Charts"
+author: "Matthew Bardoe and Carey Kopeikin"
+date: "11/14/2019 and 8/03/2020"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, error = TRUE)
+```
+
+## Bar Graphs and Pie Charts
+ 
+You will learn here:
+
+* How to create graphs related to the frequency of a response in a categorical variable
+  - Bar Graphs (good)
+  - Pie Charts (Bad)
+
+### Making Bar graphs
+First we will look at the data we will be working with. This data set is actually built into R so we don't need to import it.
+```{r}
+data(mtcars)
+head(mtcars)
+```
+
+#### Tables
+Sometimes the best way to express data is just a table. For instance, if we want to see the way that cylinders and transmission type are connected we might make a *two-way table* breaking down the data by all the different options:
+
+```{r}
+table(mtcars$cyl, mtcars$am)
+```
+
+This table is hard to read for several reasons. 
+
+1. It has no title
+2. It has no labels
+3. It is just a series of numbers with no graphical representation
+4. It is not exciting to look at
+
+In order to make it easier to process this information we can create various displays of the data. The main one we are going to use is a simple ```bar chart``` also known as a ```bar graph```.
+
+```{r}
+# Bar graph of number of cylinders in cars in this data set
+barplot(table(mtcars$cyl),
+        main = "Number of Cylinders in '73-74 Cars",
+        xlab = "Number of Cylinders",
+        ylab = "Frequency",
+        )
+```
+
+Unfortunately this graph is still missing the title and labels. 
+Let's add title and labels here. Label the x-axis "number of cylinders" and the y axis "frequency", and give your graph a title. You can use the same parameters you used when you made histograms and boxplots.
+
+```{r}
+
+```
+
+Now we have a graph that makes sense but is boring. We need to add color so that it catches the eye. Make each bar a different, fun color! You should know how to do this from when we made boxplots and histograms.
+
+```{r}
+barplot(
+  table(mtcars$cyl),
+  main = "Frequency of Type of Cylinder",
+  xlab = "number of cylinders",
+  ylab = "frequency",
+  col = c("navy", "gold", "lightblue")
+  )
+```
+
+Now we have a graph that is easy to understand and visually appealing.  
+
+We can make other different types of bar graphs that show information in different ways. 
+
+Maybe we want to show the frequency of number of cylinders on *only the cars with automatic transmission*. To do that, we need to subset using a logical test. Let's do that now, and then make a barplot of the frequency of number of cylinders for automatic cars.
+
+```{r}
+automatic.cars = mtcars[mtcars$am == 0,]
+head(automatic.cars)
+
+barplot(table(automatic.cars$cyl))
+```
+
+Or, if we want to show the frequency of number of cylinders on all cars but still differentiate between automatic and manual cars we can use a ```stacked``` bar graph.
+
+```{r}
+barplot(table(mtcars$am, mtcars$cyl),
+        main = "Frequency of Number of Cylinders on Cars",
+        xlab = "number of cylinders",
+        ylab = "frequency",
+        col = c("red3", "blue1") )
+
+```
+
+This is a nice visual but it is difficult to know which colors represent automatic and manual. We need a legend to help differentiate. We can use a table like the one below to help figure out which labels to use on the legend. Note that when using a legend you may have to make the graph wider by changing the xlim. 
+
+```{r}
+table(mtcars$am, mtcars$cyl)
+```
+
+```{r}
+barplot(table(mtcars$am, mtcars$cyl),
+        main = "Frequency of Number of Cylinders on Cars",
+        xlab = "number of cylinders",
+        ylab = "frequency",
+        col = c("red3", "blue1"),
+        legend.text = c("Automatic", "Manual"), # legend labels in same order as their colors
+        xlim = c(0,5) 
+        )
+        
+```
+
+We can make a graph below that shows the same information but instead of a stacked  bar graph we can make a ```side by side``` bar graph by adding "beside = TRUE". Notice that we have to change xlim due to the extra columns.
+
+```{r}
+barplot(table(mtcars$am, mtcars$cyl),
+        main = "Frequency of Number of Cylinders on Cars",
+        beside = TRUE,
+        xlab = "number of cylinders",
+        ylab = "frequency",
+        col = c("dodgerblue2","coral1"),
+        legend.text = c("automatic" ,"manual"),
+        xlim = c(0,11)
+        )
+```
+
+
+The following graph is a ```segmented bar graph```. It shows the proportion of automatic and manual cars within each number of cylinders. *Segmented bar charts are always shown with proportions.*
+
+```{r}
+barplot( prop.table( table(mtcars$am, mtcars$cyl), 2),
+         main = "Proportions of Number of Cylinders on Cars",
+         xlab = "number of cylinders",
+         ylab = "proportions",
+         col = c("brown4","floralwhite"),
+         legend.text = c("automatic" ,"manual"),
+         xlim = c(0,5) )
+```
+
+**Your Turn**:
+Make a barplot for frequency of cylinder type (4, 6, 8) that takes into account the engine shape (v-shaped or straight). Make sure your legend is correctly labeled, and that your title makes sense.
+
+```{r}
+barplot(table(mtcars$vs, mtcars$cyl),
+        main = "Number of Cylinders by Engine Type",
+        beside = TRUE,
+        xlab = "number of cylinders",
+        ylab = "frequency",
+        col = c("navy", "gold"),
+        legend.text = c("V-shaped", "Straight"),
+        xlim = c(0, 10)
+        )
+```
+
+**Your Turn**:
+Take the graph you just made above, copy and paste it below, and make it into a segmented bar graph that shows the proportion of each cylinder type that are v-shaped and straight.
+
+```{r}
+barplot(prop.table(table(mtcars$vs, mtcars$cyl), 2),
+        main = "Number of Cylinders by Engine Type",
+        xlab = "number of cylinders",
+        ylab = "frequency",
+        col = c("navy", "gold"),
+        legend.text = c("V-shaped", "Straight"),
+        xlim = c(0, 10)
+        )
+```
+
+###Barplots of summarized data
+Sometimes we want to visualize data that has already been tabulated or summarized instead of having R add up the counts for us. For instance, maybe we would like to make a barplot that shows the breakdown of favorite subject areas in our class. We want to see how many prefer STEM, Humanities, and Arts.
+
+```{r}
+
+```
+
+
+### Pie Graphs
+
+In general, pie graphs are bad. From the help in R about pie charts:
+
+**Pie charts are a very bad way of displaying information. The eye is good at judging linear measures and bad at judging relative areas. A bar chart or dot chart is a preferable way of displaying this type of data.**
+
+**Cleveland (1985), page 264: “Data that can be shown by pie charts always can be shown by a dot chart. This means that judgements of position along a common scale can be made instead of the less accurate angle judgements.” This statement is based on the empirical investigations of Cleveland and McGill as well as investigations by perceptual psychologists.**
+
+```{r}
+table(mtcars$cyl)
+```
+
+
+We can make them with the ```pie``` command
+```{r}
+pie(
+  table(mtcars$cyl),
+  labels = c("4 cyl", "6 cyl", "8 cyl")
+    )
+```
+
+You are able to create more interesting pie charts by changing colors, adding labels, and legends in exactly the same way as you did with bar charts. We will not be using them much in this class as they are not good ways to accurately show information.
+
+For more reasons not to use pie charts look at this page.
+
+https://www.businessinsider.com.au/pie-charts-are-the-worst-2013-6?r=US&IR=T
+
+

@@ -1,0 +1,239 @@
+---
+title: "Day 32 DPQR Functions: Calculations with the Normal Model"
+date: "12/7/2019 rev 1/5/2020"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, error=TRUE)
+```
+
+## Random Number Functions
+
+In this section you will learn about: 
+
+* the ```r--```, ```d--```, ```p--```, ```q--``` functions that go with random variables.
+* How to use these four functions to analyze values from the perspective of a random fluctuation.
+* How to use these to generate random numbers
+
+### Random Variables
+
+In statistics we deal with an idea called a *random variable*. These are different from the variables that you have dealt with in other math classes in important ways, and you shouldn't try to use them in the way that you have in other math classes. Most importantly, you *don't solve for a random variable*. Random variables, often written with capital letters such as $X$, stand for a random process. So to fully describe a random variable we need to tell both what values it can take, and a way to determine the likelihood that those values will occur. The easiest forms of random variables are the *discrete random variables* which we worked with last term in the Probability unit. Now we are working with continuous random variables.
+
+#### Continuous Normal Random Variable
+A continuous random variable whose probabilities are described by the normal distribution. Basically, a variable that we can model with the Normal model, like SAT scores, height, weight, IQ, etc.
+
+In ```R``` every kind of continuous random variable comes with 4 functions. The ```d--```, ```p--```, ```q--```, and ```r--```. 
+
+* ```d--``` - gives the **d**ensity (or relative likelihood) of a value. This is used for graphing.
+
+* ```p--``` - gives the **p**robability of getting a value less than or equal to the given one
+
+* ```q--``` - gives the value that corresponds to a given **q**uantile.
+
+* ```r--``` - gives **r**andom values that follow the desired rule. 
+
+We are dealing with Normal random variables here so we will have "norm" after each letter: 
+
+* ```dnorm```
+* ```pnorm```
+* ```qnorm```
+* ```rnorm```
+
+What are these functions good for? 
+
+###### ```dnorm```
+
+In general the ```d--``` functions are mostly used for drawing probability density graphs (which means, essentially, probability distributions). 
+This graph is of the standard normal distribution:
+
+```{r}
+curve( dnorm(x, mean=0, sd=1),
+       xlim=c(-4,4), #pick your xlims by taking  mean - 4sd and mean +4sd
+       main="Standard Normal Distribution",
+       ylab="density")
+
+```
+
+If we want to draw the Normal distribution for the Evidence-Based Reading and Writing section (ERW) of the SAT which has a mean of 500 and a standard deviation of 100 (so it is  N( 500, 100)), it would look like this:
+
+```{r}
+
+
+```
+
+If we want we can draw a line on the graph to indicate a value of note. Imagine that you scored a 430 on the ERW section of the SAT. You could represent your score as follows:
+
+```{r}
+#draw the Normal distribution
+curve( dnorm(x, mean=500, sd=100),
+       xlim=c( 100, 900),  #pick your xlim by taking the mean - 4sd and mean +4sd
+       main="Normal Distribution of the SAT ERW",
+       ylab="density")
+
+#add a segment at our value of note
+segments( 430, 0,
+          430, dnorm(430, mean=500, sd=100), 
+          #these are the coordinates (430,0) and (430, f(430) ) 
+          col = "red",
+          lwd = 4)
+
+```
+
+You can also shade in a portion of the graph using the polygon function. If we want to see visually what percentile of the population we did better than we could use the following code:
+
+```{r}
+#draw the Normal distribution
+curve( dnorm(x, mean=500, sd=100),
+       xlim=c( 100, 900),  #pick your xlim by taking the mean - 4sd and mean +4sd
+       main="Normal Distribution of the SAT ERW",
+       ylab="density")
+
+#draw segment for our value of note
+segments( 430, 0,
+          430, dnorm(430, mean=500, sd=100), 
+          #these are the coordinates (430,0) and (430, f(430) ) 
+          col = "red",
+          lwd = 4)
+
+#use polygon function to shade in area to the left of segment
+polygon(x=c(1, 
+            seq(from=1, to=430, by=1),
+            430),
+        y=c(0,
+            dnorm(seq(from=1, to=430, by=1),mean=500, sd=100),
+            0),
+        col="yellow")
+```
+
+**Your turn**: Graph the Normal distribution of the Delorean's accelerations.  Make sure you adjust the x-axis appropriately. Draw a segment at the speed where the DeLorean achieves time travel.
+
+```{r}
+
+```
+
+ 
+##### ```pnorm```
+
+The ```p--``` functions are used to get values, not graphs. We can use them to tell us *the probability of getting a value less than or equal to that value*. This means it tells us the percentile of that value.
+We give the function the value we want to know the percentile of, as well as the mean and sd of the distribution, and pnorm will give us back the percentile (aka what percent of the data is less than or equal to the value).
+
+The following code tells us what percentile a score of 430 on the SAT ERW section is.
+
+```{r}
+pnorm( 430, mean = 500, sd = 100)
+```
+
+**Your turn**: What percent of scores are less than or equal to a 550?
+```{r}
+pnorm(550, 500, 100)
+```
+
+Many times we will want to find the probability of getting something between two numbers. The easiest way to do this is by taking the difference in pnorms. For instance, if I want to determine the likelihood of getting scores between 550 and 640 then I would do the following:
+
+*Note that this is the same as asking the question "what percent of SAT ERW scores are between 550 and 640?"*
+
+```{r}
+pnorm( 640, mean = 500, sd = 100) - pnorm( 550, mean = 500, sd = 100)
+```
+
+**Your turn**: What percent of SAT ERW scores are between a 600 and 650?
+
+```{r}
+1 - pnorm(700, 500, 100)
+```
+
+##### ```qnorm```
+
+The quantile function qnorm for the Normal distribution is used for finding specific value in the distribution, given a percentile.  For instance, if I wanted to find what score I would need to get to do better than 80% of SAT ERW test takers I would do the following:
+
+```{r}
+qnorm(0.8, mean=500, sd=100)
+```
+
+
+**Your turn**: What score do you need to earn to do better than 30% of SAT ERW test takers?
+
+```{r}
+
+```
+
+**Your turn**: Find the score that represents the 99th percentile:
+```{r}
+
+```
+
+
+##### ```rnorm```
+
+This is the simplest function. rnorm just generates random values that follow the given Normal distribution. If we want to simulate the test scores of 300 random students who took the SAT ERW we would do the following:
+
+```{r}
+rnorm(300, mean=500, sd=100)
+```
+
+Just in case you are interested we can make the scores look like real SAT scores.
+
+```{r}
+round( rnorm(300, mean=500, sd=100), -1)
+```
+
+### Practice Exercises
+First, complete the Back to the Future worksheet, using R to do the calculations.
+
+
+Then, for these next problems use the following information. The average height of a woman in the United States is 65 inches with a standard deviation of 3.5 inches. Assume that the distribution of heights of women follows the normal distribution N(65, 3.5).
+
+Create a graph that shows the relative likelihoods of womens heights in the USA. 
+
+```{r}
+curve(dnorm(x, mean=65, sd=3.5),
+       xlim=c(51, 79),
+       main="Normal Distribution of Women's Heights in the USA",
+       ylab="density")
+```
+
+What if we want to see better what this graph says about the relative likelihood of being  73 inches tall? Redraw the graph with a red line indicating the height 73 inches tall.
+
+```{r}
+curve(dnorm(x, mean=65, sd=3.5),
+       xlim=c(51, 79),
+       main="Normal Distribution of Women's Heights in the USA",
+       ylab="density")
+
+#draw segment for our value of note
+segments( 73, 0,
+          73, dnorm(73, mean=65, sd=3.5), 
+          col = "red",
+          lwd = 4)
+```
+
+What percent of US women are less than 73 inches tall?
+
+```{r}
+pnorm(73, mean=65, sd=3.5)
+```
+
+
+What proportion of adult women in the USA are between 63 and 70 inches tall?
+
+```{r}
+pnorm(70, mean=65, sd=3.5) - pnorm(63, mean=65, sd=3.5)
+```
+
+
+How tall do you have to be so that you are taller than 90% of women in the USA?
+
+```{r}
+qnorm(0.9, mean=65, sd=3.5)
+```
+
+Generate a list of 100 numbers that could represent the heights of 100 adult women in the USA.
+
+```{r}
+rnorm(100, mean=65, sd=3.5)
+```
+
+
+
+

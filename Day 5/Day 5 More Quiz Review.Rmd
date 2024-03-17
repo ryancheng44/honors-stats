@@ -1,0 +1,99 @@
+---
+title: "Day 5 MORE Review for Quiz"
+author: "Stephanie Neul"
+date: "2022-09-16"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, error = TRUE)
+```
+
+1. Read in the data set ```anothersurvey.csv``` and display the first *8* rows. This data came from this survey - feel free to look at the questions asked in case it's helpful for any of these questions:
+https://docs.google.com/forms/d/e/1FAIpQLSeTE0TN6CykbqhVmQJSlDhWNxu2XVGGlNUX6Gu5GdhoBiQ4GQ/viewform?usp=sf_link
+
+```{r}
+data.set = read.csv("anothersurvey.csv")
+head(data.set, 8)
+```
+
+2. How many people filled out the survey? Support your answer with code, don't just count :)
+
+```{r}
+nrow(data.set)
+```
+
+3. How many variables are in this data frame?
+
+```{r}
+ncol(data.set)
+```
+
+4. Explain why the variable `form` should be a factor, then change it to be a factor.
+
+```{r}
+# Form should be a factor because there's only four options: 3rd, 4th, 5th, or 6th. Also, the same form means the same thing for one person as it does for another as in it's not unique.
+
+data.set$form = as.factor(data.set$form)
+```
+
+
+5. Choose a variable that you believe should be turned into a logical vector. Explain why, and then change it into a logical vector. There a several possible options, just choose one.
+
+```{r}
+# Are you a PG should be turned into a logical vector because there are only two cases, yes or no.
+
+data.set$are.you.a.PG = data.set$are.you.a.PG == "Yes"
+data.set$are.you.a.PG
+```
+
+6. Respondents were asked to rate "How neat is your room" on a scale of 0-5. It's more typical to use a scale from 1-5, though, so let's make all 0's into 1's. Change the `how.neat.is.your.room vector` so that any answers of 0 are now 1.
+
+```{r}
+data.set$how.neat.is.your.room[data.set$how.neat.is.your.room == 0] = 1
+data.set$how.neat.is.your.room
+```
+
+7. Make a new column in the data frame called `home.km.away.from.choate` that takes the response to `home.miles.away.from.choate` and converts it into kilometers. If you don't know how many kilometers are in a mile, look it up :)
+
+```{r}
+data.set$home.km.away.from.choate = data.set$home.miles.away.from.choate * 1.609
+data.set$home.km.away.from.choate
+```
+
+8. Two people answered that their middle names were "n/a". A more descriptive answer would be "No middle name". Change those answers to "No middle name".
+
+```{r}
+data.set$middle.name[data.set$middle.name == "n/a"] = "No middle name"
+data.set$middle.name
+```
+
+9. Use sorting and indexing to print out the greatest number of miles from Choate to a survey respondent's home.
+
+```{r}
+sort(data.set$home.miles.away.from.choate, TRUE)[1]
+```
+
+10. Unless you already did this in problem 5, change `do.you.like.veg.out.monday` into a logical vector. Note that you will have to make a choice when doing this; explain why you made the choice that you did.
+
+```{r}
+data.set$do.you.like.veg.out.monday = data.set$do.you.like.veg.out.monday == "Yes"
+data.set$do.you.like.veg.out.monday
+
+# I think anything short of a complete yes can't be considered true. Just like half-truths don't actually count as a truth.
+```
+
+11. Print out all of the distances from Choate to home that are less than 100 miles.
+
+```{r}
+data.set$home.miles.away.from.choate[data.set$home.miles.away.from.choate < 100]
+```
+
+12. Is `middle.name` a categorical or quantitative variable? Also, what class is it currently saved as? Is that the best choice of class for this variable?
+
+```{r}
+# middle.name is a categorical variable, it fails to past the "average" test. Besides, middle names are used as identifiers, not as measurements. middle.name is currently saved as character. I think it is the best choice of class for this variable.
+
+class(data.set$middle.name)
+```
+

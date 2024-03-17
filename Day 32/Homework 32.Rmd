@@ -1,0 +1,103 @@
+---
+title: "Homework 32"
+author: "Ryan Cheng"
+date: "`r Sys.Date()`"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+pg. 139 #37, 39, 43, 45abce, 47
+
+#37
+a. 2.5%
+```{r}
+253.76 + 2 * 312.36
+```
+b. 2.5% of receivers gain more than 878.48 yards.
+
+#39
+a.
+```{r}
+1 - pnorm(10.3, mean=8, sd=1.5)
+```
+b.
+```{r}
+pnorm(9.1, mean=8, sd=1.5)
+```
+c.
+```{r}
+pnorm(10.3, mean=8, sd=1.5) - pnorm(9.1, mean=8, sd=1.5)
+```
+
+#43
+a.
+```{r}
+qnorm(0.4, mean=8, sd=1.5)
+```
+b.
+```{r}
+qnorm(0.99, mean=8, sd=1.5)
+```
+c.
+```{r}
+qnorm(0.75, mean=8, sd=1.5) - qnorm(0.25, mean=8, sd=1.5)
+```
+
+#45
+a.
+```{r}
+curve(dnorm(x, mean=188, sd=24),
+       xlim=c(188 - 4*24, 188 + 4*24),
+       main="Normal Distribution of Cholestrol Levels of Adult American Women",
+       ylab="density")
+```
+b.
+```{r}
+1 - pnorm(200, mean=188, sd=24)
+```
+c.
+```{r}
+pnorm(170, mean=188, sd=24) - pnorm(150, mean=188, sd=24)
+```
+e.
+```{r}
+qnorm(0.85, mean=188, sd=24)
+```
+
+#47
+a.
+```{r}
+pnorm(36, mean=38.2, sd=1.8)
+```
+b.
+```{r}
+qnorm(0.1, mean=38.2, sd=1.8)
+qnorm(0.9, mean=38.2, sd=1.8)
+```
+c.
+```{r}
+qnorm(0.9, mean=38.2, sd=1.8)
+```
